@@ -1,6 +1,6 @@
 # Sharp Norms from Finite Structure
 
-[Read the paper (PDF)](./Sharp%20Norms%20from%20Finite%20Structure%20-%20arXiv.pdf)
+[Read the paper (PDF)](./Sharp%20Norms%20from%20Finite%20Structure.pdf)
 
 The paper gives sharp graph-matrix norm laws from finite structure and uses them to obtain two application-level results: square-root-scale degree-four clique SoS feasibility and precise spectral behavior of Gaussian tensor networks. It also develops a norm theory for structured random factors.
 
@@ -130,4 +130,4 @@ The largest gate degree determines the logarithm, even though the matrix product
 
 Separate theorems treat local weights and unequal role dimensions through weighted minimum cuts, and establish comparisons for bounded asymmetric noise, Gaussian inputs, and fixed-degree Hermite inputs under their stated hypotheses.
 
-The assumptions and precise theorem statements are in the [paper](./Sharp%20Norms%20from%20Finite%20Structure%20-%20arXiv.pdf).
+The assumptions and precise theorem statements are in the [paper](./Sharp%20Norms%20from%20Finite%20Structure.pdf).
