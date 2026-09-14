@@ -1,43 +1,58 @@
-# OP31 graph-matrix main theorem in Lean
+# Sharp graph-matrix norms in Lean
 
-This repository contains the frozen Lean proof of the original R16 two-sided
-graph-matrix norm theorem. The final entry point is
-`GraphMatrixReplica.root_original_injectiveTwoSided` in
-[`R6/M1OriginalMain.lean`](R6/M1OriginalMain.lean).
+This library formalizes the two-sided norm theorem for dense Rademacher graph
+matrices from *Sharp Norms from Finite Structure*.
 
-For each `G : PaperShape`, there exist positive graph-dependent constants
-`c`, `C` and a threshold `N` such that, for all `n >= N`, the expected L2
-operator norm of the original injectively indexed graph matrix is bounded
-above and below by these constants times
+For every fixed graph shape, there are positive constants depending only on
+the shape such that, for all sufficiently large `n`,
 
-```
-n ^ ((v + h - s) / 2) * (log n) ^ (a* / 2).
+```math
+\mathbb{E}\lVert M_G(n)\rVert_{\mathrm{op}}
+\asymp_G n^{(v+h-s)/2}(\log n)^{a_*/2}.
 ```
 
-The final theorem takes only the graph shape as input. Its counting,
-probability and witness obligations are proved within the dependency chain.
-Empty or overlapping boundaries, disconnected shapes and isolated roles are
-retained. This release covers the main theorem; it does not certify all
-manuscript applications or a line-by-line correspondence with the manuscript.
+Here `v` is the vertex count, `h` counts isolated summation vertices, `s` is
+the minimum boundary-separator size, and `a*` is the maximum active-component
+count over minimum separators. The formal model includes empty or overlapping
+boundaries, disconnected shapes, and isolated summation vertices.
 
-## Build
+The main theorem is
+[`GraphMatrixReplica.injective_expected_norm_two_sided`](GraphMatrix/MainTheorem.lean).
+Its only input is `G : PaperShape`; the counting estimates and probability
+bounds are established within the library. The norm is the L2 operator norm.
 
-Install Lean through elan. The toolchain and mathlib revision are pinned.
-From this directory:
+## Building
+
+Install [elan](https://github.com/leanprover/elan), then run from this directory:
 
 ```sh
 lake exe cache get
 lake build
-lake env lean -j1 FinalMainCheck.lean
+lake env lean -j1 Verify.lean
 ```
 
-`FinalMainCheck.lean` prints the final theorem types and the axioms of five
-key results. The frozen local verification passed with Lean 4.33.0.
-The five axiom sets contain only `propext`, `Classical.choice`, and `Quot.sound`.
-The 373 copied Lean source files match the frozen release byte for byte.
-See [`verification/REPORT.json`](verification/REPORT.json) for source hashes
-and the recorded local checks. This source packaging has not yet been
-validated by a fresh dependency download and clean build.
+`lean-toolchain` pins Lean 4.33.0. The mathlib commit and its transitive
+dependencies are pinned in `lakefile.toml` and `lake-manifest.json`.
 
-Precompiled binaries, local machine paths, task conversations and unrelated
-research materials are not included.
+## Organization
+
+| Location | Content |
+| --- | --- |
+| [`GraphMatrix/MainTheorem.lean`](GraphMatrix/MainTheorem.lean) | Lower and two-sided expected-norm bounds |
+| [`GraphMatrix/Main/`](GraphMatrix/Main/) | Assembly, isolated vertices, boundary indices, and scale identities |
+| [`GraphMatrix/Counting/`](GraphMatrix/Counting/) | Replica partitions, path restrictions, seeds, and defect counts |
+| [`GraphMatrix/Probability/`](GraphMatrix/Probability/) | Internal moments, conditional laws, and synchronized trials |
+| [`GraphMatrix/Lower/`](GraphMatrix/Lower/) | Separator contractions and weighted flattenings |
+| [`GraphMatrix/Model/`](GraphMatrix/Model/) | Model identifications, color projections, and factor decompositions |
+| [`Verify.lean`](Verify.lean) | Final theorem types and axiom dependencies |
+
+The remaining modules contain finite graph theory, matrix inequalities,
+Rademacher moment expansions, and exponential-tilting estimates.
+
+## Verification
+
+[`verification/REPORT.json`](verification/REPORT.json) records the source hashes
+and local compilation results. `Verify.lean` checks the final theorem types
+and prints the axiom dependencies of the main results and two probability
+lemmas. Their axiom sets contain only `propext`, `Classical.choice`, and
+`Quot.sound`.

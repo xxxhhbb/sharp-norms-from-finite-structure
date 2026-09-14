@@ -111,7 +111,7 @@
       "configFile": "lakefile.toml"
     }
   ],
-  "name": "OP31Main",
+  "name": "GraphMatrix",
   "lakeDir": ".lake",
   "fixedToolchain": false
 }

@@ -1,0 +1,14 @@
+import GraphMatrix.MainTheorem
+open scoped Matrix.Norms.L2Operator
+namespace GraphMatrixReplica
+#check @expected_norm_lower_bound
+#check @expected_norm_two_sided
+#check @injective_expected_norm_two_sided
+#print axioms expected_norm_lower_bound
+#print axioms expected_norm_two_sided
+#print axioms injective_expected_norm_two_sided
+#print axioms p3_actual_weightedSum_sync_half_uniform_floor
+#print axioms main_actual_uniformWitness_constants
+set_option pp.all true in
+#check @injective_expected_norm_two_sided
+end GraphMatrixReplica

@@ -1,431 +1,2654 @@
 {
-  "scope": "Original OP31/R16 graph-only two-sided theorem, including literal injective boundary indices.",
   "status": "passed",
-  "original_main_kernel_validation_complete": true,
-  "whole_manuscript_extensions_complete": false,
-  "lean_version": "Lean (version 4.33.0, x86_64-w64-windows-gnu, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
-  "r6_module_count": 372,
-  "checks": [
-    {
-      "module": "R6.M1OriginalMain",
-      "exit_code": 0,
-      "seconds": 19.98,
-      "source_sha256": "417663239623e92e05ee918ae076ad511a1c5f2fdeb57cc3f70ff2c80385453b",
-      "olean_sha256": "862762d57770f34aed1d332d235e341790951b1ca6b21d9de32f60675e3b0c7b",
-      "sorryAx": false
-    },
-    {
-      "module": "FinalMainCheck",
-      "exit_code": 0,
-      "seconds": 19.47,
-      "source_sha256": "c23f57e5bc45c2a0e79d473d41d763641bd9cf0ee5cabd812d9ea468651a8e04",
-      "olean_sha256": "c29b19e59a380c69670eb45dcf1776f5bc9a16033866d2dfb3fc4be6ab2122ed",
-      "sorryAx": false
-    }
-  ],
-  "source_sha256": {
-    "FinalMainCheck.lean": "c23f57e5bc45c2a0e79d473d41d763641bd9cf0ee5cabd812d9ea468651a8e04",
-    "R6/AdmissibleStatePolynomial.lean": "69ec2eb67d38d52e7a13568d8249672a48f9d8965fe6b6cf8efcc3195607ad9d",
-    "R6/C027NormTransferInterface.lean": "fcca04a46ac7c565265bccdb01f6f6ba3dbfd12cbf17d581787a97453abd5168",
-    "R6/C079ActiveComponents.lean": "91a9cd6421fa317e08979614452f4b209d8bcd9a38dbfe30c563410ce91bc448",
-    "R6/C079AllDefectStatement.lean": "33a4600b492cf95f28e7d363602a8c5bcd29b57d829cd6bc7479e8019dda1344",
-    "R6/C079BackboneDefectSplit.lean": "5b6754784408a0eb264a1db43c272d9af284dd7ac8510ecfcbeebd5b37fd28f4",
-    "R6/C079BoundaryCoreScope.lean": "d1f1b867d1cd0c944e3312035995a30c874c8b9df27e950162d500f937918808",
-    "R6/C079BoundaryFaithfulSeedConstruction.lean": "9f98328d0d5602c1fda83f7554fb72233150ae802fd49d60780d025a2f982d67",
-    "R6/C079BoundaryFaithfulSeedGate.lean": "e67f53b9207cc68c0f2816f429dee32b88ad2feaecfbbd4df8a58c1229f2e57d",
-    "R6/C079CompatibleMatchingSeedCount.lean": "c930c42af69e574330f51dfc1cbe4d583cd76b3671fd9a30ab4af1eaa0abe954",
-    "R6/C079ComponentSeedTreeProof.lean": "22dbda0f5df1fc0fd1629cb3997f03ae96cb3932fd41a3708566ed673d326b24",
-    "R6/C079DefectStratification.lean": "cf7adf15e9888d29a8251b1927d11a27826cdb7e1821184b592d9a6c6bcfb921",
-    "R6/C079DefectVectorCount.lean": "6b41607e88a9fc4333e2dc3e0df567f9e9718143bc0270d0edf6780525777350",
-    "R6/C079DisjointPathLayerCount.lean": "8e35739ffbfd224657bcdf496a1f2991502132b00a9873da8e7c3489f2c4e04d",
-    "R6/C079EncoderAssembly.lean": "4ac0082492b62573247c6e2a046a3c3b3c8a533b499d06e38834463b5c3b8ddb",
-    "R6/C079ExplicitConstants.lean": "88adeeec53f3f340752c51c853ed47611615856f80312f542c8c6eb78867ba77",
-    "R6/C079FiniteGaussianTailMoment.lean": "57f240871ad4ae67676efc7fee66f5067d917f0a93898b0e6a5c204310b85660",
-    "R6/C079ForwardNormalizationLedger.lean": "070dbd8f3798c8b6409e2d9b15de27c35884a4fce95f53c961d07516b95a64db",
-    "R6/C079ForwardSwitchEncoderBridge.lean": "a29ced7cf093228d17fe3694f878b2192a263b9d2fefa582b836253156da9a70",
-    "R6/C079FreeSeedCountNumerical.lean": "5d56ac2cc4aa51884e56a07c7e2a4266f7442e6d72c5bb21ac6f4ae7bd0f055d",
-    "R6/C079FreeSeedLedger.lean": "2cb4f90ebb2c0310de3248b59371a39e46e88f1b6bc3be81d7ce11299dd83ede",
-    "R6/C079IidBilinearTail.lean": "af4d44d569d1493e5177c220a8bee086ed04d98da09dc91ffb4cc1840390b516",
-    "R6/C079IidEvenWalkCountBound.lean": "7fba3f147a387ca75566c4a28e5d72a3db91d221967d7b6c4c347bf79d305524",
-    "R6/C079IidMomentFromTail.lean": "d395b4038e020ccaed275ff06445f13fc9deca21b6c80682caef0b386fd8bb9a",
-    "R6/C079IidSignMatrixHighMoment.lean": "1508b02eddd214e8006fd47a366fb3c144a15a8b92db55c738031078735d70e1",
-    "R6/C079IidSphereNet.lean": "b432df49ffba388d29307746525ad3d53463e9eb4b33e9cae3d0539de456a628",
-    "R6/C079IidTailIntegral.lean": "72928b3a3c39033e3fb858c862afabf88d4f4d952a4d3ec5428c6b27217e6480",
-    "R6/C079IntervalLayerDoubleCount.lean": "6fb398d874614e7e8abd067d33a225265f7cdc500d7535a80ef597581a12821e",
-    "R6/C079MatchingDistanceFaithful.lean": "57388bd377da743478232bbb7f5deb1d12fb9d6e5c6d204b27f6fb9170fe50bd",
-    "R6/C079MatchingPartition.lean": "2916668880ca8bff5e99d6a2287715767537717e836cb8b0609f643803407e3e",
-    "R6/C079MatchingSwitch.lean": "2bcffe27be7f85eae41db22ebb36e6754354c6138744aa0ea4700ea6d7506430",
-    "R6/C079MatchingSwitchDescentCore.lean": "96c8aa50a64e0068fe1a8b05b3d840902dfc3513b994f916f905982aa048362d",
-    "R6/C079MaxPackingBoundaryComponent.lean": "7ac6a4371996a7685de96587eedd718319750b3c34595e8fb5cbdf3496aeae72",
-    "R6/C079MergeDefectCharge.lean": "7c0509c2c838b2d65c3f0029fa61161a1edcff256073c6a3df067e72a79ef751",
-    "R6/C079PartiteRealTransfer.lean": "43bdeb8a7d185bfe8720cbd0014428513ae0d5d4f019ae8c86144c5a000545ff",
-    "R6/C079PartiteTraceBudget.lean": "60b82edebfb62e0d45422f88698d7084b95497107c753a715df10259aa54efc2",
-    "R6/C079PartitionInterval.lean": "b7cb6ab6765cfd34f56c17fc634c0c52e7de6ae60ad5bd1711f8531d79a9969e",
-    "R6/C079PartitionIntervalMonotonicity.lean": "33ac4c33f8d14623abac50fd595571f2d82e8af0bb592dad9aecbb0e168efcb6",
-    "R6/C079PartitionMergeWord.lean": "08bd4271bfdbc52c755e50b9137788b730d555704dcaf2049de95f8416d8631d",
-    "R6/C079PathAuxMomentAlgebra.lean": "dfdc3543b16466d2215f8b461437d54031364638de57488b74b59dd456535d40",
-    "R6/C079PathAuxMomentShape.lean": "63912f2d970af131496b7ee4861235d49b17179a230bb526d68001b0fdfede8d",
-    "R6/C079PathAuxUpperUnconditional.lean": "e95f483db1c9f01084af8549617599cee1185dfd81a179af3b8abf9d358ac6df",
-    "R6/C079PathBoundaryProductProof.lean": "8c500277fc66d75bdbe104ca40a7171a4aba5738facc9b92a13d9ff927c91bf5",
-    "R6/C079PathFallingFactorialLower.lean": "79076b74d7656a94e03e18f72c69eb9294f722446f3ca4a6793b4539d6057a7e",
-    "R6/C079PathNoiseProductLaw.lean": "388a1c86ebedb475e243a491aca69bf483d6ab537c522ddb13fccb5a26f336a4",
-    "R6/C079PathProductMomentFromFactor.lean": "d00d1fc77416a3fb87c1b5c6a46b347f7b9edbc9da48b39529873559706b8369",
-    "R6/C079PathStateCountArithmetic.lean": "2762d8c91a5b9bb3f32e696e324fb16819111bea92f6d3c563f0c9fe3cd4fe73",
-    "R6/C079PathStateCountInterface.lean": "a318f2d977e02ea04a1910c4a6ea462702cf7ebb9181f03996b9b196db4db07e",
-    "R6/C079R16CountingTarget.lean": "bc6363435c8bf60749cb10054655321b3b308ffcbb3e6a8fcf577a0771a82f19",
-    "R6/C079ReplicaIntervalLayers.lean": "fbfc3a91a6740dbaa22fa6d8cae91d2d3331f47ed0fd4710a14ac7184d5085c2",
-    "R6/C079SeparatorLayerCertificate.lean": "2b0d0f25a2b4e91a07ece50ca3820de19938e00438f396946ec5b2425d69af7d",
-    "R6/C079StatePolynomialEndpoint.lean": "7db0ee46e0539f5af148398b5419442ce65025ffd18af9d337323bc2ef80b572",
-    "R6/C079UniformCoefficientBound.lean": "5167b11b0287d736ebfadf5145b3e5b07e6ffae279e967d775f00e1ce224daf4",
-    "R6/C2Actual.lean": "9572233cf1d6dea546e6953f3a39e6ac1dc7fcf622cbdb810488de2f638bab38",
-    "R6/C2ActualAssignmentSplit.lean": "fb727291f47b1d0823d83cb1152ebed685a8a1178c7c24935e20b46a56178dff",
-    "R6/C2ActualChaosReindex.lean": "784793384778609609e1290ec0cb2081aa425e59489d3025c5c084957a37a60c",
-    "R6/C2ActualIntegrationAcceptance.lean": "7ebd344565cc6c23a93c4524c8f47e758468e8724e6aa83a5c12514359cc7fd3",
-    "R6/C2ActualMatrixExpansion.lean": "4dcc3269531849a2304dbad79a4a973d6706cdb3aa8c2fc6d4100247d52c7563",
-    "R6/C2ActualMixedFlattening.lean": "ee28a29d060337b601811bfde15c239d2f12365a0093162a50bb91516584dbfd",
-    "R6/C2ActualWeightedFlattening.lean": "226f96a50fdc28c130034b54c0309ca044562971a4a812c4e818652d88659836",
-    "R6/C2AllSeparatorContraction.lean": "94bf8a3882e1d904469b228df85aecd13d9d9f47de33eabf6254bfd4cd261b2e",
-    "R6/CoveredRoleBlockBound.lean": "00ad679589f4d351756fc3218e6da6bbf393ac20ed1557ef4658449871b3546e",
-    "R6/DisjointPathDegreeBound.lean": "7f192f5b24d4ed1857c9a6d5dc8d14eadd41bb88d6eedcd15ff30d4273803003",
-    "R6/DistinctCoordinateTrials.lean": "0e3c378b2f9fee877311dee87dae9b807386b2a2fdf68c3284b2e7597471d9b2",
-    "R6/EdgeExpectationProduct.lean": "909663329dec05723e4f7a823faf19bcfeb56de7f12b40524ded2451b0ec58c2",
-    "R6/EdgeParityEvenEndpoint.lean": "cab7fcb27d2c7d17e1f04043aae87b6182c134f47e4cd8b8ca86106b84242f6a",
-    "R6/EdgeParityMatching.lean": "3a6c5a5bfc61c6f683588d2b270ce022d2c588875e71d6d9dd39d185ab0f684c",
-    "R6/EqualityPatternLabelCount.lean": "afc06350ce0a21f8fef709e76b6c4e57d43ffcfa7ca4e2351902b4c62e107449",
-    "R6/EvenFiberPairing.lean": "b590e15a34f86828f882081e1ce8a3c8025194e24fc59532cb9aeece6f1d5acb",
-    "R6/EvenPartitionBlockBound.lean": "f8d3ddf2ddc16aa6330b930f05ab9d6bc9a351384cca6910596684c797a7bd01",
-    "R6/F1aRawProductBridge.lean": "861b2871e637124e310b331ebda163adc935028eeaa9f4000a8948b32f9f56c1",
-    "R6/F1aRealLpFactorization.lean": "7d60a91872e675266919057506bf5b05ed61753d24836ac6a8f34b3561bcc4b7",
-    "R6/FiniteConditionalTrials.lean": "e5abd3791add7f9c882560f99add5c87ce5d4be46b5cd32b545e6d09d40b5b06",
-    "R6/FiniteIntegralFlowPathDecomposition.lean": "68dcc3c4b0681affbab0e2ecbab1e3bdcc8945e384a44bb3618ed7339be4c1bc",
-    "R6/FiniteIntegralFlowReachability.lean": "bc5fa57023355081f6332293fb55f19f425498f1860a2c9daca8cc56e3916e21",
-    "R6/FiniteMengerCertificate.lean": "fb8462ab90ef3335dd8652af7445344deb3fc8de7a758dabfa01a6c0a2211c6b",
-    "R6/FiniteMengerResidualAugmentation.lean": "63f2d0dde3184a31a32b7a06f03e1278c115ce9a827a1ce9b1bbf39a13a4082b",
-    "R6/FiniteMengerResidualBalance.lean": "c55536d64e5e0e1c6a60508621387d92106d09c72b0e3f004006d14af068e11b",
-    "R6/FiniteMengerResidualCut.lean": "a785bfcb7727bf4ce56ff05f369af289160fc6aadce37075c2bedec374e7dccb",
-    "R6/FiniteMengerResidualFinalFlow.lean": "9c6dde07710af05c242e05a5bbd46b6855ec53d22e9e0524749e04cc7d8e801d",
-    "R6/FiniteMengerResidualFlowSkeleton.lean": "360020924257ab68c50d7bbc25ddd4c2d08bc33dc22a425b571da440e6b37b4b",
-    "R6/FiniteMengerResidualGlobalCapacity.lean": "99fe33617028f932eebaa494da1544078cdb9fc5af800b88bd4f930e0c7f46a1",
-    "R6/FiniteMengerResidualPathProjection.lean": "c155a22907befc8ae4d1c169136947d217e394e3d2b0ba560bbf2ca042bf08b9",
-    "R6/FiniteMengerResidualProgram.lean": "dd2af07bba376b85067cda9f5821c20adc05f59664dea99477580c5cf51bc2a6",
-    "R6/FiniteMengerResidualToggle.lean": "f1c545182ee7b019378c30b5def9927062f854614bd44ff9b1f1dfec7243af51",
-    "R6/FiniteMengerStrongDuality.lean": "35ee0a942aa438361a20dd997a808589f62066aef79264770fa5d6ffd345e571",
-    "R6/FinitePathLoopErasure.lean": "b8b37424ae4efd882fadd0adf70bc17d75f04d61ac270ffaeb32d4d741ebb4b9",
-    "R6/HighMomentTailMarkov.lean": "156966fc237bd1446056b0ee4f2c380b749aba7e11da2300cdb454e99f95928f",
-    "R6/IntersectionDistanceMetric.lean": "e012372fc538f3acc135e126b6cb2cbf7e539f3a59015371e25c1a92d2a5d5c9",
-    "R6/IsolatedMiddleCorrection.lean": "2bab2192764849e8d2d6bb5fe0ab6e9c3e507570e70ff03fa69bf26ce4a78523",
-    "R6/JointEdgeRademacherExpectation.lean": "cea4cb8517076feb0943c45d27f3227ef17ef082bcf1ccd872a7a8409ea03d05",
-    "R6/M1ActiveThresholdProduct.lean": "65ecedbc9d282098bc7adeac1eeae1e85ab5d17c86f5d44f5fc32f53308dca57",
-    "R6/M1ActualConditionalSync.lean": "1bbd686dc8d86c45cf16d45f102b73f51139b2c1667a405190b3c831ddcd953a",
-    "R6/M1ActualSimultaneousEvent.lean": "6ede78c8c9d0984362be867a81ede7a47f10bf4d7e9a27fdb492cba53a5e7414",
-    "R6/M1BoundaryCoreGlobalUpper.lean": "cd2ec2763663b3ae3ce962a875ac827865852f9a8683b5e477692a8e7d45e434",
-    "R6/M1BoundaryCoreShape.lean": "34d517a25bc98ab94bb19f4c05189aabc613202e22162da99e6016f590aaf7fc",
-    "R6/M1BoundaryCoreTypedSharp.lean": "7377aa626e0fddfdb1b04173a324c536001f22a74e6a2bc18ca8ecb6b4d17f75",
-    "R6/M1C2CoefficientScale.lean": "3ee4ffec038d6826eea1b4ab0883f676ecc525c6036f59ea6ccb7a52377af835",
-    "R6/M1C2DimensionScale.lean": "43d304d8d19a7b1fb21e8654338a6f15222b80daada88a836ea51f09bbeb1fc6",
-    "R6/M1C2MeanAssembly.lean": "07e3017481b3dc24fc51c7c9e4fdb9f7f44040fe413d5d461d089e55c723ad5a",
-    "R6/M1C2RoleAllocation.lean": "2774863eee1a6ba9cc5baa94a9e853798c6db8557995b1d32496f8bcc3c8ac9e",
-    "R6/M1C2WitnessExpectation.lean": "2e8b416af73aa64cb43fd1b6d6a761a97069ec8fdbbf203d5d62dd52de147f1f",
-    "R6/M1ColorLowerAssembly.lean": "83ad052b98982a919345fe8e10e2274b575dd3140f7e97f8b0b3613250cc8875",
-    "R6/M1ConditionalWitnessEndpoint.lean": "cde520b3122d4e46f4a3f96254a9db4efd9fd8ecc09bbd169c15e0839b5c5370",
-    "R6/M1CoreActiveComponents.lean": "9058f04cdc3663417b8ea685cddcc8c66def63873ad7ff8876883590c1dd593a",
-    "R6/M1CoreGraphParameters.lean": "f2f9970f87abbf134b1d72fe110fffc3353be684f8336cee3832527de7a4fa35",
-    "R6/M1CoreMatrixIdentification.lean": "97d98e81b4d66f290fa2c2b71538035667e13a8ccfa940708c9e454841e862d4",
-    "R6/M1CoreMatrixIndices.lean": "4318ee18e4731dc82875b77457fb1aae38014b01b80a368d3f2588d985b62d56",
-    "R6/M1CoreProbabilityIdentification.lean": "e509df0cd03115a8db64361638016c5971e3a4f0df257162c7a707b0f823d1a1",
-    "R6/M1DetachedSecondMoment.lean": "b5e8014488959175121faef5fae837f50cb27c2d39703b6d77fffe8a5e8f31a5",
-    "R6/M1FiniteProbabilityInstanceTransport.lean": "4b5ba3f384398dcf0384454e2355eaff00978eeb40a4e0321d678f60f8b2ab44",
-    "R6/M1FrozenWitnessLaw.lean": "f9fd986d2ab6a14e96c2898375c5ca9117513c114a2b8ea81cc9b19d99fab7d0",
-    "R6/M1FullGraphUpper.lean": "980e3071b5253709d238049c75f6a127d184f6ea72741bf76cc0eb9e34f32c1b",
-    "R6/M1GlobalIsolatedFactorization.lean": "5515b7773f752c631c6d2cecc820af8426ddacbd134542abbb94b5cd11f5993d",
-    "R6/M1GraphRawFactorBridge.lean": "c632c561fa90985cd3fd9a7b9f1629b5a54771ba6c2cce492a1960379921fa61",
-    "R6/M1GraphRawProbabilityBridge.lean": "30980a2fd66449ef8fee712e3ac33b62e5376a31df0978971ff375d6f172062f",
-    "R6/M1InjectiveBoundaryNorm.lean": "df16a45f691be7af0db15bddcfac6570ff08fb84f66fec1bb286235c55fcf9f2",
-    "R6/M1InternalGoodFloor.lean": "64abc479fd988050fdfcb24379f26f76741a7deb1bc3d4f0bc173194c3616ec0",
-    "R6/M1InternalSampleProduct.lean": "26b47de45dc832934d1ca7c0c8649a6b9ee829ff76a3edab5522c796b3c46277",
-    "R6/M1IsolatedReducedShape.lean": "6ada1792a7e7cc8ebaab488720b1d7ec60ac85e9669ef10ab7246e9ef450c26f",
-    "R6/M1IsolatedScalarBounds.lean": "98ba55dc4f1076402bbbc103dd14987112c6f5bd02d7cab17451194ce31fc649",
-    "R6/M1IsolatedSharpTransfer.lean": "c0ba80bd3af68636a07d5d061b17ea339f14e225029da7770461ca2a4019efe0",
-    "R6/M1NoActiveLower.lean": "b037f5f0d1394738e63638a0fb3acd273d714c69dc560c18147a071dbd5e77e3",
-    "R6/M1OriginalMain.lean": "417663239623e92e05ee918ae076ad511a1c5f2fdeb57cc3f70ff2c80385453b",
-    "R6/M1P3HalfInstanceAdapter.lean": "24b39f9865f079d9ffaaae509f404b77e2702708cb57cd2e0dc10d8cdcfeceed",
-    "R6/M1P3SampleReadoutBridge.lean": "a9c35bfa7920adf5584cb7d7451225d0bbb2dbcca55adaa8899ca1e85f4164ce",
-    "R6/M1P3TrialMass.lean": "1d0678fcf55e47737a2dcfed1e5f1ab34df0034b9b73cd5595f21e407f198165",
-    "R6/M1P3UniformTiltConstants.lean": "79c5213253e46ccbad28eb1926d6e0676c0dfcce932e94f5f38f32c2f245b2ba",
-    "R6/M1ReducedActiveComponents.lean": "e9089c38b8ed8b120f0c5fe65f95031700c5270a48c91e7e8825ef6f13dc825a",
-    "R6/M1ReducedGraphParameters.lean": "813bc5853c1d52a8c0d11ebd5cd90738b0a583333328d3503678e14b8ece3335",
-    "R6/M1RoleAllocation.lean": "a4990bc65ce331d58a5078b80f8486c3ae7f7ecab561275bd6b55e862fe0d6f6",
-    "R6/M1TraceScaleBounds.lean": "bb16b242125ae5f72a5ad935f90bac09eacade77a24f84df6bcb8dab5b24aea3",
-    "R6/M1TypedScaleAssembly.lean": "0b835879312c8f9f21e85b5b37c5fe98689b285bbc7767c773508a963f0443d7",
-    "R6/M1UniformLowerEndpoint.lean": "56c0468bb222dcf3bd6c8f536c5a2c77937fd58ad3357a9604f510916f0a8fb0",
-    "R6/MatchingDefectPath.lean": "503416ba95e2292cb584164908e6d5eecfe7e40028c154de6bdea91ae96c6419",
-    "R6/OperatorNormEndpoint.lean": "1c949af3f3be1d7b9306fc5574dc8c94efcf4564f61fc0ff6644b1eb71f51164",
-    "R6/P1ActiveComponentCoefficients.lean": "9f1309a62d7b0b2aaded08681418f9cd1ece54471713e92cefda982cc96f0efe",
-    "R6/P1ADAcceptance.lean": "b1a9d3cd5f69091f728ce0bf697c64005ae75ee5b07d1a8f7472f7fa344d2e69",
-    "R6/P1ADFiniteMean.lean": "af79391e90b8a9e01e27e77e1ee6d9803ad3deb372cef7110af2a85b95c3c65e",
-    "R6/P1ADGoodEvents.lean": "9929f1dc2b3efdf3fbad3b1da125a2084a82fe0a033d65ac157607464ea4915c",
-    "R6/P1ADGroupedMoments.lean": "51a114c6679061cfd6bf8f693e114217c173dc1440959b7f05111c118f6baf67",
-    "R6/P1ADHilbertMoments.lean": "9d92819d42a0bb47cf9a0ac942e9e62ce96b2e8cfc792d47c1250ecefa2481be",
-    "R6/P1ADHilbertPolynomial.lean": "b71f2f8e7dfa70c4e054c89e2760013e647245762ae9cdfea1536fe29912aff9",
-    "R6/P1ADInternalMoments.lean": "992eb4741649486f7fe8e72fd964b5f6a6c6a92ef8435881810d5afb8696396a",
-    "R6/P1ADScaleBounds.lean": "c4239bfe91f50caea740f09ab6d2d599343647f2f77582a5144f1e20b90185f0",
-    "R6/P1ADSecondLayerMoments.lean": "39582986df2de5715d31fe773665e917c0e4ab95cffc064375defa50483c9c50",
-    "R6/P1ADStructure.lean": "fc55f04c81d5d652a54b646e3e6c98a6d6a1b0097e527dfd8de3039bdd66b6cd",
-    "R6/P1ADUniform.lean": "c0c34b84a7615377de56e9182b65e8cd9ea91ed9aece5b2a51e7a0cda1be203f",
-    "R6/P1ContractionReadout.lean": "f55f8b316ed7d6c3fc80b818a3e876d5392003aca9596c5013666b5cb0c35f5f",
-    "R6/P1CrossingArrays.lean": "1909690206f4db2c08ebad33274d7d60ddf4f78f7108056d3419dee9c5737948",
-    "R6/P1P2aEtaBridge.lean": "6490046ced663bdba95080df9943495e0802ea39ce7b62688330cb02d9012888",
-    "R6/P1P2aP3ActualLawBridge.lean": "e873791cc1600f6478843a2a362143d86d56617fb7b99de688b16effa05d002d",
-    "R6/P1Targets.lean": "2daaf2f4a7619812c400907b0edd2bca095968a6ac1d5195a0d3713888fbfd9b",
-    "R6/P2aComponentContraction.lean": "2d8e9e70e21bdc80e6a9b0fa9fef521a901a16bdba4edb697e70aeabd2fe1c22",
-    "R6/P2aConditionalProductLaw.lean": "e558289d81bca082b183f2ce58c8277e8d90c610ae2c9cdf25ca4b4e72850119",
-    "R6/P3ActualAddressBridge.lean": "4d1393d40035b758346f45fb6c23d8fe5eb6249863500ec3e716f15e4ca72531",
-    "R6/P3ActualP1ComponentLaw.lean": "e82561b45bc6598626e8872bd508b87ef905c8bc334e890207a00084564d14de",
-    "R6/P3ActualP1JointLaw.lean": "487e97e96d936059b73c1323948b44b54619046c5586fb40f17ddbdaf0afc679",
-    "R6/P3ActualP1TrialBridge.lean": "cbf712a314826a3c02b2495919a9294f9398a99adff68cffdddbfcde5fc95260",
-    "R6/P3ActualWeightedSumSync.lean": "77561eacd6ba7464274d23b40da28d67b34c0ac9f910527f863e26903d2ff955",
-    "R6/P3FiniteProductLaw.lean": "e4108959b1a99f58e648f5ac7dc835e91174c935183408fc82ddd0f49f2ac326",
-    "R6/P3FromP1Component.lean": "3c7fb5aecdfb666634211d26a3629f91b102662e903b88bd9f5d6231dd0e30c5",
-    "R6/P3LargeNArithmetic.lean": "9f58c60a6b432033407517ed9b18028ef391205b911bd9ffec2cfce7a7a8bfe0",
-    "R6/P3SyncAmplification.lean": "ae2295154e386cfed27cb545feff87863ab4fcf2bbd4c9920d006232ce957581",
-    "R6/P3UniformTail.lean": "f060d7984a2444ca8983d410f067b720e8bf73e76620844515ab69b60d3ff775",
-    "R6/PairCoarseningEvenPartition.lean": "9035997f1cc9b9680ed47504d510b21453c56886443d5427b7874e4068c19bf2",
-    "R6/PaperBoundarySupport.lean": "623b73ff7bae54eaaf191f4ff1f2e8207c615570d78a4ce27e9d6b2af4e4d6fb",
-    "R6/PaperBranchSym2VarianceCompression.lean": "be39ddeef2da2803557896f0203f1a719ab8cb5eed026e735e5eaa03afd866d9",
-    "R6/PaperBranchTreeDyadicTraceConcrete.lean": "7ccb9c8b765a74209b940732702c4a0213472c5d4a272cac4b30bf885b529b47",
-    "R6/PaperCoordinateSupportCount.lean": "16ef851df22286cfd2d9d544fafbef8995482ca75653ba0f30a7fe617bbd6fe0",
-    "R6/PaperEdgeOrientationDecomposition.lean": "395a6ddbe509568531af90b55513f667c2597c500808b6ce2be88a1aebf8fe36",
-    "R6/PaperFinalFlattening.lean": "08381445b7d99284ea2f1961bda4d465c93c269f30e4ce2d6e68324c47441575",
-    "R6/PaperFlatteningExponentArithmetic.lean": "8da65a8f11b4caf382de175b3538dd17615d8a437406dce79a476f327ff81d04",
-    "R6/PaperFormula21SchurBridge.lean": "ab09ca10eecd9fa41d501ddb3074ec1c4d3c4765cbec25c9fb60982737c280a6",
-    "R6/PaperGlobalEdgeParity.lean": "b9431b9111e093417b5ea4e48ec45b4d2e335d2bbd2993b716525a24f8ff3e29",
-    "R6/PaperGlobalEqualityState.lean": "75aa741dd09d02233836d523453a524336436ada7b130566b1a475303d406eb7",
-    "R6/PaperGlobalStatePolynomial.lean": "e41ced34306ed7aefb19dc04d756d61bf6d8daa14c7d2482dee33437be01f034",
-    "R6/PaperGlobalStateWeight.lean": "59c47d7a11cb684eee2519602297ddd4d6df304b25dca8d1ae8737d85a73de6d",
-    "R6/PaperGraphMatrixEntryMoments.lean": "aca15daecca5eadc1cdc2b9281c3914ecb8ea417bf6c473916176c8ad49174dd",
-    "R6/PaperIntermediateEdgeOrdering.lean": "36d0fc0361f52ed4b38de2ad7bf44f7c997bcece887510d5194782ba0b228b29",
-    "R6/PaperIntermediateFlattening.lean": "71b09c81242de030b4c6fb90cf06da406251332a14d8504f17c53171a720cdd4",
-    "R6/PaperIntermediateFormula21Application.lean": "9ec2388d961d7d43e9fb457e55108aa03a5078e1dd3f091d62788c71de4901bd",
-    "R6/PaperIsolatedAmplitudeFactorization.lean": "516032bf33be2cb6c0fc5b8d4c2b1282e75f4c428cb066111d569e88706039e5",
-    "R6/PaperIsolatedFormula21Application.lean": "78cd1ac293690f2372653b2caf2387a9e81103d21faf91b6dc2be07192fd5b3f",
-    "R6/PaperIsolatedInjectiveFiberCount.lean": "ce54ec5ce2c6259bfac64780ac3749e44583cf4088c8bf823759a2f83f473c66",
-    "R6/PaperIsolatedRoleMarginalization.lean": "300c9bcfa69ecbd32a97b11e3e13062ccf386a0737da0c6ad7b5f25aeb35331b",
-    "R6/PaperLogExponentAccounting.lean": "f1bc6712fe5bde7dd0e8d99348ca0d6178a2382eeae9ddfab0ffe0310e4b2b81",
-    "R6/PaperMengerPathAlignment.lean": "06edc56335761d1865f375535c0d69d812686f91db51a1aaf8825ac42370cdee",
-    "R6/PaperMengerPathTrimming.lean": "3528023ad5ef5017e57e18e3e31e7fd686e158d6b47cffb84d8b47c70881b8ea",
-    "R6/PaperMomentToMean.lean": "7c7fd7483dfd3137b1bd66e75368fe24f825c0ca68ee20dadae6decf6b87ded0",
-    "R6/PaperNCKEndpoint.lean": "3a771ecf446b800ee34473bc26a735d8c9c2d3367cf97cfbf24794cd85902a43",
-    "R6/PaperNearlyCombinatorialFlatteningSupport.lean": "df90915a6c0d8689ef61147be829cb3e07132d1898b48249d1649a2dd5c5d2d1",
-    "R6/PaperNearlyCombinatorialModel.lean": "dbaa1c8361c9353708c07f1980661b0e63b5e36fbbdf850fb0af2a0312b237e2",
-    "R6/PaperPartialNCKAlgebraicReindexProof.lean": "819c1bfc4b8f0ad9e9e191f58187e53fe94171de99e60ea4be74a3350041e8e6",
-    "R6/PaperPartialNCKBranchingLedger.lean": "46be64cc2a4e876fac6094d26c1b0b3c1d8d5d58cf3780baf60a54e5ea7121f4",
-    "R6/PaperPartialNCKBranchingStages.lean": "bc0afb4a0e6c67b473081eeaa7509efd23dba6b7396a6814cf28facb76433261",
-    "R6/PaperPartialNCKConcreteLedger.lean": "125fb2a4843d64c5cb5e586ae328b1cd7425b347bd990d559c9e852b3b2be5ee",
-    "R6/PaperPartialNCKFinalCompression.lean": "8ac2d7a3969ba00cfd071284f463e5ca1fd64a51da32c7a1b24cde8abe0f8183",
-    "R6/PaperPartialNCKGaugeIsometry.lean": "3306f82399ec0bec3e3c70cd44952c1142e5f07493a9b32eecb9adb1d0997af8",
-    "R6/PaperPartialNCKIteration.lean": "217ec4e681f2f63cf1284831eae2d08dc9c7f30da45621e6411ef760260cce0d",
-    "R6/PaperPartialNCKOneStepReduction.lean": "c1847de243d0784e4f310c2b855cfc3bf76ce49c3fe185ab6e14fbfa18e76b95",
-    "R6/PaperPartialNCKRawTerminalBound.lean": "2dbb8b85411d0c238521186152395890180c6e01ece3e72372d8276d6e2c73a0",
-    "R6/PaperPartialNCKStageMatrices.lean": "a0a496aa302c28d93b4d5cc0fbd371441276399e9286c92a92dffe48b0e494fb",
-    "R6/PaperPartialNCKStageReindexIsometry.lean": "95a742fb895861e3663f3af6f9c3eb785c76ad4a3672722be3d6e9ab021360fb",
-    "R6/PaperR16ActualPrimitiveObservations.lean": "0034a49952cd668efe76bc194d5198d1e5118a5e9e1c6ba6d51b0d27de84477e",
-    "R6/PaperR16AnyOrderTraceDomination.lean": "d3e140368d193fbbd18ae03aec4dacfcc93ce8768b1e6e4080ff875e5293b33c",
-    "R6/PaperR16C1C2ActualCoefficientBridge.lean": "07e01247a5c0347d5a719d55c6454ca179ee0843244a038c3740170b90642377",
-    "R6/PaperR16C1C2AddressReindex.lean": "94de9290831e0eb8d04bd0a1669728c60d1da868bf2e7a92d6614d98aa8520f3",
-    "R6/PaperR16C2TypedCoefficientScratch.lean": "76e24e8a7328ce34eac37f5f64488fc21851fe859fba425a194de2accd574eab",
-    "R6/PaperR16ColorAutomorphismCore.lean": "d5fa7a5ee258c1131a801f80f36476b9fd89c97425ddaed4d3560a13b1a018af",
-    "R6/PaperR16ColorClassRealization.lean": "d727704618be4ba7701ffc7aab663d99f257a886c863ff9568055969ae078ab0",
-    "R6/PaperR16ColorCompressionNorm.lean": "6f2920159eb9c1052e98c2714220a60b69c34e3775d76e9f6b1f2234c9f788d0",
-    "R6/PaperR16ColoredEdgeLaw.lean": "a481038df1d5943162f530e8060ed11263d00eddddaa81c676e0d57283e29f3c",
-    "R6/PaperR16ColoredNoiseLaw.lean": "d899e42778b7ef6935d250203f4b8ce056474d9e05d7920a624612875cf05661",
-    "R6/PaperR16ColoredPaddingIdentity.lean": "9c6babc887635171495961f0f6331a50cd081c2dea062c181e2a8169385a655c",
-    "R6/PaperR16ColorFiberTypedBridge.lean": "2ba6ecf42eb7bc133aad1075e871ee948ff862db78785e354a2e7680c1eb86e3",
-    "R6/PaperR16ColorLowerAutomorphism.lean": "8f616ab99db590895232ed78ef352041a64b04318217f748903f10a12feb34e9",
-    "R6/PaperR16ColorLowerAutomorphismReindex.lean": "8f0d55019370c673bbdd1dea7adc801262d5d4fcf03b13372345739bdb8e7b7c",
-    "R6/PaperR16ColorLowerCompressionContractive.lean": "c8ae5597bb19f5259df57ce2c4bb6c57dbe0a483fcad6b8924c168ce6d3abd68",
-    "R6/PaperR16ColorLowerConcreteSurvivorBridge.lean": "891775a6f4bbed64bf2fc9535a568e337e3d5a5cc96303c02ffa3f606115aaec",
-    "R6/PaperR16ColorLowerConcreteTag.lean": "89b9654e8647dff19e877e79a6f5b1e10b3a913e0092a653b230c799ab91ea7b",
-    "R6/PaperR16ColorLowerFinal.lean": "256c7ca87531eedfd807993a27e94571a1f2393312c8cfd2e2006306f1280005",
-    "R6/PaperR16ColorLowerFourier.lean": "c7dbf81ff58b7b26a1fda37d5f89cf1551312ff251e551811fa8a999869c2a4a",
-    "R6/PaperR16ColorLowerPointwiseIdentity.lean": "44d2f53a9bb0f284e2c7325088b4abf8dc8caeeb5aec921604818ab697d76b5d",
-    "R6/PaperR16ColorLowerProjectedEntry.lean": "4372682535795f7bb506d4f6056e215c5fb48d52f1e156ae2c3ae0d56e8f79ad",
-    "R6/PaperR16ColorLowerProjectedMatrix.lean": "6e306e1e1523bb98dbb0a03d571dc03608c9191da728fee27dca1b2863d93801",
-    "R6/PaperR16ColorLowerRoleReconstruction.lean": "bf7b6e2253e74a7d7e592b6f9da14f112ac679c9987f476b878aa17635feb0e9",
-    "R6/PaperR16ColorLowerSurvivorBijection.lean": "2ec6917a1ee6017421de3156c962f42dd131d4b845de3b95129d0bf7eb8142da",
-    "R6/PaperR16ColorLowerTagSaturation.lean": "d000c0d5a660c8a1de9b354a81e8b781076a81d90f738008596d929ad22eb00c",
-    "R6/PaperR16ColorLowerTypedLaw.lean": "80b27a95750def5b3125f833b058cc19e93b83a2a1c51e7cdc48a7345fe7747f",
-    "R6/PaperR16ColorLowerWalshAutomorphismBridge.lean": "7523bb6c9cbf247ee3560b8cbb3974fe9d2942ff04b040cc332be0828754263d",
-    "R6/PaperR16ColorUpperLpAdapter.lean": "392ebff0a02049de7262ba6c134f9d98dd57fdfa01116920de8b97cf5d1bad2e",
-    "R6/PaperR16ColorUpperNormAdapter.lean": "b4c600f23b99265c7f9bc9f79ceba2605b7cf367ffae5ba39d67e046affa9bed",
-    "R6/PaperR16ColorUpperTransfer.lean": "d50bdd44708e923e6f837a48ccc2b54d00f2337c383dca0ddc8a30f711b3bb88",
-    "R6/PaperR16ComponentSideScratch.lean": "50eaeae51d7790059119697988eea57349a7fbb5d1013309085297f7ac7af133",
-    "R6/PaperR16EventuallyTypedCoreLp.lean": "a317a763885c0c08aba55fb2cb61d2445ea9da29638b3e27102af6070702f119",
-    "R6/PaperR16FiniteColorLpTransfer.lean": "e5c19c608de9b012f4320ea30371564a0fbe2536191297a3ff8569a7f3f0fff3",
-    "R6/PaperR16FiniteColorNormTransfer.lean": "3b367451297e1386cb741d5a3c99c86281c33c969917bce74dbb7ed393c513b6",
-    "R6/PaperR16FixedColorExpectedNorm.lean": "0b9b02b0190a87862525db75b4b4b6183a8a9363cac49be6bafcea118af60f5a",
-    "R6/PaperR16GeometricRatioEventually.lean": "96060de9828a280c382f9605f5b48ce3e451e3b1d6c27a478ab8e376690db31f",
-    "R6/PaperR16GeometricTraceAssembly.lean": "b1c9ed3e11f8d2e121b03740f5cfe5f583feb971ebd0ec25bd90d006f048d686",
-    "R6/PaperR16GlobalColorL1.lean": "c6258dc5f784965b0fde244f8375884bdeee33be92f9c516ddb3fd7347ea1a72",
-    "R6/PaperR16HilbertSignFourthMoment.lean": "240fd75333a4e22af029f16126c68e6771665b65e7c00750a7809c2d2bfdf283",
-    "R6/PaperR16LogWindowArithmetic.lean": "09b7ddc2cb642f7e4b015c09a70e14faa129bb426a0c52d0020b110dc70d54dd",
-    "R6/PaperR16LowerFactorCanonical.lean": "ffbbf97b8688990c4ce5ff601a1b7a27ca1bc1f635d87f55bf2774d329962d32",
-    "R6/PaperR16LowerFactorComponentReindex.lean": "ab2fb1eb8aaf3eb813d82c9c51cc8c86b6703a1174909dbd9605c4e33b58bb47",
-    "R6/PaperR16LowerFactorInterfaces.lean": "44c0d1ece4dd842fc5a0310e7006b5975b217dd43989a568676eb2c6cd39eaec",
-    "R6/PaperR16LowerFactorNormInterface.lean": "9dac91500c96c5ecbdd4603645905c90b6e380539cfdcebcd024dd039ce011cb",
-    "R6/PaperR16LowerFactorPreprocessing.lean": "1323afea6c13b13159984bb4912efc0ee2fd189a54ca00d9deeb23f5d5d3b682",
-    "R6/PaperR16LowerFactorProbabilityFactors.lean": "df90776e8c33c7f74727450d4da2d05410f95605c431285a481180c41a7454c0",
-    "R6/PaperR16LowerFactorProbabilityReindex.lean": "dd78f56bff4ebce33381ff6d495433f8580f05e1dac813773a8e3814a69d6382",
-    "R6/PaperR16LowerFactorRawExactFactorization.lean": "a79999378a628e303ada82e4192f55a60d6d4fa5eb438908112ba35cf0ce62a1",
-    "R6/PaperR16LowerFactorRawMatrixBridge.lean": "f8c946605aff91996509b05c445e75e162510df663a79fb42ec34c229a0d1d75",
-    "R6/PaperR16LowerFactorRawReindex.lean": "81636804b556614fed641cdd08c0594c15d5136d981e055c9aac69b2a2bb7454",
-    "R6/PaperR16LowerStackingAllVertical.lean": "3b104170b75f3a8592ad5f8286ed3f1da4f304a6201abd9f4cefc1504c5fa055",
-    "R6/PaperR16LowerStackingBridge.lean": "5a0cb481ae61f89f8d0c5e01a2a288e581d631e870d5a6964a6c0316bba8299a",
-    "R6/PaperR16LowerStackingConditional.lean": "002d40831848b89bcd74db34e90b87b9182c9bcb73d584263b7f1143251d7960",
-    "R6/PaperR16LowerStackingHeterogeneous.lean": "fbf35f2b24ca64ac614ceebab11be604114d4cfed110a888a36a3a54b65eb334",
-    "R6/PaperR16LowerStackingIteration.lean": "11ccfc9ed84dabacc85d6df427b74dbf5805b2d8adc9ccd154f32c836c1cafa4",
-    "R6/PaperR16LowerStackingMixed.lean": "f22712c9dadbf683c5d546bf56d3aaf81919f9c43d469575fc41f7f082622f71",
-    "R6/PaperR16LowerStackingThird.lean": "79bff2f676bd482fb835231e808231114bdc0e3842fe042c0d57025c6d7f787c",
-    "R6/PaperR16MinimumSeparatorPathScratch.lean": "5360b1634019d4d818ca27caf3b56293f27ae23c94e918cd57bb909600fc1bb9",
-    "R6/PaperR16RealLpFiniteMean.lean": "bf32c9f6659e78dc4d1efec9421715610a9d2a903f310e721b04715d723256ef",
-    "R6/PaperR16RealLpTraceEndpoint.lean": "491702fde9731ddd7f85fa3a1db33f19684be8c371b154c0b56af947c254d181",
-    "R6/PaperR16SeparatorBlockNormScratch.lean": "270d70b6f2c77253688c39bbf707f159d8640a5c9dd044fb40e712eaa1a48d12",
-    "R6/PaperR16SeparatorBlockScratch.lean": "172ca2c0302b44b3ff7054454700ccb817f660574e2fef50954beb87b00c4caa",
-    "R6/PaperR16SeparatorCoordinatesScratch.lean": "fcba4e648f69e9145726c9cb11b581f98a2b66d1cb5a4328a647d38ca1ca5a6d",
-    "R6/PaperR16TypedCoreLpUpperAssembly.lean": "e9a15b232b81bc5a52e80960030c3791c98aef0e81b3149565cda4497323b685",
-    "R6/PaperR16TypedEdgeNoiseLaw.lean": "9ca7ae27acf68215f68ee31d450a701846300d53974db33268542b2435e4de5c",
-    "R6/PaperR16UniformTypedInputBridge.lean": "448958553e6f426a72bcdef2e0eaf8a7c96348de0a33bdb3548653ccc082787b",
-    "R6/PaperR16X3aScalarCombinatorics.lean": "82c8cad438aaf50eec2c8a7b15d75b3c5b85366c742803e233de3347242b46b2",
-    "R6/PaperR16ZeroRole.lean": "9836ad4ba8ffaf49ae9bdfbd0739140a2fc914b861fe0809fed9fd8aae32d96b",
-    "R6/PaperRademacherAdjacentContraction.lean": "e886c6ec2d5caa9751f55e565c663cfd9150d66cad75b4055630ecce78119049",
-    "R6/PaperRademacherBlockRowSandwich.lean": "25657c5b7f26ad8a198f5afe9aea14a065ef735f7aa48a26df525daf66da7f22",
-    "R6/PaperRademacherCatalanAssignmentEquiv.lean": "1644e8d86753a6e07fe430fd722634a3ffaa1ddecf194093f9e46972fab193a1",
-    "R6/PaperRademacherCatalanAssignmentEquivRecursive.lean": "bb4a810d13bc7ca7d6e0921c0e0d3aa01c03eac58da56e4c6f61216f4344acce",
-    "R6/PaperRademacherCatalanClosedCycleEquiv.lean": "5fd572d12dfe30db6ba49b92132012702d3ca3c3c7ccef1416acd79d7ff9ecd8",
-    "R6/PaperRademacherCatalanClosedCycleWeight.lean": "e7bf96acfd04ad51d284f1f21085ef733ca5f2ff6673e70e88fb9c0b2df88d32",
-    "R6/PaperRademacherCatalanClosedCycleWeightProof.lean": "de3d2428877999d339407a782dffcc437e87206a01fc9d61bbda578e67d3d16e",
-    "R6/PaperRademacherCatalanContributionBound.lean": "34987e637828ae66042eac1c1d78b6b3b4673609d990c4f0ff29240deab5b4d3",
-    "R6/PaperRademacherCatalanCoordinateEquivRecursive.lean": "565d409398f8da03b7167f89a765b69d7162ca2f7c585113b39c916c55dc4d77",
-    "R6/PaperRademacherCatalanCoordinateWeightEquivProof.lean": "06d02b62518d020a8b96d7a19db66816c5fae118890d38efdec8eb81c8c0d602",
-    "R6/PaperRademacherCatalanCycleCoordinateEquivProof.lean": "257da9e320d5c2c90f246d7c65f598fe12c31aa5045c95fd5b8f365340f5fcc5",
-    "R6/PaperRademacherCatalanCycleCoordinateSigmaInverse.lean": "99b17888b0d4868e52a162eca97f7f950f680654afba608e5e40d7caaf5da19e",
-    "R6/PaperRademacherCatalanNodeReindexProof.lean": "6780a53f4887c3642236fa9c696bd683704258bfb3699c45f326d13fab2090d6",
-    "R6/PaperRademacherCatalanOccurrenceBridge.lean": "c3902c8278593055b18cf171766495bd9c3f92ef4eaa41a69fd456e274668240",
-    "R6/PaperRademacherCatalanRawToDecoration.lean": "e9bb431fcc372df7958563835e8e03321f2970239885cf9b1cc36114af05be1d",
-    "R6/PaperRademacherCatalanScalarIdentityProof.lean": "aa02230c8e1b481b54492fa96eaf4e7d941ff0c993f5334c2d418a2b2516e713",
-    "R6/PaperRademacherCatalanTraceBridge.lean": "36bffde61d1aba6f865c796a63b19b806e7afea6b7704ebae269b5312203ff7e",
-    "R6/PaperRademacherColorProjectionContraction.lean": "43597e3b9b041cb1337a51cf3259d18d0c4cc75f25a46ad79adfe85ee947e094",
-    "R6/PaperRademacherColumnMatchingContribution.lean": "b63bf8adebda61bbb20e289388a81ef51176502c6101590af03c9d37d9b38873",
-    "R6/PaperRademacherConcreteAdjacentContraction.lean": "48a2b86e4d4176b914ecbacf292b9649d7e977b477223e26fe41f07999bada40",
-    "R6/PaperRademacherCrossingMatchingReduction.lean": "4c5e7149a463bc5e4be93f314ad53954605dff101fc185e12d3fda501cacd126",
-    "R6/PaperRademacherCrossingPairingBound.lean": "0490430c88494d879ddb91d6dc759fa6672ea29f961f1d517e72bec71fb82367",
-    "R6/PaperRademacherDecoupledStageZeroGlue.lean": "e5b01c05f96a8dacb2295ece272701fc7d3c1875d810ddf03a82bd3c98355e40",
-    "R6/PaperRademacherDecoupling.lean": "026c2fddb80033ad81dfe10c93b577a55bdcc78b1612b057840b8654a842cff2",
-    "R6/PaperRademacherDihedralMatching.lean": "50a9c84e708ad494d01ff0e20dd2006f76455eba17b385317f14f6b360e30bdf",
-    "R6/PaperRademacherEvenWordPairing.lean": "79b379071d915237e9e74da3c24ce505dedcd675929f0390861d8943e32d2a9b",
-    "R6/PaperRademacherEvenWordPairingDecomposition.lean": "e195814feb9715f97a42c3352b5d4403582d897d7840b890dea55afb9725f29c",
-    "R6/PaperRademacherMatchingContribution.lean": "beba9ab70883f6c48aa1d9189bc1bd1a1b3d8001dcb5e23066392cb60e1fcccb",
-    "R6/PaperRademacherMatchingReindex.lean": "3e7da1a29f1241db700a44f8750fa652827e41f1d7e10e544bedfe67b8563da1",
-    "R6/PaperRademacherMatrixDyadicMoment.lean": "e84b5a19f1446c83610c485dcb6e85cbdaab0fdfede64422a052b8ad9f73e5cf",
-    "R6/PaperRademacherMatrixFourthMoment.lean": "d525a586e3b49796936331509bf261c15b5426532acc9812745667e66d9d9f86",
-    "R6/PaperRademacherMatrixSecondMoment.lean": "476b5fe87bdd22318de56185b045b24e771a5c6e857d9702747dbb49c2c545ce",
-    "R6/PaperRademacherNoncrossingContribution.lean": "32fc98213853969455079c9d7a9cde251127d99b2735dd4760ca19b70f823ea4",
-    "R6/PaperRademacherNoncrossingMatching.lean": "504b48c5abe582f7e423eefb8c5b915a13bf76647b7bcf65834b71cfc4592341",
-    "R6/PaperRademacherOpenWordContraction.lean": "7c0ae7b0b1d0d993fb4b6d547019147d49025dc606ddcc20da5f06e99a1d5056",
-    "R6/PaperRademacherPerfectMatchingCount.lean": "eed4c4d3d7bd727d744e8145f2dd3de91bfd9176881539ae63aa0e78a8cde8b3",
-    "R6/PaperRademacherPerfectMatchingEnumeration.lean": "01345fa79dc3beae8f4a3e8adc3082cef3c5e7232db65fd85976cc430156e5d0",
-    "R6/PaperRademacherRainbowDecoupling.lean": "c3b2569cf53747b62ff888e6af16cfefabc21ae8bc819dd057696db5cd7a1e54",
-    "R6/PaperRademacherSymmetrizedDecoupling.lean": "302d4337406e00937c60739e004aad153dc0a2612e957cb5ed1514fe671ac59a",
-    "R6/PaperRademacherWalshProjection.lean": "89239f6d4c8d1ee3a6929906292779d0b36847c80f13acd964b84f399ef4134b",
-    "R6/PaperRoleColoredNoiseExtension.lean": "368465f99fd33313dc8898bc0e7a0a78ca491f018faf0f956fdff1ed2c217af0",
-    "R6/PaperRoleColoredPartiteBridge.lean": "c97cfd83fc417f1f442a453dfb5731a42677407a22b7921279cb6bfd0ec0a452",
-    "R6/PaperRoleColoringExistence.lean": "41b5642d4d5c6cb07e67d6dc7d749cd041d63903574c2b748366ddb53a0dac7d",
-    "R6/PaperRpowHalfExponent.lean": "e2b1b3fd1163f4786a1bd161375008f1c930cfa43ee864e0e39ac0417f4c1dce",
-    "R6/PaperSchurTest.lean": "1a3bbac60ef76188d7b3d6c4c380b8b1fbf78fc02913b48eaa6d3bad4771cf48",
-    "R6/PaperSparseFlatteningNorm.lean": "4eb322c424a6308169e05f3d6f6186d8991c3e7078fb7ac6ce3c6334f76fe796",
-    "R6/PaperStageSpecificNCKTraceReduction.lean": "46f1a41c1980fb3c300a7ad6ea07a76a662201c9363c13699aa04e121fb5dfd4",
-    "R6/PaperTheorem48AnalyticReduction.lean": "8f1d3f9c9f7eec1c7a770fe5b75b458af450bb1d7ddbf68eb71b66c508a53f39",
-    "R6/PaperTheorem48BranchingAssembly.lean": "faf111fc6fc220186ef9b067b06ea2f2d9a244b3a1f1cc22251a5f5850cbaeac",
-    "R6/PaperTheorem48RawFinalAssembly.lean": "06804d255211739b424b7e7718f79234a04934e900fc685d044a44dd5dcad195",
-    "R6/PaperTheorem48StageSpecificAssembly.lean": "a3512b6910e7ea95d97cde71b5663117f50e9ddb54bf0e1a950a62c849426298",
-    "R6/PaperTheorem48UnconditionalGeometry.lean": "b4966dbcbe7aee199db2c11a5f46d8be30b5fffb2c33c7e9b009864df2646f80",
-    "R6/PaperTheorem48UpperAssembly.lean": "9a01325442047a40256f718749fc3b6c78be965c70b9c8a6c18d2074fc1f8a2b",
-    "R6/PaperToPartiteBridge.lean": "151576d00d8b522a2d8b62a8aaf2a62cbb9cb72061c9f6749546e381992ca403",
-    "R6/PaperTraceCycleIdentity.lean": "ac65eee1be80a98e16bd61b0629ff2c318049b1a30b8254eb35867753a8175c4",
-    "R6/PaperTraceMomentFormula.lean": "07a4d82cccb9376567b72eb0b231e93e2534a4833a07000d6123d6c6c03b3578",
-    "R6/PaperTraceNormBridge.lean": "ac0aaee0550c52a42ea7351172e8b946b134b1db9ff2af6c4245ea4842ac3a50",
-    "R6/PaperTraceWordExpansion.lean": "6972d0d3d9f318eb5015600249aece25cd03e0dbaf793a41091e54b5ff4d89cc",
-    "R6/PaperUnconditionalMengerFlattening.lean": "4f73aec67a5c9c95777a0e1b7ad54b4a0cb51c069d501153f23ebdd66ae888ca",
-    "R6/PartiteBoundaryMatrixMengerBound.lean": "b14bb8816d61acf797d49fa5f9411e543e6166ea133a5381aeb887e4359c8bbe",
-    "R6/PartiteBoundaryMatrixTrace.lean": "0d20f80d19a833f7cf5a78ff6322b55151f8bfa2037d5598f1bf3808884766a1",
-    "R6/PartitionConstantSubspace.lean": "c5082051599b88d1adfd9762753a3bf3e52ca0913860653302f6108a43d3a74c",
-    "R6/PerfectMatchingDistance.lean": "9a995387d061ce6ebdefe9282f47e4c1f84f0e5b2fee2632c80fc4f8c51db79f",
-    "R6/RademacherCharacterSum.lean": "71dbb38ddf4055ef27f6592e6d23a13bf6a7a1a54565cee2d22a361766cabef0",
-    "R6/ReplicaPartitionState.lean": "1c02714aaaba28099d02dfce46e9a6a4714e86aa0ec53c1eaaa56dba26923f95",
-    "R6/ReplicaStateWeight.lean": "2e52a782841c10ef15048221530884fd470945de4244ba94599755c7e320d067",
-    "R6/RightBoundaryEvenPartition.lean": "a3a0ab4c8255bbc879335a1293abaf2b2eec992e61b07f99aa370a38b733e0aa",
-    "R6/SeparatorPathCertificate.lean": "f858e229ab32fd083433ef17e7049ea57c5f8468f03c78c3a6f4e510c15fb091",
-    "R6/StateBoundaryPathDefect.lean": "85df6d4d7c47e7444b8d045b12f73b3190a96e1c674f64e0c1504b1b39e70c74",
-    "R6/TraceMatchingDistance.lean": "e57a46120362a3963dbf420a144b69f7746b583d8618816ac24d3ec238a57b1d",
-    "R6/U2ActualEncoder.lean": "e542f9b8ea3066fd573f3397023d1e973bad0b3ab476cdc91780fa7c6d398783",
-    "R6/U2Assembly.lean": "6bd0c6078df4b41268c564e39196abbc339a5ddb8ff6368e1a5a8e2042c792bd",
-    "R6/U2BlockMerge.lean": "27749492523749b845e5271336adb4adcd7d31e5f1baa155bf7be95a1ed66f18",
-    "R6/U2EncodingBudget.lean": "c0b8a6174fe4ac9388cabeedb9690addb7f3e6a0d8a2fbd1ecba5bb791801eee",
-    "R6/U2FixedMergeCode.lean": "5cab1e5e51d81c328c8890890ceb04871d93acdb8c24ba7f904dce8764659264",
-    "R6/U2ForwardCode.lean": "bb8f9ae9c528fa9a6141fa5b3998416275de3de94243835aa87055807fb31350",
-    "R6/U2NormalizedBackbone.lean": "965f0596d6b57f91b0b59c6e6910d8fe0e03f9ee5c25ca1bea033233e8e6fb17",
-    "R6/U2NormalizedState.lean": "25d72efa92a3ab4c6666de883e0efd526b21bba72d8def1e0bb7a33581cb1db6",
-    "R6/U3ActualCountIntegration.lean": "6d7271c34523aa1541e50317317c545e5999e9fc9fa1b1e560e7cc57420aeae9",
-    "R6/U3ExponentLedger.lean": "3b0f4d411de3c3b3a9cb7eba24296239090220c2b847cb3cee2e9d2f31977807",
-    "R6/U3ForwardWordBudget.lean": "da883aa8ec1db901763dfc0d9402d8358f37d6f2d9f8c9dc67d9147c099936b8",
-    "R6/U3IntegrationAcceptance.lean": "06cf6d7d2d1b475fe8585d8e31efdd8e1d1648f4b65b093d8fe7ef97efe9a942",
-    "R6/U3MengerProfileTransport.lean": "6199703f66e0b72421a74596104f447a1e37e187c71a28e2d0178a83dc7820d5",
-    "R6/U3PathBudgets.lean": "af68915e3d81e760fa32cf874f2a67a3a338690bbd35af0af92e039a8a4134e6",
-    "R6/U3PathFiberRestriction.lean": "53502308c10ff3f0946406e20bdd5123ed248e886f5e1edaae75ff05301481f2",
-    "R6/U3ProfileBudgetSum.lean": "926b1d57a26cf33d6cb25e1a1e851d40199ef1764040255594c45ecb0c34c375",
-    "R6/U3RecordSemantics.lean": "6a53325e04e3784884a30cbf584a4306f069878b2ebbd038e2fe580a57e3b1d6",
-    "R6/U3RolewiseProfiles.lean": "f19820bac7ae9485dff2b976279892b240ce5f7a8ac17b76d40fe1c61985d915",
-    "R6/U3SeedCompatibility.lean": "1b3e20070c33c479f3487008b469cb136d2e26871f69b8fae09235a6f493bcd9",
-    "R6/U3SeedEntropyCharge.lean": "b2337fe55a4d40638d0288817b3f44300ba395eed2a39b5d85f8d91493e22ea7",
-    "R6/U3SeedLayerGeometry.lean": "3247ff98f0bbd84ee033b79fb05bb3e6d543e40524d143f106a2f91bd29101ab",
-    "R6/WeightedSignTiltChebyshev.lean": "305d5da9c60b58be2e262b890b49b6d772f4b8b57af2890449d061bdd9f7a3fe",
-    "R6/WeightedSignTiltComplete.lean": "232aeb16198c66f450b80dda9450cbd78a3b24619d2ee56dc06e805dc9bd852a",
-    "R6/WeightedSignTiltConcreteVariance.lean": "2936d7612eadc55a481c4aa92d8e2d213d1d585b776191b45a286e882eafec8d",
-    "R6/WeightedSignTiltCore.lean": "292c4a2339e9ae266af3c063f7ddf4edc0af8cca02f6d18692a6c129aaf4b0e4",
-    "R6/WeightedSignTiltMoments.lean": "77d283fd6caacec24a6028c0df39b0afd6ff695989822a03e43181f730081cee",
-    "R6/WeightedSignTiltTanh.lean": "e18532b32d2008b03e8f4dcf4624d357e537d7334e6930fc9dc1652c16db2597",
-    "R6/WeightedSignTiltVariance.lean": "ae88fc6a319120d39802ffc3c3c33210b26a7376a3ebed2f7997a2fcb385ceb6",
-    "R6/X3aExactPairInjection.lean": "f3cdccce0a5bee1a42308c875e89110568c77859e69b867d8ce5e8c4f4f1de69",
-    "R6/X3aScalarMomentProof.lean": "0bb339f69b0bfa7c2b6dec6ed211d7882c4d55d1c2426766e455a7fdb3ea2ea0",
-    "R6/ZeroResidualLower.lean": "c62b2e887739f7b88da0ef4a1134780c9426d581055ed082a06fabd481d37efa"
-  },
+  "theorem": "GraphMatrixReplica.injective_expected_norm_two_sided",
+  "lean_version": "4.33.0",
+  "mathlib_revision": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "library_modules": 372,
+  "verification_modules": 1,
+  "validation_method": "Each renamed library source and Verify.lean compiled from source against pinned local dependencies; no prior library binaries reused.",
+  "proof_preservation": "Library proof tokens match the original verified release under the recorded identifier and module renaming, after removing comments and diagnostic printing commands.",
   "axiom_sets": {
-    "GraphMatrixReplica.root_original_globalLower": [
+    "GraphMatrixReplica.expected_norm_lower_bound": [
+      "propext",
       "Classical.choice",
-      "Quot.sound",
-      "propext"
+      "Quot.sound"
     ],
-    "GraphMatrixReplica.root_original_globalTwoSided": [
+    "GraphMatrixReplica.expected_norm_two_sided": [
+      "propext",
       "Classical.choice",
-      "Quot.sound",
-      "propext"
+      "Quot.sound"
     ],
-    "GraphMatrixReplica.root_original_injectiveTwoSided": [
+    "GraphMatrixReplica.injective_expected_norm_two_sided": [
+      "propext",
       "Classical.choice",
-      "Quot.sound",
-      "propext"
+      "Quot.sound"
     ],
     "GraphMatrixReplica.p3_actual_weightedSum_sync_half_uniform_floor": [
+      "propext",
       "Classical.choice",
-      "Quot.sound",
-      "propext"
+      "Quot.sound"
     ],
-    "GraphMatrixReplica.root_actual_uniformWitness_constants": [
+    "GraphMatrixReplica.main_actual_uniformWitness_constants": [
+      "propext",
       "Classical.choice",
-      "Quot.sound",
-      "propext"
+      "Quot.sound"
     ]
   },
-  "forbidden_code_hits": [],
   "matrix_norm_instance": "Matrix.instL2OpNormedAddCommGroup",
-  "note": "Local frozen-release verification, not a fresh GitHub or clean-clone build."
+  "forbidden_code_hits": [],
+  "source_sha256": {
+    "GraphMatrix/AdmissibleStatePolynomial.lean": "0b3f0b13ba0c7cf431c0a3bde561cd6a007981e3653c9d05b8d34e2387424ae1",
+    "GraphMatrix/BoundarySupport.lean": "9fe868d49d653df22b1ceb6a01d09ee4d268659f6183ef1afa7d9e7d8308f25c",
+    "GraphMatrix/BranchSym2VarianceCompression.lean": "335b3c2c72e97996b2aca5673c33f095e5f3f5e8f109fc495120b2aa09941993",
+    "GraphMatrix/BranchTreeDyadicTraceConcrete.lean": "4b6a2595ebfe33cf400521217a75218a17ef7e374d295673297ed38c30beb429",
+    "GraphMatrix/CoordinateSupportCount.lean": "eabee14a616237a5c571d0db87be4c8126d292cdf22482982f57c45304a22ff9",
+    "GraphMatrix/Counting/ActiveComponents.lean": "34efe1e9f93867c528f38606ebc98e625be71ea2fac7288fe47a9528a5913e26",
+    "GraphMatrix/Counting/AllDefectStatement.lean": "a8e74e2f30a7d2b18316ac279f4b1e9ad4ecc838546203d7b998388836e2fbaa",
+    "GraphMatrix/Counting/BackboneDefectSplit.lean": "26f2e5f4b693777af8270a1968e270fc8f7e9886cd689daf664ea512ece89955",
+    "GraphMatrix/Counting/BoundaryCoreScope.lean": "bace8612d4dc6082183158ef40cf9b5f54f52b3f281f3f3aac359c6778661b8b",
+    "GraphMatrix/Counting/BoundaryFaithfulSeedConstruction.lean": "e29e2f9d682e043de3e49c6c2e732d160b5e5dd5407df881f8bd3ff6dcc3659d",
+    "GraphMatrix/Counting/BoundaryFaithfulSeeds.lean": "6a7bf35eabc44bcb3fb360d5909a55838fb366b87793bedd524eb0378647aedb",
+    "GraphMatrix/Counting/Bounds/CoefficientAssembly.lean": "9a54fe09c6e6d4bea7f4aa859fac88765fc0e897d4e43839f0baf8e92883deee",
+    "GraphMatrix/Counting/Bounds/ExponentLedger.lean": "ebf36ca11414ee206ea728ae4c8cb4e442aff393089004b4eb4034c87746e5f3",
+    "GraphMatrix/Counting/Bounds/ForwardWordBudget.lean": "95eef718b856283c11e77267e6f79296b5ab3853accc5324b60412be786a68d2",
+    "GraphMatrix/Counting/Bounds/MengerProfileTransport.lean": "3cd0d4dc2db32703c6ddbda66a1909a9b21db73ec10f55ea03bb0096628fedb6",
+    "GraphMatrix/Counting/Bounds/PathBudgets.lean": "b287c7da41e405c8424fb61eb6079d5170fd5fc7084d76139c068d420b779f20",
+    "GraphMatrix/Counting/Bounds/PathFiberRestriction.lean": "10c1f25d8d6f78b095640b3acd43cddfe0a87961e241d5ce881da54d9b10b97e",
+    "GraphMatrix/Counting/Bounds/ProfileBudgetSum.lean": "80659f0f310d44c273f6c73536e812c1cd20346603bc99b4caa11668a6ea1e47",
+    "GraphMatrix/Counting/Bounds/RecordSemantics.lean": "af8f173e7bbf33efdb50854b7f23ad96e304c4394dce89935cb37a202c15ce8f",
+    "GraphMatrix/Counting/Bounds/RolewiseProfiles.lean": "956a3d0c3c63ce0ddf2c840a03e12decf4b3cdfe82f02417d69d04d5b56b36b3",
+    "GraphMatrix/Counting/Bounds/SeedCompatibility.lean": "b7f189b639d113368761513c5ba74da377ecbfce6b2b8a97f1bf36bc5b4c714d",
+    "GraphMatrix/Counting/Bounds/SeedEntropyCharge.lean": "1823370f0342d96131b92eff62fbb9088e9ab80ba5401fb79b81fe5444770c92",
+    "GraphMatrix/Counting/Bounds/SeedLayerGeometry.lean": "596078d927bea992d3995586571f7d47f249fb2f7c02ef669b35fd6279d07368",
+    "GraphMatrix/Counting/Bounds/Theorems.lean": "79f6c0d2f657043dead3edc601312b47cee45c971c9eab840b07b24d5f39d5a9",
+    "GraphMatrix/Counting/CoefficientBound.lean": "749db6adb4829f00baa1438779c31357a813f8f1d9698bc43ac486debf9abdd6",
+    "GraphMatrix/Counting/CompatibleMatchingSeedCount.lean": "7ac1a380d660384637f8861b4990f6569444b1e83719013d37f49481de88f60f",
+    "GraphMatrix/Counting/ComponentSeedTreeProof.lean": "9c89ef260cf7f39c4b6802a611781eb3d79759fab4b629eb22d650c3708fef1f",
+    "GraphMatrix/Counting/DefectStratification.lean": "723acf9522f50943b1797fb5055d9f92c170cd425e7cbc8922bd46199c7e9759",
+    "GraphMatrix/Counting/DefectVectorCount.lean": "8155d53c434352bd6f829490c719825e39decc405a45568996c2f9f5717f871f",
+    "GraphMatrix/Counting/DisjointPathLayerCount.lean": "0f5a372ed418a44f69962f6d486466eeb89f1b631e551181377f8fbb1062f41a",
+    "GraphMatrix/Counting/EncoderAssembly.lean": "4692bcb3a7f0de88660b9e8c06a0ed8770259b340eaccad26680f5a5e84c255e",
+    "GraphMatrix/Counting/Encoding/ActualEncoder.lean": "a34552616a05a7f7a6f13fb53e7fd0455f1f929ac6d6c14cae837b7c340b516b",
+    "GraphMatrix/Counting/Encoding/Assembly.lean": "b4755034f225c2326ee5cbcc64a9422cb156f6ee571bd1cde3020665014d4625",
+    "GraphMatrix/Counting/Encoding/BlockMerge.lean": "4737aa2ca976bc91bc780499fb51421c13daa9fe50eb0a9e1cee99235aa3da2d",
+    "GraphMatrix/Counting/Encoding/EncodingBudget.lean": "33271c90c3e76379f36d7339b181066703b85b0d75443d25f0b257e746b351a3",
+    "GraphMatrix/Counting/Encoding/FixedMergeCode.lean": "6e7931a4f63b1615a5ac383d5b09421ca6c46b76357159286612e6a4c94738b9",
+    "GraphMatrix/Counting/Encoding/ForwardCode.lean": "2ee1656a502971fd9335840e1ae6bc9e07d0af0dbf7f7daffc9eb0bc7d01e33b",
+    "GraphMatrix/Counting/Encoding/NormalizedBackbone.lean": "1a29a5ab0205963a77aaff147f93a60fbb46cf115704b5c18804eab510cfe4f8",
+    "GraphMatrix/Counting/Encoding/NormalizedState.lean": "87aa647f1ca072b399fb8f48d446799d26cf5999a33c93d6989a5ee30fece7ca",
+    "GraphMatrix/Counting/ExplicitConstants.lean": "c8c1985e5af68ea609f771d927de6eccb7a72cdefab5fbe6fb3c2dd491af9bee",
+    "GraphMatrix/Counting/FiniteGaussianTailMoment.lean": "00e922a3b7a11770e263381433eea05d7b3eb86d3b0ca25a886b6ef7ccab3bd1",
+    "GraphMatrix/Counting/ForwardNormalization.lean": "8f031c0ba098016ce3f5affe8ca7d3782dfada773b313b939bb785034d6a490d",
+    "GraphMatrix/Counting/ForwardSwitchEncoderBridge.lean": "8f7430224417cb19f850041cd52800caec4f7c6d327a1ae672948163db7424ad",
+    "GraphMatrix/Counting/FreeSeedCountNumerical.lean": "19ff1cf77190980580efdbc01d4f3d082e0ddf5f948aac5812601c8d7f2536f5",
+    "GraphMatrix/Counting/FreeSeeds.lean": "a7e6ddb6de57ff1a35c0bf2ee8fb60e699b4442e66af142d22146e9a43c63a73",
+    "GraphMatrix/Counting/IidBilinearTail.lean": "d4dea7a0959b76ec9ed167bc0c508167bb2290b83842662716c8292fd4086f4e",
+    "GraphMatrix/Counting/IidEvenWalkCountBound.lean": "0fc26a74f69838253b821d520eb189f3fb34525052deb9c2504d1096235f45b5",
+    "GraphMatrix/Counting/IidMomentFromTail.lean": "e5d3ee5c5e0c6073eb956baa66491e3a05f87bcb7e4c017bbed67325212da08e",
+    "GraphMatrix/Counting/IidSignMatrixHighMoment.lean": "c853d1247b301d3f35dcba53003c6ade174f74020147316647fb9b9cb338b1f7",
+    "GraphMatrix/Counting/IidSphereNet.lean": "35ec42d0146e5b8469938606b000b714dd0e82773c60bf9f4fcb1479aa7ac220",
+    "GraphMatrix/Counting/IidTailIntegral.lean": "94270171cb80734141e1560ad25670beb3ae5cd43452e45d49bcbfbd5c432328",
+    "GraphMatrix/Counting/IntervalLayerDoubleCount.lean": "2a6b7cdc81b9e7800acae9b89c4686bcd629a91c83c7504b8b58e054b68c0429",
+    "GraphMatrix/Counting/MatchingDistanceFaithful.lean": "33685a18a9541c2ff58f163afa59f3b3a68dd4d72de14e2cea62a4fba8069de0",
+    "GraphMatrix/Counting/MatchingPartition.lean": "4fd9a5ebb7bf2d5dfc58f2063982639498bacd8232fd2dd76bf842511a6d06ea",
+    "GraphMatrix/Counting/MatchingSwitch.lean": "7c30c424d6fdb6469318759b7e14aa70c54b1a1f1cb8a53acbd147de7122bb16",
+    "GraphMatrix/Counting/MatchingSwitchDescentCore.lean": "35a70255c836de0e4229cd17f378a604893bfaab024bd5cf1965191225401ded",
+    "GraphMatrix/Counting/MaxPackingBoundaryComponent.lean": "a2e6561a7d8cb85f245414288dc0d469c071588672749719f693730e98701ab4",
+    "GraphMatrix/Counting/MergeDefectCharge.lean": "882b99ea024b42223987bc32bdcf5de3a0b752fcc0a7cbd187cbaf178548bdbe",
+    "GraphMatrix/Counting/PartiteRealTransfer.lean": "6f02902af6897cab9261357b2f72c0c24e693b2025689e7cb3b81b9a106ba0fc",
+    "GraphMatrix/Counting/PartiteTraceBudget.lean": "08e7b29bcfe146caebcda86cf0d1ee335b51b8687661a14b021040669a1e3335",
+    "GraphMatrix/Counting/PartitionInterval.lean": "44c538d96104e88c1191c3f9411307cea564e45ea3a246b739e1d7ec797ed232",
+    "GraphMatrix/Counting/PartitionIntervalMonotonicity.lean": "032b66bdea66a74456dd27d3f7a05c912e21d03d42e22a82e5a9f9f01e0226d1",
+    "GraphMatrix/Counting/PartitionMergeWord.lean": "68a6da58a54d4d81b0f1fb33e10a77c5976f6c697b6847002b4d86460e74307e",
+    "GraphMatrix/Counting/PathAuxMomentAlgebra.lean": "4863471b05559a07db308cdfa1d0ed44fd8e96f71473ada42468aff0339dabcf",
+    "GraphMatrix/Counting/PathAuxMomentShape.lean": "b18bdeb627c6d0b5bdf10f24e82fc6940cf9dd981a8a66d12b02824c0a8db54d",
+    "GraphMatrix/Counting/PathAuxUpperUnconditional.lean": "ec6a01be07f7f9f097a88336fc6582acf806f6e1f07de5d0da83fb22f55acfab",
+    "GraphMatrix/Counting/PathBoundaryProductProof.lean": "2b86d7733445ae9fe237c876f591a59721d7917ebd5345d74d75df16d367c93d",
+    "GraphMatrix/Counting/PathFallingFactorialLower.lean": "45740bd7616a70ae5d34a24083a42c217028846fdca8fb560395a7d7e0f93c47",
+    "GraphMatrix/Counting/PathNoiseProductLaw.lean": "0f0f856b14e2e41571604a952b66962d123eec62509704defa094723e2aa997f",
+    "GraphMatrix/Counting/PathProductMomentFromFactor.lean": "a743e188c938efdb78bd11bdd4b5a95426313ae04d8767396b79cd85325b6523",
+    "GraphMatrix/Counting/PathStateCountArithmetic.lean": "c4fe3333dedec8d482e843b31795925db9a653e6572313aa071f20145abc14cb",
+    "GraphMatrix/Counting/PathStateCountInterface.lean": "caacd344006368bf5a7e0c506c252e354695d22f9e622840521e26656c276553",
+    "GraphMatrix/Counting/ReplicaIntervalLayers.lean": "39f826ca29f7b4cc26782fdb7b839a82c23e2e76f03d89e28fef95363e0e182b",
+    "GraphMatrix/Counting/SeparatorLayerCertificate.lean": "248bd2fedd2db063adc4994a33c51e32bec29cb5b8b2ebf102c514657b2624fd",
+    "GraphMatrix/Counting/StatePolynomialEndpoint.lean": "301ec70723a3d950b85e5be26a5689be6bf028e38ce23d29a18ad6a209cce949",
+    "GraphMatrix/Counting/UniformCoefficientBound.lean": "66b6d16a97938aa7c8be0cff88022cc884d2dff47380303ae767187d639c302d",
+    "GraphMatrix/CoveredRoleBlockBound.lean": "9e111279cabc2240a6097e147f917d9bb1b5271f7b0f8874e9d377514eb32bc8",
+    "GraphMatrix/DisjointPathDegreeBound.lean": "995c4b6809860b4f96e810d39f9389fa305d373a9c136f8a49234fd37d2d7291",
+    "GraphMatrix/DistinctCoordinateTrials.lean": "0f03c5224f3a1201a69bb1e518dff5966466b173b39117a52455f042f7aa34a7",
+    "GraphMatrix/EdgeExpectationProduct.lean": "0657dc7bd24565c6107a8146ce69ce88f551a765587ef115dead2ef39f0d3f22",
+    "GraphMatrix/EdgeOrientationDecomposition.lean": "66ef07b8031d8f10ab8c38bbf3c53f07968e0fe1b19308e5a5c9776c4a17cd8c",
+    "GraphMatrix/EdgeParityEvenEndpoint.lean": "1c3203974bfeb2187fe508829faef69a2519e8c90fd08eb962612cff67b18f02",
+    "GraphMatrix/EdgeParityMatching.lean": "d598b7ab7746af7bce23a292a2068cbaacbc4287b544ddfb438d2b4b002c2b5b",
+    "GraphMatrix/EqualityPatternLabelCount.lean": "2bd743bf840d2d5be2a7d54a7104391bf7542debdcc6587666b5d95f687b15ef",
+    "GraphMatrix/EvenFiberPairing.lean": "059cffe029016c1afa4fa5e3f921ae30be92a5769ba0c39804d976dfea74f7d2",
+    "GraphMatrix/EvenPartitionBlockBound.lean": "46729ba27954407c91cf4a14e2e536d5f3123ce0bfeee7674f40604486a9bc3b",
+    "GraphMatrix/FinalFlattening.lean": "770ee1a3f4a2db79ebaa6134102da31f32cde0b1ca9f3f901b3bc58c0f34fe0f",
+    "GraphMatrix/FiniteConditionalTrials.lean": "0fd7335fa784b956651bf028d46ba9d243dc4a7fda86788ed805b0c1ddf5fa9e",
+    "GraphMatrix/FiniteIntegralFlowPathDecomposition.lean": "93dcbe696a1699a56caf56c733762b874b3f356fac1ad86f220ac5e9ae2b3ebb",
+    "GraphMatrix/FiniteIntegralFlowReachability.lean": "29c7c2a5da3d98e593ae8c3de4180b71a0fa5c6fd6fc9bcbe4b06dcae4cd33fb",
+    "GraphMatrix/FiniteMengerCertificate.lean": "e613a15782ab233c109afa356cdb42643170fc1dae39e21cbbb009e1fcc4e380",
+    "GraphMatrix/FiniteMengerResidualAugmentation.lean": "d853ad5dd3d6dfb2b1bc12b7a13e50aff55eadf0f629bcd9fbbfea042b79dea1",
+    "GraphMatrix/FiniteMengerResidualBalance.lean": "4431d7cd7dbc2df3c87af0678b3f6f84cf72036c8923662473af36fc432a60f8",
+    "GraphMatrix/FiniteMengerResidualCut.lean": "af47c171506148ef271b8887449911b04f784760419a32cd3c2dcb4d635898f8",
+    "GraphMatrix/FiniteMengerResidualFinalFlow.lean": "fc0e76504da06c2538a8e8d5bef4244c0b10ed67baab48d354574f35397dd68c",
+    "GraphMatrix/FiniteMengerResidualFlowSkeleton.lean": "a8c11c745702b5bd0ce9db3a1e5926d61584de39d7ac0f4bae188d733008e0e3",
+    "GraphMatrix/FiniteMengerResidualGlobalCapacity.lean": "f7187aa71d590e17c1b449d5dbb0c317239cf5c76794c49f97c63da08e2e7074",
+    "GraphMatrix/FiniteMengerResidualPathProjection.lean": "552e6670226aef72d33c59addd3f61dd6b53e1d398021604b5ef2155ffc4ecf2",
+    "GraphMatrix/FiniteMengerResidualProgram.lean": "31b40b4cb8c32ccabdc4de40dd32d456bd4c9ca63c1670055994f831477ecee9",
+    "GraphMatrix/FiniteMengerResidualToggle.lean": "15f6d7155560aeb1dd747f3a3e7041705297a97ab34ade09c3956b8e269b839d",
+    "GraphMatrix/FiniteMengerStrongDuality.lean": "5f3bb8e0a7fe81721bd5df0b88408b9e40657a77169afddab95649666f3a0b84",
+    "GraphMatrix/FinitePathLoopErasure.lean": "4cc52493b9f41731e04fbebdb92516f04920d74dba0d18d3a387190a24098e60",
+    "GraphMatrix/FlatteningExponentArithmetic.lean": "c02181afa96a0660daef68279b6f873bf0120e598706f0f509a9e862c586bce7",
+    "GraphMatrix/Formula21SchurBridge.lean": "1c27dc9611529a72b159f2cb1a5380e8aa746b740f1cb37d8304bdd78731357f",
+    "GraphMatrix/GlobalEdgeParity.lean": "e3b331a0da348e2e63da33e877762b2315ddf686773eb0792881b8e4dc8b6624",
+    "GraphMatrix/GlobalEqualityState.lean": "773621820fe9cee4e997317bad2c78806ebe7c998d56b6c507d3427e761247df",
+    "GraphMatrix/GlobalStatePolynomial.lean": "429628738854315b4d751ad7691ad4e39f86b47fc5eba52c822899c3019815cb",
+    "GraphMatrix/GlobalStateWeight.lean": "e71d9752f42db600be5b9a2439a700d06744a0f4d529dc377d3355e3588cf8de",
+    "GraphMatrix/GraphMatrixEntryMoments.lean": "3e1a96ed508e01f31c30f28a0fbf0d04a4e44cd16148eff1e33a6c0f0bad61bf",
+    "GraphMatrix/HighMomentTailMarkov.lean": "19e77c146c9313e6705f227ffb803ef1fdb6803605221e5f41aa72dc033c7d40",
+    "GraphMatrix/IntermediateEdgeOrdering.lean": "fa91f69b33672f4a6be04f65ca32fa7599b7405aa9dd7ed852bdbb1ff5bc8d74",
+    "GraphMatrix/IntermediateFlattening.lean": "a88e81990cee0478058ac8ad5843331ab1882238863eb8ab41b8e4a799cf960e",
+    "GraphMatrix/IntermediateFormula21Application.lean": "16cf46914464d3ec0fe4089b1432bc90be7aa10e255059376482f6fe37910b71",
+    "GraphMatrix/IntersectionDistanceMetric.lean": "33217b941cbf498d56faa54ee9cdc5da0ca7fad378f2a5c1e6c12ea4eb52a006",
+    "GraphMatrix/IsolatedAmplitudeFactorization.lean": "2be8b659c87a45a3f1e7144846360684b14b5a7f49d5158108e62a9f285ce484",
+    "GraphMatrix/IsolatedFormula21Application.lean": "864c7853edd6adde7347845d7ccdce4363f15a0cadba4f450ba7ed8c7590fea4",
+    "GraphMatrix/IsolatedInjectiveFiberCount.lean": "52eeeccae429f97e120b85bf7be19b6bc896410b5bb6d98273fb6f65b5865e35",
+    "GraphMatrix/IsolatedMiddleCorrection.lean": "b35be3b59379dcb191f9981534e4a0ea5bd96586f6e03d66c787dc017b1c7450",
+    "GraphMatrix/IsolatedRoleMarginalization.lean": "8ae6a232495d80cb99ea6161a853cb66e905022140fba548f02a04faab9354b7",
+    "GraphMatrix/JointEdgeRademacherExpectation.lean": "069b5223319fcfb502284e447539567713272c4727c398af3e36a30101d950cc",
+    "GraphMatrix/LogExponentAccounting.lean": "cca21595057605f4ef77eb9b5e60e18f24a8e1a3033ea21b69e769fb901baa0a",
+    "GraphMatrix/Lower/Flattening/ActualAssignmentSplit.lean": "ecaf2cac3cbd3507da044894c97e6794c1c10dcf4dba802bf835e0a07f47a7e7",
+    "GraphMatrix/Lower/Flattening/ActualChaosReindex.lean": "e5bf105dbd8508e4cb307094baef2c436406d126feb54acb08f84dafa6210eab",
+    "GraphMatrix/Lower/Flattening/ActualMatrixExpansion.lean": "fffd2807a73ce5d1d2f30266e04c38a0710702b28fa776b628a69a6f66ca5386",
+    "GraphMatrix/Lower/Flattening/ActualMixedFlattening.lean": "c2e9979b11d98eb70bf36043043231a5810228fb3373bc340af77745c3b50d79",
+    "GraphMatrix/Lower/Flattening/ActualWeightedFlattening.lean": "aa3e2492ba9caccbc04d750af51ba512b000bfb5c8e16686612d97249dbd516b",
+    "GraphMatrix/Lower/Flattening/AllSeparatorContraction.lean": "49869703fddd947df8bafd018d3ce988c4396b599e6e1a9b1bc531be0788bdaa",
+    "GraphMatrix/Lower/Flattening/ContractionBound.lean": "c1a0bc15b61414a6089ff977c340610dd7076bdf94e7a7402b02603ee7e26ad5",
+    "GraphMatrix/Lower/Flattening/Theorems.lean": "6583f3c7e2f762237b056bfc4becc926a687428ff02a1ada4740a81bea5127dd",
+    "GraphMatrix/Main/ActiveThresholdProduct.lean": "96bae59f014bafae5c4cc486e2db2fe3f6be27cbdc7e0da17f5fd58db390b269",
+    "GraphMatrix/Main/ActualConditionalSync.lean": "4dae03ec0ac1dbb9a5784ae6f006d7981a92d1608a8bbb34f10191f70994ed8e",
+    "GraphMatrix/Main/ActualSimultaneousEvent.lean": "c8353ca71495bd33a31a08c633e8bdec649ed015ad5c9384a2c428be93fbbd60",
+    "GraphMatrix/Main/BoundaryCoreGlobalUpper.lean": "873917709f497b40b8e6c2c6a359720121cf44f4b160031af9465135fc3be8f2",
+    "GraphMatrix/Main/BoundaryCoreShape.lean": "674dd702e39c10e57d91a1459a70e29e061e9eaa23b6009b5acd3a4d17589afc",
+    "GraphMatrix/Main/BoundaryCoreTypedSharp.lean": "4f080235b4034bb1c11e04881d2a0a298c314242ce053ceabae44379c58f0bc1",
+    "GraphMatrix/Main/ColorLowerAssembly.lean": "b9df6617a0c56562c7ea48c0b5135570562cf5ad4aef55753706366448a1ba95",
+    "GraphMatrix/Main/ConditionalWitnessEndpoint.lean": "62b0f4e8be70141794f078fed8d41bf64ab04230b8370795078a3f2ed3baee0e",
+    "GraphMatrix/Main/CoreActiveComponents.lean": "84dc2f1931cf07063e55a240f8fe899670bcf70573db8bf1119e81be8aec14df",
+    "GraphMatrix/Main/CoreGraphParameters.lean": "a85de8d98d8532a3fc28ef5f861cc56cb29ec4f3b6ccd631e4cf5a1eac9dac48",
+    "GraphMatrix/Main/CoreMatrixIdentification.lean": "7154e6a5682575ac2724ede9de7e90ee67ada6dc5683ac44df74511366cb25c7",
+    "GraphMatrix/Main/CoreMatrixIndices.lean": "f112e65d1f7d23bdfa03c1ff3151eab25624acf384eb1b798a4dc840035481a3",
+    "GraphMatrix/Main/CoreProbabilityIdentification.lean": "5ee21e7682861f60ccab484192217673a546db7a67440aeb7b1793cacfec1495",
+    "GraphMatrix/Main/DetachedSecondMoment.lean": "d95c9cdcc130b30b47e010d7e18d928f179bb97b07dc08bddd9cf9bd2e14cba3",
+    "GraphMatrix/Main/FiniteProbabilityInstanceTransport.lean": "b013c9bf67c4fa3f0212c38b6abd00d35cd738f1c1b353d2bd98cec185acf7f3",
+    "GraphMatrix/Main/Flattening/CoefficientScale.lean": "e44ab1a7dc4242bc1a5a03bb36f6440fd5954f27e9c8748dbab114fa7df91dd3",
+    "GraphMatrix/Main/Flattening/DimensionScale.lean": "abfd2e11acfa428044ae4cf01139fc95bfabfacb6a0767d8443947c350515263",
+    "GraphMatrix/Main/Flattening/MeanAssembly.lean": "9782c76b51a5e0aef7d75096c5e905aac64cc598deeddecd847e6bae37e6eaef",
+    "GraphMatrix/Main/Flattening/RoleAllocation.lean": "6ef89d079ffd8272d47f8b89e027751cca2a00dbb30ab56345f36348bcd41792",
+    "GraphMatrix/Main/Flattening/WitnessExpectation.lean": "288ad3587c6a2ebb24aa72f157adc10c9ca4d1c211881902ff8b4753c1bf053d",
+    "GraphMatrix/Main/FrozenWitnessLaw.lean": "71a8f3aaae30075a83d046a73e2296545bf240cd0a2c93981d7f39742aa2b41e",
+    "GraphMatrix/Main/FullGraphUpper.lean": "5bee20a1852ad1f34c7545335b546876bfc0a6e54b4214b4464476510198d6d3",
+    "GraphMatrix/Main/GlobalIsolatedFactorization.lean": "69492599ba6dc7e83d55ae0f82824f384db58d6e83add041378a7a032d178cfc",
+    "GraphMatrix/Main/GraphRawFactorBridge.lean": "7fac3a9c56362236acccb6365c74e08e6ca9eaf673ced51d46e963666e254618",
+    "GraphMatrix/Main/GraphRawProbabilityBridge.lean": "5aa293d7ba8fc015825e558c1ac521cf4fdc3e68b5890e8770fb6d5331ce027f",
+    "GraphMatrix/Main/InjectiveBoundaryNorm.lean": "ca875fd0c5325d34fbb4c6c02a786489a04d5aab9da4d46366eb88f62b4c5d37",
+    "GraphMatrix/Main/InternalGoodFloor.lean": "a6bacc0a342f1ca01b80af1d0dc7ec16687ec9493aba129864f74adb7b649ccf",
+    "GraphMatrix/Main/InternalSampleProduct.lean": "69d8a70d19d8867070d66084e7b1fd5f100a1bbc1efe0ad6801018c45a3352b8",
+    "GraphMatrix/Main/IsolatedReducedShape.lean": "77828323dc1cc12d8ee2a7ec0e5d04be882a30b1165e457feab19278b76bca28",
+    "GraphMatrix/Main/IsolatedScalarBounds.lean": "d53188ea6ccc960123a00fa36e62e34c6c94af109a2d3fb1f51a6541f0d0afb1",
+    "GraphMatrix/Main/IsolatedSharpTransfer.lean": "a1defa8a6eead520f4fcce0236d9a9167267856d5fdc257f4708d3977662b857",
+    "GraphMatrix/Main/NoActiveLower.lean": "780ad8963a7978340685faa9fdbe0d3c9c2b716e0e50e6f273e34fb5e394422d",
+    "GraphMatrix/Main/ReducedActiveComponents.lean": "fdcc855fa9cf69a3456d47abc1182580edaf2a04e8d98ca5fc76aa147a92c8c7",
+    "GraphMatrix/Main/ReducedGraphParameters.lean": "8c3dbc809f730b876944d420d93dca602a8b553f08912fdfc54f67c134401f45",
+    "GraphMatrix/Main/RoleAllocation.lean": "402bbdbbcd0cbd849376df4e9f6316927d34b6b0a7595f33bb3768799551f092",
+    "GraphMatrix/Main/Synchronization/HalfInstanceAdapter.lean": "fef650892a7ee18aa2b335fd294aa1aa86560b88ac354e408f951cfe55671bdd",
+    "GraphMatrix/Main/Synchronization/SampleReadoutBridge.lean": "0e3f64821cb0c58d20176f9de81ac44746f85b428523ee669fed0248d1d2f567",
+    "GraphMatrix/Main/Synchronization/TrialMass.lean": "641184bbb2adc9505ba55fdab04eabbdf5b3c28d323f00e12911ac4a125b9fe3",
+    "GraphMatrix/Main/Synchronization/UniformTiltConstants.lean": "0504573a6122f008ba9799c3e1632a3904aeb35162fcc15a1ee320169a59ed23",
+    "GraphMatrix/Main/TraceScaleBounds.lean": "93b024df08b324e62b2ffc673156433d36ba268c1bc2c4f9bf12353f96f4034d",
+    "GraphMatrix/Main/TypedScaleAssembly.lean": "11f095bcc92e378a7fffbad399255ce601cf7bc114e3fc47311f17dc799f16d7",
+    "GraphMatrix/Main/UniformLowerEndpoint.lean": "e5adba2cc43f9a144fa07b997bf4713f33315ecf306fa98923db2b479cd6606d",
+    "GraphMatrix/MainTheorem.lean": "c74fcc6c59290982bbf5512725cee6b6d8e498aec5b1c9024066d6cf39766e56",
+    "GraphMatrix/MatchingDefectPath.lean": "d5bb0f20cd52e81366cdeb142b0903a02b10d24550033a5b815add6f44044377",
+    "GraphMatrix/MengerPathAlignment.lean": "8cf0d0fb4fe05b50da6b0a807bf8a3c8b94ab41b595a96563fcc50421d4da8f8",
+    "GraphMatrix/MengerPathTrimming.lean": "0a615ecd4814b91e5fd1fb1250f81c55443a71e1b13e8a80e40cd56f0fc96bad",
+    "GraphMatrix/Model/ActualPrimitiveObservations.lean": "866d3f8b0c594a43b64616c22bff45ca75c6516414d12444cb60c9c9310e4f23",
+    "GraphMatrix/Model/AnyOrderTraceDomination.lean": "ae1729fdb5e593c89e6e778723cc4b434e8f78e4ee7cd6b616bb4301fd31d42e",
+    "GraphMatrix/Model/ColorAutomorphismCore.lean": "64ad387ae0db428f2db04bec2601ffaf12c07807a25a5a3fd4877a53c364102b",
+    "GraphMatrix/Model/ColorClassRealization.lean": "9f8d8c8a289253e323e2ebe2da455e24c2f4cadb989df718f53edac1eb693be8",
+    "GraphMatrix/Model/ColorCompressionNorm.lean": "74360526c81f4789bf1ddc90eec75514db073d8b369157af5219b02bc3d6f309",
+    "GraphMatrix/Model/ColorFiberTypedBridge.lean": "b0dd3efb998d185e6f98f060aa84fe9cc0981262ee4e9ebeb60f1704496feabf",
+    "GraphMatrix/Model/ColorLowerAutomorphism.lean": "1817f4243f6d18fdfb45e4066d7f625c43b70f343b90e9d934c826288ed900ac",
+    "GraphMatrix/Model/ColorLowerAutomorphismReindex.lean": "564f6a10dfc2c62acf77041f363dffe00989117650a9b3e437e5acbe5c7e4098",
+    "GraphMatrix/Model/ColorLowerCompressionContractive.lean": "d5b4f3a2f8db176f15a98e9a873bed1e53eec6505f5854954811b8d5cb9c567a",
+    "GraphMatrix/Model/ColorLowerConcreteSurvivorBridge.lean": "1c939ef92cf5f11711816f953fc4751025ad21c91e22ea3e0a5248e935a9c93f",
+    "GraphMatrix/Model/ColorLowerConcreteTag.lean": "7154fa54c95192d1b277a6b5339db3d181849d06eea244c4015dd9243518f586",
+    "GraphMatrix/Model/ColorLowerFinal.lean": "b1ede39ff6a47b32c975364bee82fcd9ea5167848d115c2a0a28cf0e686d69e0",
+    "GraphMatrix/Model/ColorLowerFourier.lean": "e1a109a1fd4df499f2da3f7e27aa43a1cce4fe45daa69de7f99647254dab437d",
+    "GraphMatrix/Model/ColorLowerPointwiseIdentity.lean": "eb77c63f1b9a5ac5ed726f52dee3a25b2a9f2fc5d469e1a71dd5d5c3d962923f",
+    "GraphMatrix/Model/ColorLowerProjectedEntry.lean": "91c03732b75dbce3776c7ce6de0ee9d6116681563a00166f311feb2133b0dfd6",
+    "GraphMatrix/Model/ColorLowerProjectedMatrix.lean": "da5dab8bea990bca93180f8c8f03e604824a90eee245c73d340035f66b8980fa",
+    "GraphMatrix/Model/ColorLowerRoleReconstruction.lean": "2b5688d508e1395a9339036b7e4602d5f049eb7eb7ecbe7921ec3f3caf6ee48b",
+    "GraphMatrix/Model/ColorLowerSurvivorBijection.lean": "992c6bbd6ed957815b9d9a3ca62298a0d201df995ed0990330d7f4e09a521720",
+    "GraphMatrix/Model/ColorLowerTagSaturation.lean": "f9ef27dcf4f2072851daad5cfc62e8f094d875710e273956969fd379ce768094",
+    "GraphMatrix/Model/ColorLowerTypedLaw.lean": "684bbe90c33c577d738b71a3cbfd627f1ff4b455f918b727049b311fda1f756a",
+    "GraphMatrix/Model/ColorLowerWalshAutomorphismBridge.lean": "590be81743836f8398a4d9f286a364806db17281a228a84debc7e42a80431319",
+    "GraphMatrix/Model/ColorUpperLpAdapter.lean": "2066ca1151e549dbe50f5e1de302084d1a0d8dea06e72560a4e87b1835aadc94",
+    "GraphMatrix/Model/ColorUpperNormAdapter.lean": "c3c3758f135c367699977225e21bd7f2d8c5cd22c3558764d267a8b26bfee1c2",
+    "GraphMatrix/Model/ColorUpperTransfer.lean": "1e926828ce3e4c49becad6b7044977cfce7e59202a5c38fc81f9f74607a656fa",
+    "GraphMatrix/Model/ColoredEdgeLaw.lean": "e35dca35c2eb929d7bc4c201f36eb143450dc09a3af277e6a2c5b8f87f4f5168",
+    "GraphMatrix/Model/ColoredNoiseLaw.lean": "fceb315f7e7e867ec6590c7a6b3914e33e2dc70f85cd4c17a0bb5954d40d1c14",
+    "GraphMatrix/Model/ColoredPaddingIdentity.lean": "8266b29246bb17165ba68d7543ccbd25800970056c2f1a3481f4b3e38e67115a",
+    "GraphMatrix/Model/ComponentSide.lean": "4c1e0c20b4d29152fe7fe31ac5ea0d6a870e4f6e60f6f6ee8e8bef0682ca5d8d",
+    "GraphMatrix/Model/EventuallyTypedCoreLp.lean": "312859fb1aa525b25981a3ff4fe595d66c3e3534a8ab19c6ce3fe65de8326868",
+    "GraphMatrix/Model/FiniteColorLpTransfer.lean": "693e7ada462e22637411321ea93f11d621f2689f79af653d43ddb67dae5840de",
+    "GraphMatrix/Model/FiniteColorNormTransfer.lean": "7fb7a59e7e1139f17153021a42a674d03bda1776224aa8bc913766c1ee962dc8",
+    "GraphMatrix/Model/FixedColorExpectedNorm.lean": "38ab6784d9b7f692a95dab888d563c5c8a5e5bdb9021aac981ed818090e1e029",
+    "GraphMatrix/Model/GeometricRatioEventually.lean": "4e7dcb27b436daa4fe6aee540047277e4e315ca0517492ae0479d4b56eed22a2",
+    "GraphMatrix/Model/GeometricTraceAssembly.lean": "0942ce3f1d72f3af0bca26ffa154bfce7ad3efdc8b54c9415fcae030bcb09472",
+    "GraphMatrix/Model/GlobalColorL1.lean": "a003c473e002f8cedbf12a5624b54f377b13468afcd2e1066c36ca029e669c70",
+    "GraphMatrix/Model/HilbertSignFourthMoment.lean": "d6f24164c6d0b605db55d86874eafbbc4090aae46ef082fc63cf448336c31019",
+    "GraphMatrix/Model/LogWindowArithmetic.lean": "b94bcaa211e3e06d156e093ff3afbed7562c7ae2b733458d7946cafab9039de4",
+    "GraphMatrix/Model/LowerFactorCanonical.lean": "7eff1e7926117d52a7827b66fb7c8f585891d25afdf058fa21d564d9a9f4e07d",
+    "GraphMatrix/Model/LowerFactorComponentReindex.lean": "25897643f67b53bd0b5c891e40fb3af064362a696fa43789087f9560407e1aeb",
+    "GraphMatrix/Model/LowerFactorInterfaces.lean": "10e62ec653992abb40d374000b02bc6b63d2b08c93e622b52d0658cffcf91570",
+    "GraphMatrix/Model/LowerFactorNormInterface.lean": "c5910fd37dc134a78e3aaa46c7909997444e3218934172cd7b43c1c5a0f21d01",
+    "GraphMatrix/Model/LowerFactorPreprocessing.lean": "1892bbc2ea10100f81502458d21eea76f9819e2b5a8d8f9dc9ae5b1cea669924",
+    "GraphMatrix/Model/LowerFactorProbabilityFactors.lean": "0658532cffca24686aae0fd116f3e340ee203f41b4fde6626c5b19ee81166838",
+    "GraphMatrix/Model/LowerFactorProbabilityReindex.lean": "8d65ca76e8a9a277d4837f10801cd95f5a70087fe6a065d2aedd18051f9ac311",
+    "GraphMatrix/Model/LowerFactorRawExactFactorization.lean": "726d48da7477f51086b5ba4bc6967670d51a229c2c13d34b8884a086de9d9da3",
+    "GraphMatrix/Model/LowerFactorRawMatrixBridge.lean": "1ec94f86d43b6944e6b7f6d10327da8d3d89f636e7a0d5fcd1e9f1fb2bf6f376",
+    "GraphMatrix/Model/LowerFactorRawReindex.lean": "767ca63d5ea44a779b5b53710842eebe6006c5505e39a28d95d9827f81cdce25",
+    "GraphMatrix/Model/LowerStackingAllVertical.lean": "e21f9f3be3f3e4ba582136465fb05d9c3df6c9fc9ade3d9ffa9f732d0d90dcf0",
+    "GraphMatrix/Model/LowerStackingBridge.lean": "63b5a9503188d8ed53b3095c5ae2154f5a67e2154c604d98585bae45cde0e472",
+    "GraphMatrix/Model/LowerStackingConditional.lean": "77371cfd2890abcd682849b4d0b7f1d4482d1ba8a8129a40cbf5b84141bfc0cc",
+    "GraphMatrix/Model/LowerStackingHeterogeneous.lean": "c34f44e44567be828afa4354be7a191cfa4837ddd3b76c01693c252594914c1c",
+    "GraphMatrix/Model/LowerStackingIteration.lean": "87fe9d20578ddac742982936b04122f9d307bba0461d8b287c2edb7351616fc0",
+    "GraphMatrix/Model/LowerStackingMixed.lean": "6674904054eb681e8f6cf141707d618169186f3574a03b9b605bd5f467bc81a6",
+    "GraphMatrix/Model/LowerStackingThird.lean": "e39b16aebb05e04b3ed86580533e41b73a92bf895a434ec43d86b76360f1ed08",
+    "GraphMatrix/Model/MinimumSeparatorPath.lean": "bb9a656f1493cf602e7a72e0014c893719de58d3e1238c44a1b04e32a81bfd05",
+    "GraphMatrix/Model/RealLpFiniteMean.lean": "48c4abb91da996c467f3d5858ab40d6c5116c278712188f1a4d2fafc0a0af4be",
+    "GraphMatrix/Model/RealLpTraceEndpoint.lean": "6bf54c599f5e9a163944a50594aeef4eabc3827e61cdfea2de59319114af5a50",
+    "GraphMatrix/Model/SeparatorActualCoefficientBridge.lean": "1d3b27cfff4a3dd95a922ef602509a0b0b56c825f9fe1d7176c603c277616604",
+    "GraphMatrix/Model/SeparatorAddressReindex.lean": "9805e2e4a9177ab91cbe889b0673160957fd1c7b2dc28c4c26c192b6bb0c1264",
+    "GraphMatrix/Model/SeparatorBlock.lean": "269ecc1be9135e0b60d834bfeec478094758d612db3eecd8f405421350f8dbef",
+    "GraphMatrix/Model/SeparatorBlockNorm.lean": "c4e05e228421c39adf7629b06df04df9afb32394d7bd7b010c6ccfbb14076c72",
+    "GraphMatrix/Model/SeparatorCoordinates.lean": "5c6c3ba715411b252e8fd6ad34a89fb8d51b5a7ff92cf8043d4a279d1e79d3c4",
+    "GraphMatrix/Model/TypedCoefficient.lean": "2d835a71cded213c19d3b67f64a3d854dc76703f5481f09e484fa01696077fe4",
+    "GraphMatrix/Model/TypedCoreLpUpperAssembly.lean": "360385a878ab5f80fca1fc337383d2fd53f513452248e2c03ae9841271756549",
+    "GraphMatrix/Model/TypedEdgeNoiseLaw.lean": "438fda755fb065a2192c8c4a2dfd9d96c35015f1ecfb63a1171202f9275fb74f",
+    "GraphMatrix/Model/UniformTypedInputBridge.lean": "5e7158e2486de00572b28fdaa64585fbe45365e9b0dbf0b1d31959a57fb8ad2b",
+    "GraphMatrix/Model/ZeroRole.lean": "b257356b1c29143b9f6fd2067e1a69d864ed72b20a6e4de8eafdf2bbd01223b2",
+    "GraphMatrix/MomentToMean.lean": "26d85dc2a3bc410997a566bb1e9914fc568a2db7fd18f8a45d47ec5cdc178370",
+    "GraphMatrix/NCKEndpoint.lean": "01f34e9763ccf52dd184afd66ddf65877cf66fb9d9bb2e0b8f7023f280f7b382",
+    "GraphMatrix/NearlyCombinatorialFlatteningSupport.lean": "37b6c00595a53125e90ece2a57856b4f91dfbb9c8910b1981ba7abd7ddba88eb",
+    "GraphMatrix/NearlyCombinatorialModel.lean": "127b1a5aa8e565176bb591243303f72c64a92b261c7c7954972da5541db90111",
+    "GraphMatrix/NormTransfer.lean": "fc4a012a2320ebdccc0e9f7b05781b4f0662698dd01320021e2176e8d6154f2a",
+    "GraphMatrix/OperatorNormEndpoint.lean": "739a6e96e8a3a9ab396f9e831fb1fd2a8bc55143fa78c9f01f3999e053e3a846",
+    "GraphMatrix/PairCoarseningEvenPartition.lean": "6f5f139972f49479811da9996b84a4a0c76fea967e82ba2c025e2c73275ab807",
+    "GraphMatrix/PartialNCKAlgebraicReindexProof.lean": "4bccf7a48ea378ccddb226d6dd4483612fe7ca8249e6fec3f6edff2bb48380f1",
+    "GraphMatrix/PartialNCKBranchingLedger.lean": "aa267223e8fbfa6bb34b2a80c4778cdb60665ed6c1a0081b693e24aa0d85f5cc",
+    "GraphMatrix/PartialNCKBranchingStages.lean": "8920cb123e92e3a2ccc5ff0702a54ba9e10367be73926843cb0309efa626ebc7",
+    "GraphMatrix/PartialNCKConcreteLedger.lean": "28660270fe6a6967d41cb48056bd8d61a9295a1bf0e433f8111d4acf54847e95",
+    "GraphMatrix/PartialNCKFinalCompression.lean": "b9a260d21d89140ee594fd7e22b581ee9ffc72f545d25fbda599f025b1dabf5a",
+    "GraphMatrix/PartialNCKGaugeIsometry.lean": "4b226c37cf5d499e8e02062556e202e6a46a2e0b945eb0b59c96212b9f00e5da",
+    "GraphMatrix/PartialNCKIteration.lean": "5e5e9c60a3372c630b719d6d5bdbdc1f6928f40697f780f9df1e0c970aba6700",
+    "GraphMatrix/PartialNCKOneStepReduction.lean": "6a4ac4889da92c36d5e5bb22d1a3762acbefa6a8df3edc20eb743fa064e8e335",
+    "GraphMatrix/PartialNCKRawTerminalBound.lean": "1c22d079cd45ea8efc8388f58e09ab55279bdd260e45a385263b8ee96ef4903c",
+    "GraphMatrix/PartialNCKStageMatrices.lean": "a00e8bd53f55cfe1f47acfdde477d0e8429d40137e586d28c910d3d111a7a40b",
+    "GraphMatrix/PartialNCKStageReindexIsometry.lean": "f38a65df3785076cdc4efbf3b6061f38e5f2c3c102193485613f9017276be6fc",
+    "GraphMatrix/PartiteBoundaryMatrixMengerBound.lean": "16db0bc8c22164bd9c27aa9380415038cb657a53d33901671b3ed4901ddd9945",
+    "GraphMatrix/PartiteBoundaryMatrixTrace.lean": "8cf1b331ca40a511189f4111197b3eeefd60b6efb14c2c007248283e4d24fe6c",
+    "GraphMatrix/PartitionConstantSubspace.lean": "d72eec565039117635207fe147ade57163d85fe46d27d20da76908d0742c50a6",
+    "GraphMatrix/PerfectMatchingDistance.lean": "a6780a6c49f5eb4d981a29a3c91819bb8753cdbca678e5620336ee9762b2b0ba",
+    "GraphMatrix/Probability/ComponentEvents.lean": "67ced780ed89d88e0ff6c93b5509f033107e145f8ecd4255ebb73f747f334375",
+    "GraphMatrix/Probability/Components/ActiveComponentCoefficients.lean": "c650c0f3da17aca535d5c1df7de61add98758f9c4c74ce51ddd49e1f786638cf",
+    "GraphMatrix/Probability/Components/ContractionReadout.lean": "ee762d2f71ef38f91f8434a7f5c29fb7a84c2da30269b034ddb99d2514616bae",
+    "GraphMatrix/Probability/Components/CrossingArrays.lean": "a9652ec522406582d6a15d310cf7e6dcaa427433e95bcb2ac7ea2a3ff7f147c4",
+    "GraphMatrix/Probability/Conditional/ComponentContraction.lean": "6c58b95dd9e402ed806d8ac2749b1739093d405a3d70ea2dca87dd845c0c82c7",
+    "GraphMatrix/Probability/Conditional/ConditionalProductLaw.lean": "85f7ed24b054efc77365cfd255528b925d21983944e84faad1ee8bcb2f3cbb06",
+    "GraphMatrix/Probability/CrossingCoefficientIdentification.lean": "4b11d25948e51937f811df5a6147ccbc2669b5e301e4fc3d4265dbc3fc7294c7",
+    "GraphMatrix/Probability/Factorization/RawProductBridge.lean": "4ba4d74ec06355a5b13aef29252e4e6f6de33fc0cf83fecb3976d87533c933b0",
+    "GraphMatrix/Probability/Factorization/RealLpFactorization.lean": "3f36e68d29c9c5d3b6249439e5bbe037130141f030585533d0e63530b9c4e389",
+    "GraphMatrix/Probability/Internal/FiniteMean.lean": "50498807f61c3f600c7baf2acfff834abc94ce8668a6d1653ccb398e01c7053e",
+    "GraphMatrix/Probability/Internal/GoodEvents.lean": "a21961bcc1bc964e52ecaf10bd7f224b8e8630ff405e2fa30d07507c21fcf65f",
+    "GraphMatrix/Probability/Internal/GroupedMoments.lean": "ff4199edc28e2f626da40071a7a0d436faf8b169a97b86ed61d77890ac29aeb4",
+    "GraphMatrix/Probability/Internal/HilbertMoments.lean": "8f11a923dff3e50dbc7c2d0034b0afcf0b7c7a96e8ebc6ed04aa50d8d47d8c4e",
+    "GraphMatrix/Probability/Internal/HilbertPolynomial.lean": "2af281aa445812bff27d09d37fe03d1b3a8a4b53b5b55346476fb49dc75ac273",
+    "GraphMatrix/Probability/Internal/InternalMoments.lean": "d24f7ebad76c9c35399b3382f3cd6f149cddc2430d53a9287a3141d92c08c7bb",
+    "GraphMatrix/Probability/Internal/ScaleBounds.lean": "42511df9d319ec09d9080fbad04369f6d5f6180329f9779a00eaa0967ad036eb",
+    "GraphMatrix/Probability/Internal/SecondLayerMoments.lean": "264a005e3a7d1b9cad0a9c7ccf7ac5a3e71d5597935ab70fbbada34558f74794",
+    "GraphMatrix/Probability/Internal/Structure.lean": "fb4c318134da14653dcb06fd7b9599329b229c3348560ca0476a0e78778cb548",
+    "GraphMatrix/Probability/Internal/Theorems.lean": "4090d61c5c7a4a6df1ad4ce7c520d44788f299b3046d0a6dd084e5d8dae58739",
+    "GraphMatrix/Probability/Internal/Uniform.lean": "4eea9a57b523aee3fed900638eba81afce68e7c0aa4ebc040a856bb1bc805c68",
+    "GraphMatrix/Probability/MomentComparison/ExactPairInjection.lean": "ecfb85f357bbd818cad8eb9e1aac105d251550c096a6bbe6dd3a2c06982d3a69",
+    "GraphMatrix/Probability/MomentComparison/ScalarCombinatorics.lean": "426ce5ed163bf4408ddb32a7eb995a2b5e30ae25f99742054a72138665bba5f7",
+    "GraphMatrix/Probability/MomentComparison/ScalarMomentProof.lean": "266de344dca54faeb1d4b17c6f0be383ef23207a735bb89d82500b2588e29f63",
+    "GraphMatrix/Probability/Synchronization/ActualAddressBridge.lean": "254c27ac53e23616e5d941cf0691351bca8a0e8db72e2a52c7d695fd08e61064",
+    "GraphMatrix/Probability/Synchronization/ActualWeightedSumSync.lean": "2ce131a5cbd0e81839c64408a5ae84fb86f85e0d8a6d413996211b85fa2f63bc",
+    "GraphMatrix/Probability/Synchronization/ComponentJointLaw.lean": "f1fee2537f52544f0fe2b22701668be3ac1f7356c292626d000dafb6fd604792",
+    "GraphMatrix/Probability/Synchronization/ComponentLaw.lean": "76eae21fac6f1d37f141e0929a6673c68ff026ea5ac7f5badbe58bc4877662b9",
+    "GraphMatrix/Probability/Synchronization/ComponentTrialBridge.lean": "52d7042ea29153f11491028e2d80e440804d3e5914dec46ac150dba059518ddc",
+    "GraphMatrix/Probability/Synchronization/FiniteProductLaw.lean": "4bdd258ccbd46636ad580a0f90789de11415536e99997e22dd57d619496f29f1",
+    "GraphMatrix/Probability/Synchronization/FromP1Component.lean": "5609f796d6592a0f33ecaae330f0b078ddf9973b3476a738223802ed742b5021",
+    "GraphMatrix/Probability/Synchronization/LargeNArithmetic.lean": "21145e213a791b7b15155d564eef3820b66629b7586daf1b685e084b74cca0e8",
+    "GraphMatrix/Probability/Synchronization/SyncAmplification.lean": "989c48ff0f48b283861880a2a43bab6052ae76b27066ab19004c844110c17c0d",
+    "GraphMatrix/Probability/Synchronization/UniformTail.lean": "14da39938dbdf19140aeab355bd3d46ee432a90143b5a4bed63c406e2a5cbc22",
+    "GraphMatrix/Probability/TrialLawIdentification.lean": "df4617443f58a909d88d14fe430a29f32fa479f59b025dcbde58ecd466502081",
+    "GraphMatrix/RademacherAdjacentContraction.lean": "63d6a4250a83701af11f03c596c5f9a5cb7a6754742427d5ca0bf319b8bbfab8",
+    "GraphMatrix/RademacherBlockRowSandwich.lean": "41686bbbef324695ae086cd558d228f041318e1d4a81b72d9b3588fb488d66e5",
+    "GraphMatrix/RademacherCatalanAssignmentEquiv.lean": "fc09118a3e7ea586ce95ba833a5f06b81b8c8a8bb5ed68e0737368f1dcdafe66",
+    "GraphMatrix/RademacherCatalanAssignmentEquivRecursive.lean": "84526b131e8fcf81f8c4f950207bd099db9ebe2b6163b212fb43e221ec259f71",
+    "GraphMatrix/RademacherCatalanClosedCycleEquiv.lean": "ddfcf2fceef39bc23264d57fcbe63ea0e9d4f27745ce24265a34e65d892c296b",
+    "GraphMatrix/RademacherCatalanClosedCycleWeight.lean": "776762c9d64752d2fa44833e736608c5d9fc50e175629622c3335b08c5c218c1",
+    "GraphMatrix/RademacherCatalanClosedCycleWeightProof.lean": "4ddbfde67cbbec3d5b31aeaaae1a8f847cd2d031d4d0fe33462c284c5c9e2bc2",
+    "GraphMatrix/RademacherCatalanContributionBound.lean": "fb2bdb5627cb2adb7e5ff963924c9b318ca05e5543cf1598ec33ee3e8c912170",
+    "GraphMatrix/RademacherCatalanCoordinateEquivRecursive.lean": "b9c99bd1d14dd2f56aceccdb68a4d13c0b3498474078d43fcf82391f3e09bba1",
+    "GraphMatrix/RademacherCatalanCoordinateWeightEquivProof.lean": "ad82f510a04966a4cb051744d8d1d89ae6309024fda87767ccb7ef0399f3b65a",
+    "GraphMatrix/RademacherCatalanCycleCoordinateEquivProof.lean": "8a625a274c37dd5c2cefc457d18f9916684891a78a55d89da4d81262d16e7fbf",
+    "GraphMatrix/RademacherCatalanCycleCoordinateSigmaInverse.lean": "5fd08df08558ace26fe855362b6afa7e45232f58c633a68c5fa7a627d91d129a",
+    "GraphMatrix/RademacherCatalanNodeReindexProof.lean": "14e64a91668eab16443f49a29527fc52d5c27ce008a724ec61e1bdbb1c49a3a3",
+    "GraphMatrix/RademacherCatalanOccurrenceBridge.lean": "e01e849271376094629e6e05c783ae38043147728276114fc9bea6ae4a73e51b",
+    "GraphMatrix/RademacherCatalanRawToDecoration.lean": "fd3299fecb449f184c28ebb3abb02d008ddb5f69a5e7f95eaa97d9e3144df3b3",
+    "GraphMatrix/RademacherCatalanScalarIdentityProof.lean": "47073ffbace6f081ec0136180f38087a38056c14a537580f9c37773754b95c37",
+    "GraphMatrix/RademacherCatalanTraceBridge.lean": "bf784e0e953893ac2b90a9ae1d2619164c4ea56e9e766425813509172fac5788",
+    "GraphMatrix/RademacherCharacterSum.lean": "43233ca3be97fa558a3ce74c23be3e2926756e53a2de5711d6c755964069cdd1",
+    "GraphMatrix/RademacherColorProjectionContraction.lean": "8abc4db187504bc8974bf48ebbcfbcb6fe5b01f9552f4aab374748ec6f06eafd",
+    "GraphMatrix/RademacherColumnMatchingContribution.lean": "2ccb12b9c710bae06a9d29c0b4c7841381705aea74918f48f1d85d7eae0c2215",
+    "GraphMatrix/RademacherConcreteAdjacentContraction.lean": "6aad5ec27ef9deba77df410f353279c8d6d9641a4fbdadc75e40c827dbd04e3b",
+    "GraphMatrix/RademacherCrossingMatchingReduction.lean": "38f7b35ac4be3eb9ad1817769cbff0f94af79afaf1393c5f250cdfaa4e9f04d5",
+    "GraphMatrix/RademacherCrossingPairingBound.lean": "076e56ddd01f96264163ad62d36cf72d5b5c076cbd458d593cea7c1c5aff530e",
+    "GraphMatrix/RademacherDecoupledStageZeroGlue.lean": "1fa78bfc3f11321ff68b0b357b0d0d5fd4de2e8d2295c9f9b14560e314304ae7",
+    "GraphMatrix/RademacherDecoupling.lean": "ff384389766cc895149f615f0faca3d51484faab8545f89c679a442de9c2d42b",
+    "GraphMatrix/RademacherDihedralMatching.lean": "3a9254522e81ce37b9f62241ded7634593208add5d14f5477ae218701845b6bf",
+    "GraphMatrix/RademacherEvenWordPairing.lean": "4a586a21c5f63037b989ee951bdd9e6b9262a03535ec374f8d1d9b0925475f50",
+    "GraphMatrix/RademacherEvenWordPairingDecomposition.lean": "466603b49b617ed149cbd5b2010811283f3eb7b205d9fcc1cc6a994f547cfdd7",
+    "GraphMatrix/RademacherMatchingContribution.lean": "58988ebcf184264036b083b44228679d7b6baeed81105ba808372b0d2bb9ebf5",
+    "GraphMatrix/RademacherMatchingReindex.lean": "5f3b8532714c67575417a70b09732759d76aaf5bcdf49e814f67d4fffac87c22",
+    "GraphMatrix/RademacherMatrixDyadicMoment.lean": "291d65fc43553be4f047ee67149bef86e91d098070a10687c58fad403f787e8a",
+    "GraphMatrix/RademacherMatrixFourthMoment.lean": "83fe46ff1d7b7e757a4e7597210215823e3e7b0eeb651330229fcbb3b39ddbe8",
+    "GraphMatrix/RademacherMatrixSecondMoment.lean": "051001aedaf97d0449c7eb2aab0766b36ac72cd4ef42e346b25dd1b12d32882a",
+    "GraphMatrix/RademacherNoncrossingContribution.lean": "136a1f8f173d0984b92cb620ad408e57128a6871e364f388b68627e3882305ed",
+    "GraphMatrix/RademacherNoncrossingMatching.lean": "7dbc0f89022b519c6276eb03ec6f0762c61e51820716e5a52aefe440ecf323ba",
+    "GraphMatrix/RademacherOpenWordContraction.lean": "a8504e77127bee56ee8d83c8febe7bff54d9b44decc291d481f0748a92b3f58a",
+    "GraphMatrix/RademacherPerfectMatchingCount.lean": "cdd1e01fcb8e95f1647dd5e70fbe80645402375a114436ab0ac7b1fb9fa66957",
+    "GraphMatrix/RademacherPerfectMatchingEnumeration.lean": "b4d2dd51812cde39468710dc694fb73cb1b96efbfaacbcf5dcb93870c33c000b",
+    "GraphMatrix/RademacherRainbowDecoupling.lean": "27e39351d0149829786470b70b8445a30af8ea766c3717c463fcc67645bc2793",
+    "GraphMatrix/RademacherSymmetrizedDecoupling.lean": "82e745a8ea0468114c33571eb2f397846e1adb59c7e57e07aab64af359ceaa3d",
+    "GraphMatrix/RademacherWalshProjection.lean": "12a4c0a292682fae6109abe6df1ea0c334f74bbf5f0cee50e3019e6472199bc4",
+    "GraphMatrix/ReplicaPartitionState.lean": "23dfc4d236a16f1a25d8b5ab123df66946837a2123c8efca58bb7c780f1d05cb",
+    "GraphMatrix/ReplicaStateWeight.lean": "a90a7029b7369135c95a61a1ba4bf093a0cebd7e822cf18e1227b80e1b1b8eed",
+    "GraphMatrix/RightBoundaryEvenPartition.lean": "77a0970712e9b618d5c0d08402d5c4e8bb5c3eda55cfc3ef15dcfebb8e2cc554",
+    "GraphMatrix/RoleColoredNoiseExtension.lean": "b3794c3d90cd9df44d2554460abd2ddd76261160d6634e54850b3a7d5355eabd",
+    "GraphMatrix/RoleColoredPartiteBridge.lean": "1cf9003fce6e96e2284828e3ed4a3e595e974c8b59adf66237a09feaf88b82cc",
+    "GraphMatrix/RoleColoringExistence.lean": "3c0ab0b392b1eb9b5ca20fa0adca2bd92392451394c69e3933a4b3d206a47133",
+    "GraphMatrix/RpowHalfExponent.lean": "d0801b472e28851628bf0ce61e0c02b05d632cb094ab001801959140f6dc6a1a",
+    "GraphMatrix/SchurTest.lean": "a574622c31bb52bbe2cd1e75515f788309cc0b42c3e10702657bffc808b62efa",
+    "GraphMatrix/SeparatorPathCertificate.lean": "06fa9a00e2ed7db7185241a017833c4c50139bf8d6dc83eeb15d629a1b0dd49d",
+    "GraphMatrix/SparseFlatteningNorm.lean": "c075a1fad6e16ef6fb0c16687a24205efc855dc2ced8a78048ff1e4d3ba493df",
+    "GraphMatrix/StageSpecificNCKTraceReduction.lean": "4202d462b711b555fe66553c186db09d89fbdfdcd42c382070c16a9dd4406bb7",
+    "GraphMatrix/StateBoundaryPathDefect.lean": "133f68bc5ee5ecd5b15d957f8179dc406a8183b2177843e0aac6803efb36e1f7",
+    "GraphMatrix/Theorem48AnalyticReduction.lean": "6b88a346a7f023eafe339b0527e23f50f7b2200dde7fc835c5bd597d3b37b1da",
+    "GraphMatrix/Theorem48BranchingAssembly.lean": "c56b0dfcca36711331cb9a1da5712cccc47311ca4c4f4dc7a8ea62e248e61027",
+    "GraphMatrix/Theorem48RawFinalAssembly.lean": "f9861d8cf007997a20a9599866d3bfd41d9cac9fbb025bb3040ab64f20a60142",
+    "GraphMatrix/Theorem48StageSpecificAssembly.lean": "68321cad9c6ef9637a82e53917ed749106b7dfe40c2426a15bf9e7170a874372",
+    "GraphMatrix/Theorem48UnconditionalGeometry.lean": "9ce520acc034cea4b188d736f92a1dfdf198e3f67e4fd66c454387ceaee21ec6",
+    "GraphMatrix/Theorem48UpperAssembly.lean": "762bb7624ba71d29f3917874e6b72b0ab2b90aefc66cc7f14dd89f17cfcbf132",
+    "GraphMatrix/ToPartiteBridge.lean": "4abea8327a2ae19835686fbf038ccf344c7cb52f2615ff140f8ae43352015c30",
+    "GraphMatrix/TraceCycleIdentity.lean": "0d76aeedec94fab14482af8214925b3797959a1957cd25dbd1f7b5a78424f303",
+    "GraphMatrix/TraceMatchingDistance.lean": "c0d7938fd4d39ea5bba9807a790fcbe6fb87e273aac09610f19de5ce78940c3f",
+    "GraphMatrix/TraceMomentFormula.lean": "0417b528a259df8cd83fdd3aa276755cb2c43c24ae65123f7c537192da3be8c1",
+    "GraphMatrix/TraceNormBridge.lean": "03f24055e90a134ba6b8af8543e96838e9080014931917075fe8c682c387daa5",
+    "GraphMatrix/TraceWordExpansion.lean": "0ae4df21150efcc237f4aa2831f9fa94bc9646672485c7cd2a0be0dffb232f35",
+    "GraphMatrix/UnconditionalMengerFlattening.lean": "caf2a839c4d19012ee082550b147da2880b0c14cc89d90a8d060b77b861791a0",
+    "GraphMatrix/WeightedSignTiltChebyshev.lean": "55848cab5675fb66302bd74812354b701fabaadebad991de1492184e7bd35356",
+    "GraphMatrix/WeightedSignTiltComplete.lean": "ac68ac1ee97d4fc6e8620bb4ce2185dc3d92d9ea37e0d1a0e7c0f5d15bc7738a",
+    "GraphMatrix/WeightedSignTiltConcreteVariance.lean": "75c179035c6e25193796e78237609935141e799de77a1cecff72cf70f2d8c807",
+    "GraphMatrix/WeightedSignTiltCore.lean": "9071106bba78ed1c224fd98b855b563b05e5b43a771e9d45d45fecbaefd8e65d",
+    "GraphMatrix/WeightedSignTiltMoments.lean": "495434856966f9bfb31ada0056f0d2d083b31a99df93e1ef5ada029d72163ec7",
+    "GraphMatrix/WeightedSignTiltTanh.lean": "58bb46c203221eeda6b53bff41d34f608118e75bb6fa9bee657046359bcca298",
+    "GraphMatrix/WeightedSignTiltVariance.lean": "e73a296122b495f74aec2ed9459d334ace211ae1458b78232e16af08f67328be",
+    "GraphMatrix/ZeroResidualLower.lean": "025c1b38477a0df745d540ff654a48f1793fb620e48db7f727aee5e1de243b3f",
+    "Verify.lean": "7bf125fc3f7fbc8eef2f5a04da4cc26fc2c52716212e369eaa8bc5ed3e1f7246"
+  },
+  "checks": [
+    {
+      "module": "GraphMatrix.AdmissibleStatePolynomial",
+      "exit_code": 0,
+      "seconds": 23.08,
+      "source_sha256": "0b3f0b13ba0c7cf431c0a3bde561cd6a007981e3653c9d05b8d34e2387424ae1"
+    },
+    {
+      "module": "GraphMatrix.BoundarySupport",
+      "exit_code": 0,
+      "seconds": 26.66,
+      "source_sha256": "9fe868d49d653df22b1ceb6a01d09ee4d268659f6183ef1afa7d9e7d8308f25c"
+    },
+    {
+      "module": "GraphMatrix.BranchSym2VarianceCompression",
+      "exit_code": 0,
+      "seconds": 30.25,
+      "source_sha256": "335b3c2c72e97996b2aca5673c33f095e5f3f5e8f109fc495120b2aa09941993"
+    },
+    {
+      "module": "GraphMatrix.BranchTreeDyadicTraceConcrete",
+      "exit_code": 0,
+      "seconds": 28.14,
+      "source_sha256": "4b6a2595ebfe33cf400521217a75218a17ef7e374d295673297ed38c30beb429"
+    },
+    {
+      "module": "GraphMatrix.CoordinateSupportCount",
+      "exit_code": 0,
+      "seconds": 22.12,
+      "source_sha256": "eabee14a616237a5c571d0db87be4c8126d292cdf22482982f57c45304a22ff9"
+    },
+    {
+      "module": "GraphMatrix.Counting.ActiveComponents",
+      "exit_code": 0,
+      "seconds": 21.94,
+      "source_sha256": "34efe1e9f93867c528f38606ebc98e625be71ea2fac7288fe47a9528a5913e26"
+    },
+    {
+      "module": "GraphMatrix.Counting.AllDefectStatement",
+      "exit_code": 0,
+      "seconds": 21.76,
+      "source_sha256": "a8e74e2f30a7d2b18316ac279f4b1e9ad4ecc838546203d7b998388836e2fbaa"
+    },
+    {
+      "module": "GraphMatrix.Counting.BackboneDefectSplit",
+      "exit_code": 0,
+      "seconds": 22.28,
+      "source_sha256": "26f2e5f4b693777af8270a1968e270fc8f7e9886cd689daf664ea512ece89955"
+    },
+    {
+      "module": "GraphMatrix.Counting.BoundaryCoreScope",
+      "exit_code": 0,
+      "seconds": 21.84,
+      "source_sha256": "bace8612d4dc6082183158ef40cf9b5f54f52b3f281f3f3aac359c6778661b8b"
+    },
+    {
+      "module": "GraphMatrix.Counting.BoundaryFaithfulSeedConstruction",
+      "exit_code": 0,
+      "seconds": 28.48,
+      "source_sha256": "e29e2f9d682e043de3e49c6c2e732d160b5e5dd5407df881f8bd3ff6dcc3659d"
+    },
+    {
+      "module": "GraphMatrix.Counting.BoundaryFaithfulSeeds",
+      "exit_code": 0,
+      "seconds": 27.25,
+      "source_sha256": "6a7bf35eabc44bcb3fb360d5909a55838fb366b87793bedd524eb0378647aedb"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.CoefficientAssembly",
+      "exit_code": 0,
+      "seconds": 21.34,
+      "source_sha256": "9a54fe09c6e6d4bea7f4aa859fac88765fc0e897d4e43839f0baf8e92883deee"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.ExponentLedger",
+      "exit_code": 0,
+      "seconds": 28.19,
+      "source_sha256": "ebf36ca11414ee206ea728ae4c8cb4e442aff393089004b4eb4034c87746e5f3"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.ForwardWordBudget",
+      "exit_code": 0,
+      "seconds": 27.53,
+      "source_sha256": "95eef718b856283c11e77267e6f79296b5ab3853accc5324b60412be786a68d2"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.MengerProfileTransport",
+      "exit_code": 0,
+      "seconds": 28.28,
+      "source_sha256": "3cd0d4dc2db32703c6ddbda66a1909a9b21db73ec10f55ea03bb0096628fedb6"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.PathBudgets",
+      "exit_code": 0,
+      "seconds": 22.14,
+      "source_sha256": "b287c7da41e405c8424fb61eb6079d5170fd5fc7084d76139c068d420b779f20"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.PathFiberRestriction",
+      "exit_code": 0,
+      "seconds": 21.31,
+      "source_sha256": "10c1f25d8d6f78b095640b3acd43cddfe0a87961e241d5ce881da54d9b10b97e"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.ProfileBudgetSum",
+      "exit_code": 0,
+      "seconds": 28.8,
+      "source_sha256": "80659f0f310d44c273f6c73536e812c1cd20346603bc99b4caa11668a6ea1e47"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.RecordSemantics",
+      "exit_code": 0,
+      "seconds": 27.58,
+      "source_sha256": "af8f173e7bbf33efdb50854b7f23ad96e304c4394dce89935cb37a202c15ce8f"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.RolewiseProfiles",
+      "exit_code": 0,
+      "seconds": 29.05,
+      "source_sha256": "956a3d0c3c63ce0ddf2c840a03e12decf4b3cdfe82f02417d69d04d5b56b36b3"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.SeedCompatibility",
+      "exit_code": 0,
+      "seconds": 22.34,
+      "source_sha256": "b7f189b639d113368761513c5ba74da377ecbfce6b2b8a97f1bf36bc5b4c714d"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.SeedEntropyCharge",
+      "exit_code": 0,
+      "seconds": 22.44,
+      "source_sha256": "1823370f0342d96131b92eff62fbb9088e9ab80ba5401fb79b81fe5444770c92"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.SeedLayerGeometry",
+      "exit_code": 0,
+      "seconds": 22.23,
+      "source_sha256": "596078d927bea992d3995586571f7d47f249fb2f7c02ef669b35fd6279d07368"
+    },
+    {
+      "module": "GraphMatrix.Counting.Bounds.Theorems",
+      "exit_code": 0,
+      "seconds": 21.34,
+      "source_sha256": "79f6c0d2f657043dead3edc601312b47cee45c971c9eab840b07b24d5f39d5a9"
+    },
+    {
+      "module": "GraphMatrix.Counting.CoefficientBound",
+      "exit_code": 0,
+      "seconds": 21.58,
+      "source_sha256": "749db6adb4829f00baa1438779c31357a813f8f1d9698bc43ac486debf9abdd6"
+    },
+    {
+      "module": "GraphMatrix.Counting.CompatibleMatchingSeedCount",
+      "exit_code": 0,
+      "seconds": 22.53,
+      "source_sha256": "7ac1a380d660384637f8861b4990f6569444b1e83719013d37f49481de88f60f"
+    },
+    {
+      "module": "GraphMatrix.Counting.ComponentSeedTreeProof",
+      "exit_code": 0,
+      "seconds": 21.77,
+      "source_sha256": "9c89ef260cf7f39c4b6802a611781eb3d79759fab4b629eb22d650c3708fef1f"
+    },
+    {
+      "module": "GraphMatrix.Counting.DefectStratification",
+      "exit_code": 0,
+      "seconds": 27.97,
+      "source_sha256": "723acf9522f50943b1797fb5055d9f92c170cd425e7cbc8922bd46199c7e9759"
+    },
+    {
+      "module": "GraphMatrix.Counting.DefectVectorCount",
+      "exit_code": 0,
+      "seconds": 21.88,
+      "source_sha256": "8155d53c434352bd6f829490c719825e39decc405a45568996c2f9f5717f871f"
+    },
+    {
+      "module": "GraphMatrix.Counting.DisjointPathLayerCount",
+      "exit_code": 0,
+      "seconds": 27.3,
+      "source_sha256": "0f5a372ed418a44f69962f6d486466eeb89f1b631e551181377f8fbb1062f41a"
+    },
+    {
+      "module": "GraphMatrix.Counting.EncoderAssembly",
+      "exit_code": 0,
+      "seconds": 28.44,
+      "source_sha256": "4692bcb3a7f0de88660b9e8c06a0ed8770259b340eaccad26680f5a5e84c255e"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.ActualEncoder",
+      "exit_code": 0,
+      "seconds": 29.34,
+      "source_sha256": "a34552616a05a7f7a6f13fb53e7fd0455f1f929ac6d6c14cae837b7c340b516b"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.Assembly",
+      "exit_code": 0,
+      "seconds": 28.33,
+      "source_sha256": "b4755034f225c2326ee5cbcc64a9422cb156f6ee571bd1cde3020665014d4625"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.BlockMerge",
+      "exit_code": 0,
+      "seconds": 28.31,
+      "source_sha256": "4737aa2ca976bc91bc780499fb51421c13daa9fe50eb0a9e1cee99235aa3da2d"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.EncodingBudget",
+      "exit_code": 0,
+      "seconds": 28.83,
+      "source_sha256": "33271c90c3e76379f36d7339b181066703b85b0d75443d25f0b257e746b351a3"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.FixedMergeCode",
+      "exit_code": 0,
+      "seconds": 29.7,
+      "source_sha256": "6e7931a4f63b1615a5ac383d5b09421ca6c46b76357159286612e6a4c94738b9"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.ForwardCode",
+      "exit_code": 0,
+      "seconds": 25.62,
+      "source_sha256": "2ee1656a502971fd9335840e1ae6bc9e07d0af0dbf7f7daffc9eb0bc7d01e33b"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.NormalizedBackbone",
+      "exit_code": 0,
+      "seconds": 29.08,
+      "source_sha256": "1a29a5ab0205963a77aaff147f93a60fbb46cf115704b5c18804eab510cfe4f8"
+    },
+    {
+      "module": "GraphMatrix.Counting.Encoding.NormalizedState",
+      "exit_code": 0,
+      "seconds": 29.17,
+      "source_sha256": "87aa647f1ca072b399fb8f48d446799d26cf5999a33c93d6989a5ee30fece7ca"
+    },
+    {
+      "module": "GraphMatrix.Counting.ExplicitConstants",
+      "exit_code": 0,
+      "seconds": 24.97,
+      "source_sha256": "c8c1985e5af68ea609f771d927de6eccb7a72cdefab5fbe6fb3c2dd491af9bee"
+    },
+    {
+      "module": "GraphMatrix.Counting.FiniteGaussianTailMoment",
+      "exit_code": 0,
+      "seconds": 30.41,
+      "source_sha256": "00e922a3b7a11770e263381433eea05d7b3eb86d3b0ca25a886b6ef7ccab3bd1"
+    },
+    {
+      "module": "GraphMatrix.Counting.ForwardNormalization",
+      "exit_code": 0,
+      "seconds": 23.62,
+      "source_sha256": "8f031c0ba098016ce3f5affe8ca7d3782dfada773b313b939bb785034d6a490d"
+    },
+    {
+      "module": "GraphMatrix.Counting.ForwardSwitchEncoderBridge",
+      "exit_code": 0,
+      "seconds": 24.39,
+      "source_sha256": "8f7430224417cb19f850041cd52800caec4f7c6d327a1ae672948163db7424ad"
+    },
+    {
+      "module": "GraphMatrix.Counting.FreeSeedCountNumerical",
+      "exit_code": 0,
+      "seconds": 29.52,
+      "source_sha256": "19ff1cf77190980580efdbc01d4f3d082e0ddf5f948aac5812601c8d7f2536f5"
+    },
+    {
+      "module": "GraphMatrix.Counting.FreeSeeds",
+      "exit_code": 0,
+      "seconds": 24.16,
+      "source_sha256": "a7e6ddb6de57ff1a35c0bf2ee8fb60e699b4442e66af142d22146e9a43c63a73"
+    },
+    {
+      "module": "GraphMatrix.Counting.IidBilinearTail",
+      "exit_code": 0,
+      "seconds": 33.8,
+      "source_sha256": "d4dea7a0959b76ec9ed167bc0c508167bb2290b83842662716c8292fd4086f4e"
+    },
+    {
+      "module": "GraphMatrix.Counting.IidEvenWalkCountBound",
+      "exit_code": 0,
+      "seconds": 30.12,
+      "source_sha256": "0fc26a74f69838253b821d520eb189f3fb34525052deb9c2504d1096235f45b5"
+    },
+    {
+      "module": "GraphMatrix.Counting.IidMomentFromTail",
+      "exit_code": 0,
+      "seconds": 23.66,
+      "source_sha256": "e5d3ee5c5e0c6073eb956baa66491e3a05f87bcb7e4c017bbed67325212da08e"
+    },
+    {
+      "module": "GraphMatrix.Counting.IidSignMatrixHighMoment",
+      "exit_code": 0,
+      "seconds": 24.75,
+      "source_sha256": "c853d1247b301d3f35dcba53003c6ade174f74020147316647fb9b9cb338b1f7"
+    },
+    {
+      "module": "GraphMatrix.Counting.IidSphereNet",
+      "exit_code": 0,
+      "seconds": 13.25,
+      "source_sha256": "35ec42d0146e5b8469938606b000b714dd0e82773c60bf9f4fcb1479aa7ac220"
+    },
+    {
+      "module": "GraphMatrix.Counting.IidTailIntegral",
+      "exit_code": 0,
+      "seconds": 11.31,
+      "source_sha256": "94270171cb80734141e1560ad25670beb3ae5cd43452e45d49bcbfbd5c432328"
+    },
+    {
+      "module": "GraphMatrix.Counting.IntervalLayerDoubleCount",
+      "exit_code": 0,
+      "seconds": 23.64,
+      "source_sha256": "2a6b7cdc81b9e7800acae9b89c4686bcd629a91c83c7504b8b58e054b68c0429"
+    },
+    {
+      "module": "GraphMatrix.Counting.MatchingDistanceFaithful",
+      "exit_code": 0,
+      "seconds": 28.16,
+      "source_sha256": "33685a18a9541c2ff58f163afa59f3b3a68dd4d72de14e2cea62a4fba8069de0"
+    },
+    {
+      "module": "GraphMatrix.Counting.MatchingPartition",
+      "exit_code": 0,
+      "seconds": 27.44,
+      "source_sha256": "4fd9a5ebb7bf2d5dfc58f2063982639498bacd8232fd2dd76bf842511a6d06ea"
+    },
+    {
+      "module": "GraphMatrix.Counting.MatchingSwitch",
+      "exit_code": 0,
+      "seconds": 28.55,
+      "source_sha256": "7c30c424d6fdb6469318759b7e14aa70c54b1a1f1cb8a53acbd147de7122bb16"
+    },
+    {
+      "module": "GraphMatrix.Counting.MatchingSwitchDescentCore",
+      "exit_code": 0,
+      "seconds": 29.14,
+      "source_sha256": "35a70255c836de0e4229cd17f378a604893bfaab024bd5cf1965191225401ded"
+    },
+    {
+      "module": "GraphMatrix.Counting.MaxPackingBoundaryComponent",
+      "exit_code": 0,
+      "seconds": 29.05,
+      "source_sha256": "a2e6561a7d8cb85f245414288dc0d469c071588672749719f693730e98701ab4"
+    },
+    {
+      "module": "GraphMatrix.Counting.MergeDefectCharge",
+      "exit_code": 0,
+      "seconds": 23.12,
+      "source_sha256": "882b99ea024b42223987bc32bdcf5de3a0b752fcc0a7cbd187cbaf178548bdbe"
+    },
+    {
+      "module": "GraphMatrix.Counting.PartiteRealTransfer",
+      "exit_code": 0,
+      "seconds": 22.22,
+      "source_sha256": "6f02902af6897cab9261357b2f72c0c24e693b2025689e7cb3b81b9a106ba0fc"
+    },
+    {
+      "module": "GraphMatrix.Counting.PartiteTraceBudget",
+      "exit_code": 0,
+      "seconds": 21.95,
+      "source_sha256": "08e7b29bcfe146caebcda86cf0d1ee335b51b8687661a14b021040669a1e3335"
+    },
+    {
+      "module": "GraphMatrix.Counting.PartitionInterval",
+      "exit_code": 0,
+      "seconds": 28.58,
+      "source_sha256": "44c538d96104e88c1191c3f9411307cea564e45ea3a246b739e1d7ec797ed232"
+    },
+    {
+      "module": "GraphMatrix.Counting.PartitionIntervalMonotonicity",
+      "exit_code": 0,
+      "seconds": 22.22,
+      "source_sha256": "032b66bdea66a74456dd27d3f7a05c912e21d03d42e22a82e5a9f9f01e0226d1"
+    },
+    {
+      "module": "GraphMatrix.Counting.PartitionMergeWord",
+      "exit_code": 0,
+      "seconds": 28.53,
+      "source_sha256": "68a6da58a54d4d81b0f1fb33e10a77c5976f6c697b6847002b4d86460e74307e"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathAuxMomentAlgebra",
+      "exit_code": 0,
+      "seconds": 22.45,
+      "source_sha256": "4863471b05559a07db308cdfa1d0ed44fd8e96f71473ada42468aff0339dabcf"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathAuxMomentShape",
+      "exit_code": 0,
+      "seconds": 22.01,
+      "source_sha256": "b18bdeb627c6d0b5bdf10f24e82fc6940cf9dd981a8a66d12b02824c0a8db54d"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathAuxUpperUnconditional",
+      "exit_code": 0,
+      "seconds": 21.42,
+      "source_sha256": "ec6a01be07f7f9f097a88336fc6582acf806f6e1f07de5d0da83fb22f55acfab"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathBoundaryProductProof",
+      "exit_code": 0,
+      "seconds": 25.67,
+      "source_sha256": "2b86d7733445ae9fe237c876f591a59721d7917ebd5345d74d75df16d367c93d"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathFallingFactorialLower",
+      "exit_code": 0,
+      "seconds": 24.44,
+      "source_sha256": "45740bd7616a70ae5d34a24083a42c217028846fdca8fb560395a7d7e0f93c47"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathNoiseProductLaw",
+      "exit_code": 0,
+      "seconds": 24.11,
+      "source_sha256": "0f0f856b14e2e41571604a952b66962d123eec62509704defa094723e2aa997f"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathProductMomentFromFactor",
+      "exit_code": 0,
+      "seconds": 22.99,
+      "source_sha256": "a743e188c938efdb78bd11bdd4b5a95426313ae04d8767396b79cd85325b6523"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathStateCountArithmetic",
+      "exit_code": 0,
+      "seconds": 23.08,
+      "source_sha256": "c4fe3333dedec8d482e843b31795925db9a653e6572313aa071f20145abc14cb"
+    },
+    {
+      "module": "GraphMatrix.Counting.PathStateCountInterface",
+      "exit_code": 0,
+      "seconds": 27.42,
+      "source_sha256": "caacd344006368bf5a7e0c506c252e354695d22f9e622840521e26656c276553"
+    },
+    {
+      "module": "GraphMatrix.Counting.ReplicaIntervalLayers",
+      "exit_code": 0,
+      "seconds": 22.33,
+      "source_sha256": "39f826ca29f7b4cc26782fdb7b839a82c23e2e76f03d89e28fef95363e0e182b"
+    },
+    {
+      "module": "GraphMatrix.Counting.SeparatorLayerCertificate",
+      "exit_code": 0,
+      "seconds": 21.81,
+      "source_sha256": "248bd2fedd2db063adc4994a33c51e32bec29cb5b8b2ebf102c514657b2624fd"
+    },
+    {
+      "module": "GraphMatrix.Counting.StatePolynomialEndpoint",
+      "exit_code": 0,
+      "seconds": 23.08,
+      "source_sha256": "301ec70723a3d950b85e5be26a5689be6bf028e38ce23d29a18ad6a209cce949"
+    },
+    {
+      "module": "GraphMatrix.Counting.UniformCoefficientBound",
+      "exit_code": 0,
+      "seconds": 22.11,
+      "source_sha256": "66b6d16a97938aa7c8be0cff88022cc884d2dff47380303ae767187d639c302d"
+    },
+    {
+      "module": "GraphMatrix.CoveredRoleBlockBound",
+      "exit_code": 0,
+      "seconds": 25.92,
+      "source_sha256": "9e111279cabc2240a6097e147f917d9bb1b5271f7b0f8874e9d377514eb32bc8"
+    },
+    {
+      "module": "GraphMatrix.DisjointPathDegreeBound",
+      "exit_code": 0,
+      "seconds": 26.52,
+      "source_sha256": "995c4b6809860b4f96e810d39f9389fa305d373a9c136f8a49234fd37d2d7291"
+    },
+    {
+      "module": "GraphMatrix.DistinctCoordinateTrials",
+      "exit_code": 0,
+      "seconds": 21.38,
+      "source_sha256": "0f03c5224f3a1201a69bb1e518dff5966466b173b39117a52455f042f7aa34a7"
+    },
+    {
+      "module": "GraphMatrix.EdgeExpectationProduct",
+      "exit_code": 0,
+      "seconds": 25.76,
+      "source_sha256": "0657dc7bd24565c6107a8146ce69ce88f551a765587ef115dead2ef39f0d3f22"
+    },
+    {
+      "module": "GraphMatrix.EdgeOrientationDecomposition",
+      "exit_code": 0,
+      "seconds": 27.19,
+      "source_sha256": "66ef07b8031d8f10ab8c38bbf3c53f07968e0fe1b19308e5a5c9776c4a17cd8c"
+    },
+    {
+      "module": "GraphMatrix.EdgeParityEvenEndpoint",
+      "exit_code": 0,
+      "seconds": 21.86,
+      "source_sha256": "1c3203974bfeb2187fe508829faef69a2519e8c90fd08eb962612cff67b18f02"
+    },
+    {
+      "module": "GraphMatrix.EdgeParityMatching",
+      "exit_code": 0,
+      "seconds": 24.33,
+      "source_sha256": "d598b7ab7746af7bce23a292a2068cbaacbc4287b544ddfb438d2b4b002c2b5b"
+    },
+    {
+      "module": "GraphMatrix.EqualityPatternLabelCount",
+      "exit_code": 0,
+      "seconds": 22.62,
+      "source_sha256": "2bd743bf840d2d5be2a7d54a7104391bf7542debdcc6587666b5d95f687b15ef"
+    },
+    {
+      "module": "GraphMatrix.EvenFiberPairing",
+      "exit_code": 0,
+      "seconds": 23.31,
+      "source_sha256": "059cffe029016c1afa4fa5e3f921ae30be92a5769ba0c39804d976dfea74f7d2"
+    },
+    {
+      "module": "GraphMatrix.EvenPartitionBlockBound",
+      "exit_code": 0,
+      "seconds": 22.86,
+      "source_sha256": "46729ba27954407c91cf4a14e2e536d5f3123ce0bfeee7674f40604486a9bc3b"
+    },
+    {
+      "module": "GraphMatrix.FinalFlattening",
+      "exit_code": 0,
+      "seconds": 29.09,
+      "source_sha256": "770ee1a3f4a2db79ebaa6134102da31f32cde0b1ca9f3f901b3bc58c0f34fe0f"
+    },
+    {
+      "module": "GraphMatrix.FiniteConditionalTrials",
+      "exit_code": 0,
+      "seconds": 27.12,
+      "source_sha256": "0fd7335fa784b956651bf028d46ba9d243dc4a7fda86788ed805b0c1ddf5fa9e"
+    },
+    {
+      "module": "GraphMatrix.FiniteIntegralFlowPathDecomposition",
+      "exit_code": 0,
+      "seconds": 29.52,
+      "source_sha256": "93dcbe696a1699a56caf56c733762b874b3f356fac1ad86f220ac5e9ae2b3ebb"
+    },
+    {
+      "module": "GraphMatrix.FiniteIntegralFlowReachability",
+      "exit_code": 0,
+      "seconds": 27.5,
+      "source_sha256": "29c7c2a5da3d98e593ae8c3de4180b71a0fa5c6fd6fc9bcbe4b06dcae4cd33fb"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerCertificate",
+      "exit_code": 0,
+      "seconds": 22.52,
+      "source_sha256": "e613a15782ab233c109afa356cdb42643170fc1dae39e21cbbb009e1fcc4e380"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualAugmentation",
+      "exit_code": 0,
+      "seconds": 28.5,
+      "source_sha256": "d853ad5dd3d6dfb2b1bc12b7a13e50aff55eadf0f629bcd9fbbfea042b79dea1"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualBalance",
+      "exit_code": 0,
+      "seconds": 30.19,
+      "source_sha256": "4431d7cd7dbc2df3c87af0678b3f6f84cf72036c8923662473af36fc432a60f8"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualCut",
+      "exit_code": 0,
+      "seconds": 29.95,
+      "source_sha256": "af47c171506148ef271b8887449911b04f784760419a32cd3c2dcb4d635898f8"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualFinalFlow",
+      "exit_code": 0,
+      "seconds": 30.83,
+      "source_sha256": "fc0e76504da06c2538a8e8d5bef4244c0b10ed67baab48d354574f35397dd68c"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualFlowSkeleton",
+      "exit_code": 0,
+      "seconds": 30.89,
+      "source_sha256": "a8c11c745702b5bd0ce9db3a1e5926d61584de39d7ac0f4bae188d733008e0e3"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualGlobalCapacity",
+      "exit_code": 0,
+      "seconds": 28.92,
+      "source_sha256": "f7187aa71d590e17c1b449d5dbb0c317239cf5c76794c49f97c63da08e2e7074"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualPathProjection",
+      "exit_code": 0,
+      "seconds": 30.31,
+      "source_sha256": "552e6670226aef72d33c59addd3f61dd6b53e1d398021604b5ef2155ffc4ecf2"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualProgram",
+      "exit_code": 0,
+      "seconds": 29.19,
+      "source_sha256": "31b40b4cb8c32ccabdc4de40dd32d456bd4c9ca63c1670055994f831477ecee9"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerResidualToggle",
+      "exit_code": 0,
+      "seconds": 28.98,
+      "source_sha256": "15f6d7155560aeb1dd747f3a3e7041705297a97ab34ade09c3956b8e269b839d"
+    },
+    {
+      "module": "GraphMatrix.FiniteMengerStrongDuality",
+      "exit_code": 0,
+      "seconds": 29.12,
+      "source_sha256": "5f3bb8e0a7fe81721bd5df0b88408b9e40657a77169afddab95649666f3a0b84"
+    },
+    {
+      "module": "GraphMatrix.FinitePathLoopErasure",
+      "exit_code": 0,
+      "seconds": 28.67,
+      "source_sha256": "4cc52493b9f41731e04fbebdb92516f04920d74dba0d18d3a387190a24098e60"
+    },
+    {
+      "module": "GraphMatrix.FlatteningExponentArithmetic",
+      "exit_code": 0,
+      "seconds": 27.76,
+      "source_sha256": "c02181afa96a0660daef68279b6f873bf0120e598706f0f509a9e862c586bce7"
+    },
+    {
+      "module": "GraphMatrix.Formula21SchurBridge",
+      "exit_code": 0,
+      "seconds": 23.31,
+      "source_sha256": "1c27dc9611529a72b159f2cb1a5380e8aa746b740f1cb37d8304bdd78731357f"
+    },
+    {
+      "module": "GraphMatrix.GlobalEdgeParity",
+      "exit_code": 0,
+      "seconds": 28.02,
+      "source_sha256": "e3b331a0da348e2e63da33e877762b2315ddf686773eb0792881b8e4dc8b6624"
+    },
+    {
+      "module": "GraphMatrix.GlobalEqualityState",
+      "exit_code": 0,
+      "seconds": 27.92,
+      "source_sha256": "773621820fe9cee4e997317bad2c78806ebe7c998d56b6c507d3427e761247df"
+    },
+    {
+      "module": "GraphMatrix.GlobalStatePolynomial",
+      "exit_code": 0,
+      "seconds": 29.3,
+      "source_sha256": "429628738854315b4d751ad7691ad4e39f86b47fc5eba52c822899c3019815cb"
+    },
+    {
+      "module": "GraphMatrix.GlobalStateWeight",
+      "exit_code": 0,
+      "seconds": 29.0,
+      "source_sha256": "e71d9752f42db600be5b9a2439a700d06744a0f4d529dc377d3355e3588cf8de"
+    },
+    {
+      "module": "GraphMatrix.GraphMatrixEntryMoments",
+      "exit_code": 0,
+      "seconds": 29.25,
+      "source_sha256": "3e1a96ed508e01f31c30f28a0fbf0d04a4e44cd16148eff1e33a6c0f0bad61bf"
+    },
+    {
+      "module": "GraphMatrix.HighMomentTailMarkov",
+      "exit_code": 0,
+      "seconds": 26.22,
+      "source_sha256": "19e77c146c9313e6705f227ffb803ef1fdb6803605221e5f41aa72dc033c7d40"
+    },
+    {
+      "module": "GraphMatrix.IntermediateEdgeOrdering",
+      "exit_code": 0,
+      "seconds": 30.76,
+      "source_sha256": "fa91f69b33672f4a6be04f65ca32fa7599b7405aa9dd7ed852bdbb1ff5bc8d74"
+    },
+    {
+      "module": "GraphMatrix.IntermediateFlattening",
+      "exit_code": 0,
+      "seconds": 28.95,
+      "source_sha256": "a88e81990cee0478058ac8ad5843331ab1882238863eb8ab41b8e4a799cf960e"
+    },
+    {
+      "module": "GraphMatrix.IntermediateFormula21Application",
+      "exit_code": 0,
+      "seconds": 20.75,
+      "source_sha256": "16cf46914464d3ec0fe4089b1432bc90be7aa10e255059376482f6fe37910b71"
+    },
+    {
+      "module": "GraphMatrix.IntersectionDistanceMetric",
+      "exit_code": 0,
+      "seconds": 8.62,
+      "source_sha256": "33217b941cbf498d56faa54ee9cdc5da0ca7fad378f2a5c1e6c12ea4eb52a006"
+    },
+    {
+      "module": "GraphMatrix.IsolatedAmplitudeFactorization",
+      "exit_code": 0,
+      "seconds": 22.38,
+      "source_sha256": "2be8b659c87a45a3f1e7144846360684b14b5a7f49d5158108e62a9f285ce484"
+    },
+    {
+      "module": "GraphMatrix.IsolatedFormula21Application",
+      "exit_code": 0,
+      "seconds": 24.75,
+      "source_sha256": "864c7853edd6adde7347845d7ccdce4363f15a0cadba4f450ba7ed8c7590fea4"
+    },
+    {
+      "module": "GraphMatrix.IsolatedInjectiveFiberCount",
+      "exit_code": 0,
+      "seconds": 21.88,
+      "source_sha256": "52eeeccae429f97e120b85bf7be19b6bc896410b5bb6d98273fb6f65b5865e35"
+    },
+    {
+      "module": "GraphMatrix.IsolatedMiddleCorrection",
+      "exit_code": 0,
+      "seconds": 22.09,
+      "source_sha256": "b35be3b59379dcb191f9981534e4a0ea5bd96586f6e03d66c787dc017b1c7450"
+    },
+    {
+      "module": "GraphMatrix.IsolatedRoleMarginalization",
+      "exit_code": 0,
+      "seconds": 22.69,
+      "source_sha256": "8ae6a232495d80cb99ea6161a853cb66e905022140fba548f02a04faab9354b7"
+    },
+    {
+      "module": "GraphMatrix.JointEdgeRademacherExpectation",
+      "exit_code": 0,
+      "seconds": 27.58,
+      "source_sha256": "069b5223319fcfb502284e447539567713272c4727c398af3e36a30101d950cc"
+    },
+    {
+      "module": "GraphMatrix.LogExponentAccounting",
+      "exit_code": 0,
+      "seconds": 22.61,
+      "source_sha256": "cca21595057605f4ef77eb9b5e60e18f24a8e1a3033ea21b69e769fb901baa0a"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.ActualAssignmentSplit",
+      "exit_code": 0,
+      "seconds": 27.8,
+      "source_sha256": "ecaf2cac3cbd3507da044894c97e6794c1c10dcf4dba802bf835e0a07f47a7e7"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.ActualChaosReindex",
+      "exit_code": 0,
+      "seconds": 30.39,
+      "source_sha256": "e5bf105dbd8508e4cb307094baef2c436406d126feb54acb08f84dafa6210eab"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.ActualMatrixExpansion",
+      "exit_code": 0,
+      "seconds": 31.38,
+      "source_sha256": "fffd2807a73ce5d1d2f30266e04c38a0710702b28fa776b628a69a6f66ca5386"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.ActualMixedFlattening",
+      "exit_code": 0,
+      "seconds": 30.55,
+      "source_sha256": "c2e9979b11d98eb70bf36043043231a5810228fb3373bc340af77745c3b50d79"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.ActualWeightedFlattening",
+      "exit_code": 0,
+      "seconds": 28.41,
+      "source_sha256": "aa3e2492ba9caccbc04d750af51ba512b000bfb5c8e16686612d97249dbd516b"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.AllSeparatorContraction",
+      "exit_code": 0,
+      "seconds": 30.19,
+      "source_sha256": "49869703fddd947df8bafd018d3ce988c4396b599e6e1a9b1bc531be0788bdaa"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.ContractionBound",
+      "exit_code": 0,
+      "seconds": 25.98,
+      "source_sha256": "c1a0bc15b61414a6089ff977c340610dd7076bdf94e7a7402b02603ee7e26ad5"
+    },
+    {
+      "module": "GraphMatrix.Lower.Flattening.Theorems",
+      "exit_code": 0,
+      "seconds": 26.62,
+      "source_sha256": "6583f3c7e2f762237b056bfc4becc926a687428ff02a1ada4740a81bea5127dd"
+    },
+    {
+      "module": "GraphMatrix.Main.ActiveThresholdProduct",
+      "exit_code": 0,
+      "seconds": 28.56,
+      "source_sha256": "96bae59f014bafae5c4cc486e2db2fe3f6be27cbdc7e0da17f5fd58db390b269"
+    },
+    {
+      "module": "GraphMatrix.Main.ActualConditionalSync",
+      "exit_code": 0,
+      "seconds": 21.11,
+      "source_sha256": "4dae03ec0ac1dbb9a5784ae6f006d7981a92d1608a8bbb34f10191f70994ed8e"
+    },
+    {
+      "module": "GraphMatrix.Main.ActualSimultaneousEvent",
+      "exit_code": 0,
+      "seconds": 21.17,
+      "source_sha256": "c8353ca71495bd33a31a08c633e8bdec649ed015ad5c9384a2c428be93fbbd60"
+    },
+    {
+      "module": "GraphMatrix.Main.BoundaryCoreGlobalUpper",
+      "exit_code": 0,
+      "seconds": 22.95,
+      "source_sha256": "873917709f497b40b8e6c2c6a359720121cf44f4b160031af9465135fc3be8f2"
+    },
+    {
+      "module": "GraphMatrix.Main.BoundaryCoreShape",
+      "exit_code": 0,
+      "seconds": 29.02,
+      "source_sha256": "674dd702e39c10e57d91a1459a70e29e061e9eaa23b6009b5acd3a4d17589afc"
+    },
+    {
+      "module": "GraphMatrix.Main.BoundaryCoreTypedSharp",
+      "exit_code": 0,
+      "seconds": 23.5,
+      "source_sha256": "4f080235b4034bb1c11e04881d2a0a298c314242ce053ceabae44379c58f0bc1"
+    },
+    {
+      "module": "GraphMatrix.Main.ColorLowerAssembly",
+      "exit_code": 0,
+      "seconds": 28.55,
+      "source_sha256": "b9df6617a0c56562c7ea48c0b5135570562cf5ad4aef55753706366448a1ba95"
+    },
+    {
+      "module": "GraphMatrix.Main.ConditionalWitnessEndpoint",
+      "exit_code": 0,
+      "seconds": 22.27,
+      "source_sha256": "62b0f4e8be70141794f078fed8d41bf64ab04230b8370795078a3f2ed3baee0e"
+    },
+    {
+      "module": "GraphMatrix.Main.CoreActiveComponents",
+      "exit_code": 0,
+      "seconds": 27.38,
+      "source_sha256": "84dc2f1931cf07063e55a240f8fe899670bcf70573db8bf1119e81be8aec14df"
+    },
+    {
+      "module": "GraphMatrix.Main.CoreGraphParameters",
+      "exit_code": 0,
+      "seconds": 28.58,
+      "source_sha256": "a85de8d98d8532a3fc28ef5f861cc56cb29ec4f3b6ccd631e4cf5a1eac9dac48"
+    },
+    {
+      "module": "GraphMatrix.Main.CoreMatrixIdentification",
+      "exit_code": 0,
+      "seconds": 28.56,
+      "source_sha256": "7154e6a5682575ac2724ede9de7e90ee67ada6dc5683ac44df74511366cb25c7"
+    },
+    {
+      "module": "GraphMatrix.Main.CoreMatrixIndices",
+      "exit_code": 0,
+      "seconds": 28.26,
+      "source_sha256": "f112e65d1f7d23bdfa03c1ff3151eab25624acf384eb1b798a4dc840035481a3"
+    },
+    {
+      "module": "GraphMatrix.Main.CoreProbabilityIdentification",
+      "exit_code": 0,
+      "seconds": 27.89,
+      "source_sha256": "5ee21e7682861f60ccab484192217673a546db7a67440aeb7b1793cacfec1495"
+    },
+    {
+      "module": "GraphMatrix.Main.DetachedSecondMoment",
+      "exit_code": 0,
+      "seconds": 23.61,
+      "source_sha256": "d95c9cdcc130b30b47e010d7e18d928f179bb97b07dc08bddd9cf9bd2e14cba3"
+    },
+    {
+      "module": "GraphMatrix.Main.FiniteProbabilityInstanceTransport",
+      "exit_code": 0,
+      "seconds": 21.47,
+      "source_sha256": "b013c9bf67c4fa3f0212c38b6abd00d35cd738f1c1b353d2bd98cec185acf7f3"
+    },
+    {
+      "module": "GraphMatrix.Main.Flattening.CoefficientScale",
+      "exit_code": 0,
+      "seconds": 27.69,
+      "source_sha256": "e44ab1a7dc4242bc1a5a03bb36f6440fd5954f27e9c8748dbab114fa7df91dd3"
+    },
+    {
+      "module": "GraphMatrix.Main.Flattening.DimensionScale",
+      "exit_code": 0,
+      "seconds": 29.06,
+      "source_sha256": "abfd2e11acfa428044ae4cf01139fc95bfabfacb6a0767d8443947c350515263"
+    },
+    {
+      "module": "GraphMatrix.Main.Flattening.MeanAssembly",
+      "exit_code": 0,
+      "seconds": 23.91,
+      "source_sha256": "9782c76b51a5e0aef7d75096c5e905aac64cc598deeddecd847e6bae37e6eaef"
+    },
+    {
+      "module": "GraphMatrix.Main.Flattening.RoleAllocation",
+      "exit_code": 0,
+      "seconds": 28.2,
+      "source_sha256": "6ef89d079ffd8272d47f8b89e027751cca2a00dbb30ab56345f36348bcd41792"
+    },
+    {
+      "module": "GraphMatrix.Main.Flattening.WitnessExpectation",
+      "exit_code": 0,
+      "seconds": 30.64,
+      "source_sha256": "288ad3587c6a2ebb24aa72f157adc10c9ca4d1c211881902ff8b4753c1bf053d"
+    },
+    {
+      "module": "GraphMatrix.Main.FrozenWitnessLaw",
+      "exit_code": 0,
+      "seconds": 28.05,
+      "source_sha256": "71a8f3aaae30075a83d046a73e2296545bf240cd0a2c93981d7f39742aa2b41e"
+    },
+    {
+      "module": "GraphMatrix.Main.FullGraphUpper",
+      "exit_code": 0,
+      "seconds": 21.8,
+      "source_sha256": "5bee20a1852ad1f34c7545335b546876bfc0a6e54b4214b4464476510198d6d3"
+    },
+    {
+      "module": "GraphMatrix.Main.GlobalIsolatedFactorization",
+      "exit_code": 0,
+      "seconds": 28.17,
+      "source_sha256": "69492599ba6dc7e83d55ae0f82824f384db58d6e83add041378a7a032d178cfc"
+    },
+    {
+      "module": "GraphMatrix.Main.GraphRawFactorBridge",
+      "exit_code": 0,
+      "seconds": 29.64,
+      "source_sha256": "7fac3a9c56362236acccb6365c74e08e6ca9eaf673ced51d46e963666e254618"
+    },
+    {
+      "module": "GraphMatrix.Main.GraphRawProbabilityBridge",
+      "exit_code": 0,
+      "seconds": 49.92,
+      "source_sha256": "5aa293d7ba8fc015825e558c1ac521cf4fdc3e68b5890e8770fb6d5331ce027f"
+    },
+    {
+      "module": "GraphMatrix.Main.InjectiveBoundaryNorm",
+      "exit_code": 0,
+      "seconds": 23.53,
+      "source_sha256": "ca875fd0c5325d34fbb4c6c02a786489a04d5aab9da4d46366eb88f62b4c5d37"
+    },
+    {
+      "module": "GraphMatrix.Main.InternalGoodFloor",
+      "exit_code": 0,
+      "seconds": 22.66,
+      "source_sha256": "a6bacc0a342f1ca01b80af1d0dc7ec16687ec9493aba129864f74adb7b649ccf"
+    },
+    {
+      "module": "GraphMatrix.Main.InternalSampleProduct",
+      "exit_code": 0,
+      "seconds": 23.7,
+      "source_sha256": "69d8a70d19d8867070d66084e7b1fd5f100a1bbc1efe0ad6801018c45a3352b8"
+    },
+    {
+      "module": "GraphMatrix.Main.IsolatedReducedShape",
+      "exit_code": 0,
+      "seconds": 27.76,
+      "source_sha256": "77828323dc1cc12d8ee2a7ec0e5d04be882a30b1165e457feab19278b76bca28"
+    },
+    {
+      "module": "GraphMatrix.Main.IsolatedScalarBounds",
+      "exit_code": 0,
+      "seconds": 10.98,
+      "source_sha256": "d53188ea6ccc960123a00fa36e62e34c6c94af109a2d3fb1f51a6541f0d0afb1"
+    },
+    {
+      "module": "GraphMatrix.Main.IsolatedSharpTransfer",
+      "exit_code": 0,
+      "seconds": 29.08,
+      "source_sha256": "a1defa8a6eead520f4fcce0236d9a9167267856d5fdc257f4708d3977662b857"
+    },
+    {
+      "module": "GraphMatrix.Main.NoActiveLower",
+      "exit_code": 0,
+      "seconds": 28.17,
+      "source_sha256": "780ad8963a7978340685faa9fdbe0d3c9c2b716e0e50e6f273e34fb5e394422d"
+    },
+    {
+      "module": "GraphMatrix.Main.ReducedActiveComponents",
+      "exit_code": 0,
+      "seconds": 27.66,
+      "source_sha256": "fdcc855fa9cf69a3456d47abc1182580edaf2a04e8d98ca5fc76aa147a92c8c7"
+    },
+    {
+      "module": "GraphMatrix.Main.ReducedGraphParameters",
+      "exit_code": 0,
+      "seconds": 28.69,
+      "source_sha256": "8c3dbc809f730b876944d420d93dca602a8b553f08912fdfc54f67c134401f45"
+    },
+    {
+      "module": "GraphMatrix.Main.RoleAllocation",
+      "exit_code": 0,
+      "seconds": 27.69,
+      "source_sha256": "402bbdbbcd0cbd849376df4e9f6316927d34b6b0a7595f33bb3768799551f092"
+    },
+    {
+      "module": "GraphMatrix.Main.Synchronization.HalfInstanceAdapter",
+      "exit_code": 0,
+      "seconds": 21.25,
+      "source_sha256": "fef650892a7ee18aa2b335fd294aa1aa86560b88ac354e408f951cfe55671bdd"
+    },
+    {
+      "module": "GraphMatrix.Main.Synchronization.SampleReadoutBridge",
+      "exit_code": 0,
+      "seconds": 21.53,
+      "source_sha256": "0e3f64821cb0c58d20176f9de81ac44746f85b428523ee669fed0248d1d2f567"
+    },
+    {
+      "module": "GraphMatrix.Main.Synchronization.TrialMass",
+      "exit_code": 0,
+      "seconds": 22.72,
+      "source_sha256": "641184bbb2adc9505ba55fdab04eabbdf5b3c28d323f00e12911ac4a125b9fe3"
+    },
+    {
+      "module": "GraphMatrix.Main.Synchronization.UniformTiltConstants",
+      "exit_code": 0,
+      "seconds": 21.44,
+      "source_sha256": "0504573a6122f008ba9799c3e1632a3904aeb35162fcc15a1ee320169a59ed23"
+    },
+    {
+      "module": "GraphMatrix.Main.TraceScaleBounds",
+      "exit_code": 0,
+      "seconds": 23.59,
+      "source_sha256": "93b024df08b324e62b2ffc673156433d36ba268c1bc2c4f9bf12353f96f4034d"
+    },
+    {
+      "module": "GraphMatrix.Main.TypedScaleAssembly",
+      "exit_code": 0,
+      "seconds": 21.88,
+      "source_sha256": "11f095bcc92e378a7fffbad399255ce601cf7bc114e3fc47311f17dc799f16d7"
+    },
+    {
+      "module": "GraphMatrix.Main.UniformLowerEndpoint",
+      "exit_code": 0,
+      "seconds": 28.08,
+      "source_sha256": "e5adba2cc43f9a144fa07b997bf4713f33315ecf306fa98923db2b479cd6606d"
+    },
+    {
+      "module": "GraphMatrix.MainTheorem",
+      "exit_code": 0,
+      "seconds": 21.33,
+      "source_sha256": "c74fcc6c59290982bbf5512725cee6b6d8e498aec5b1c9024066d6cf39766e56"
+    },
+    {
+      "module": "GraphMatrix.MatchingDefectPath",
+      "exit_code": 0,
+      "seconds": 26.28,
+      "source_sha256": "d5bb0f20cd52e81366cdeb142b0903a02b10d24550033a5b815add6f44044377"
+    },
+    {
+      "module": "GraphMatrix.MengerPathAlignment",
+      "exit_code": 0,
+      "seconds": 26.27,
+      "source_sha256": "8cf0d0fb4fe05b50da6b0a807bf8a3c8b94ab41b595a96563fcc50421d4da8f8"
+    },
+    {
+      "module": "GraphMatrix.MengerPathTrimming",
+      "exit_code": 0,
+      "seconds": 29.19,
+      "source_sha256": "0a615ecd4814b91e5fd1fb1250f81c55443a71e1b13e8a80e40cd56f0fc96bad"
+    },
+    {
+      "module": "GraphMatrix.Model.ActualPrimitiveObservations",
+      "exit_code": 0,
+      "seconds": 30.44,
+      "source_sha256": "866d3f8b0c594a43b64616c22bff45ca75c6516414d12444cb60c9c9310e4f23"
+    },
+    {
+      "module": "GraphMatrix.Model.AnyOrderTraceDomination",
+      "exit_code": 0,
+      "seconds": 28.88,
+      "source_sha256": "ae1729fdb5e593c89e6e778723cc4b434e8f78e4ee7cd6b616bb4301fd31d42e"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorAutomorphismCore",
+      "exit_code": 0,
+      "seconds": 27.56,
+      "source_sha256": "64ad387ae0db428f2db04bec2601ffaf12c07807a25a5a3fd4877a53c364102b"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorClassRealization",
+      "exit_code": 0,
+      "seconds": 27.34,
+      "source_sha256": "9f8d8c8a289253e323e2ebe2da455e24c2f4cadb989df718f53edac1eb693be8"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorCompressionNorm",
+      "exit_code": 0,
+      "seconds": 30.03,
+      "source_sha256": "74360526c81f4789bf1ddc90eec75514db073d8b369157af5219b02bc3d6f309"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorFiberTypedBridge",
+      "exit_code": 0,
+      "seconds": 26.89,
+      "source_sha256": "b0dd3efb998d185e6f98f060aa84fe9cc0981262ee4e9ebeb60f1704496feabf"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerAutomorphism",
+      "exit_code": 0,
+      "seconds": 28.47,
+      "source_sha256": "1817f4243f6d18fdfb45e4066d7f625c43b70f343b90e9d934c826288ed900ac"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerAutomorphismReindex",
+      "exit_code": 0,
+      "seconds": 27.2,
+      "source_sha256": "564f6a10dfc2c62acf77041f363dffe00989117650a9b3e437e5acbe5c7e4098"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerCompressionContractive",
+      "exit_code": 0,
+      "seconds": 28.62,
+      "source_sha256": "d5b4f3a2f8db176f15a98e9a873bed1e53eec6505f5854954811b8d5cb9c567a"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerConcreteSurvivorBridge",
+      "exit_code": 0,
+      "seconds": 27.62,
+      "source_sha256": "1c939ef92cf5f11711816f953fc4751025ad21c91e22ea3e0a5248e935a9c93f"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerConcreteTag",
+      "exit_code": 0,
+      "seconds": 27.59,
+      "source_sha256": "7154fa54c95192d1b277a6b5339db3d181849d06eea244c4015dd9243518f586"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerFinal",
+      "exit_code": 0,
+      "seconds": 27.75,
+      "source_sha256": "b1ede39ff6a47b32c975364bee82fcd9ea5167848d115c2a0a28cf0e686d69e0"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerFourier",
+      "exit_code": 0,
+      "seconds": 27.86,
+      "source_sha256": "e1a109a1fd4df499f2da3f7e27aa43a1cce4fe45daa69de7f99647254dab437d"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerPointwiseIdentity",
+      "exit_code": 0,
+      "seconds": 28.27,
+      "source_sha256": "eb77c63f1b9a5ac5ed726f52dee3a25b2a9f2fc5d469e1a71dd5d5c3d962923f"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerProjectedEntry",
+      "exit_code": 0,
+      "seconds": 27.16,
+      "source_sha256": "91c03732b75dbce3776c7ce6de0ee9d6116681563a00166f311feb2133b0dfd6"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerProjectedMatrix",
+      "exit_code": 0,
+      "seconds": 27.52,
+      "source_sha256": "da5dab8bea990bca93180f8c8f03e604824a90eee245c73d340035f66b8980fa"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerRoleReconstruction",
+      "exit_code": 0,
+      "seconds": 27.11,
+      "source_sha256": "2b5688d508e1395a9339036b7e4602d5f049eb7eb7ecbe7921ec3f3caf6ee48b"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerSurvivorBijection",
+      "exit_code": 0,
+      "seconds": 28.47,
+      "source_sha256": "992c6bbd6ed957815b9d9a3ca62298a0d201df995ed0990330d7f4e09a521720"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerTagSaturation",
+      "exit_code": 0,
+      "seconds": 27.45,
+      "source_sha256": "f9ef27dcf4f2072851daad5cfc62e8f094d875710e273956969fd379ce768094"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerTypedLaw",
+      "exit_code": 0,
+      "seconds": 37.22,
+      "source_sha256": "684bbe90c33c577d738b71a3cbfd627f1ff4b455f918b727049b311fda1f756a"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorLowerWalshAutomorphismBridge",
+      "exit_code": 0,
+      "seconds": 27.3,
+      "source_sha256": "590be81743836f8398a4d9f286a364806db17281a228a84debc7e42a80431319"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorUpperLpAdapter",
+      "exit_code": 0,
+      "seconds": 29.91,
+      "source_sha256": "2066ca1151e549dbe50f5e1de302084d1a0d8dea06e72560a4e87b1835aadc94"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorUpperNormAdapter",
+      "exit_code": 0,
+      "seconds": 27.94,
+      "source_sha256": "c3c3758f135c367699977225e21bd7f2d8c5cd22c3558764d267a8b26bfee1c2"
+    },
+    {
+      "module": "GraphMatrix.Model.ColorUpperTransfer",
+      "exit_code": 0,
+      "seconds": 29.34,
+      "source_sha256": "1e926828ce3e4c49becad6b7044977cfce7e59202a5c38fc81f9f74607a656fa"
+    },
+    {
+      "module": "GraphMatrix.Model.ColoredEdgeLaw",
+      "exit_code": 0,
+      "seconds": 21.19,
+      "source_sha256": "e35dca35c2eb929d7bc4c201f36eb143450dc09a3af277e6a2c5b8f87f4f5168"
+    },
+    {
+      "module": "GraphMatrix.Model.ColoredNoiseLaw",
+      "exit_code": 0,
+      "seconds": 21.25,
+      "source_sha256": "fceb315f7e7e867ec6590c7a6b3914e33e2dc70f85cd4c17a0bb5954d40d1c14"
+    },
+    {
+      "module": "GraphMatrix.Model.ColoredPaddingIdentity",
+      "exit_code": 0,
+      "seconds": 29.16,
+      "source_sha256": "8266b29246bb17165ba68d7543ccbd25800970056c2f1a3481f4b3e38e67115a"
+    },
+    {
+      "module": "GraphMatrix.Model.ComponentSide",
+      "exit_code": 0,
+      "seconds": 29.36,
+      "source_sha256": "4c1e0c20b4d29152fe7fe31ac5ea0d6a870e4f6e60f6f6ee8e8bef0682ca5d8d"
+    },
+    {
+      "module": "GraphMatrix.Model.EventuallyTypedCoreLp",
+      "exit_code": 0,
+      "seconds": 25.25,
+      "source_sha256": "312859fb1aa525b25981a3ff4fe595d66c3e3534a8ab19c6ce3fe65de8326868"
+    },
+    {
+      "module": "GraphMatrix.Model.FiniteColorLpTransfer",
+      "exit_code": 0,
+      "seconds": 28.0,
+      "source_sha256": "693e7ada462e22637411321ea93f11d621f2689f79af653d43ddb67dae5840de"
+    },
+    {
+      "module": "GraphMatrix.Model.FiniteColorNormTransfer",
+      "exit_code": 0,
+      "seconds": 28.03,
+      "source_sha256": "7fb7a59e7e1139f17153021a42a674d03bda1776224aa8bc913766c1ee962dc8"
+    },
+    {
+      "module": "GraphMatrix.Model.FixedColorExpectedNorm",
+      "exit_code": 0,
+      "seconds": 27.52,
+      "source_sha256": "38ab6784d9b7f692a95dab888d563c5c8a5e5bdb9021aac981ed818090e1e029"
+    },
+    {
+      "module": "GraphMatrix.Model.GeometricRatioEventually",
+      "exit_code": 0,
+      "seconds": 24.02,
+      "source_sha256": "4e7dcb27b436daa4fe6aee540047277e4e315ca0517492ae0479d4b56eed22a2"
+    },
+    {
+      "module": "GraphMatrix.Model.GeometricTraceAssembly",
+      "exit_code": 0,
+      "seconds": 29.0,
+      "source_sha256": "0942ce3f1d72f3af0bca26ffa154bfce7ad3efdc8b54c9415fcae030bcb09472"
+    },
+    {
+      "module": "GraphMatrix.Model.GlobalColorL1",
+      "exit_code": 0,
+      "seconds": 28.84,
+      "source_sha256": "a003c473e002f8cedbf12a5624b54f377b13468afcd2e1066c36ca029e669c70"
+    },
+    {
+      "module": "GraphMatrix.Model.HilbertSignFourthMoment",
+      "exit_code": 0,
+      "seconds": 24.56,
+      "source_sha256": "d6f24164c6d0b605db55d86874eafbbc4090aae46ef082fc63cf448336c31019"
+    },
+    {
+      "module": "GraphMatrix.Model.LogWindowArithmetic",
+      "exit_code": 0,
+      "seconds": 29.42,
+      "source_sha256": "b94bcaa211e3e06d156e093ff3afbed7562c7ae2b733458d7946cafab9039de4"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorCanonical",
+      "exit_code": 0,
+      "seconds": 22.27,
+      "source_sha256": "7eff1e7926117d52a7827b66fb7c8f585891d25afdf058fa21d564d9a9f4e07d"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorComponentReindex",
+      "exit_code": 0,
+      "seconds": 24.05,
+      "source_sha256": "25897643f67b53bd0b5c891e40fb3af064362a696fa43789087f9560407e1aeb"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorInterfaces",
+      "exit_code": 0,
+      "seconds": 24.31,
+      "source_sha256": "10e62ec653992abb40d374000b02bc6b63d2b08c93e622b52d0658cffcf91570"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorNormInterface",
+      "exit_code": 0,
+      "seconds": 27.25,
+      "source_sha256": "c5910fd37dc134a78e3aaa46c7909997444e3218934172cd7b43c1c5a0f21d01"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorPreprocessing",
+      "exit_code": 0,
+      "seconds": 24.41,
+      "source_sha256": "1892bbc2ea10100f81502458d21eea76f9819e2b5a8d8f9dc9ae5b1cea669924"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorProbabilityFactors",
+      "exit_code": 0,
+      "seconds": 29.97,
+      "source_sha256": "0658532cffca24686aae0fd116f3e340ee203f41b4fde6626c5b19ee81166838"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorProbabilityReindex",
+      "exit_code": 0,
+      "seconds": 29.55,
+      "source_sha256": "8d65ca76e8a9a277d4837f10801cd95f5a70087fe6a065d2aedd18051f9ac311"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorRawExactFactorization",
+      "exit_code": 0,
+      "seconds": 22.69,
+      "source_sha256": "726d48da7477f51086b5ba4bc6967670d51a229c2c13d34b8884a086de9d9da3"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorRawMatrixBridge",
+      "exit_code": 0,
+      "seconds": 24.24,
+      "source_sha256": "1ec94f86d43b6944e6b7f6d10327da8d3d89f636e7a0d5fcd1e9f1fb2bf6f376"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerFactorRawReindex",
+      "exit_code": 0,
+      "seconds": 23.02,
+      "source_sha256": "767ca63d5ea44a779b5b53710842eebe6006c5505e39a28d95d9827f81cdce25"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingAllVertical",
+      "exit_code": 0,
+      "seconds": 23.53,
+      "source_sha256": "e21f9f3be3f3e4ba582136465fb05d9c3df6c9fc9ade3d9ffa9f732d0d90dcf0"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingBridge",
+      "exit_code": 0,
+      "seconds": 23.62,
+      "source_sha256": "63b5a9503188d8ed53b3095c5ae2154f5a67e2154c604d98585bae45cde0e472"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingConditional",
+      "exit_code": 0,
+      "seconds": 23.98,
+      "source_sha256": "77371cfd2890abcd682849b4d0b7f1d4482d1ba8a8129a40cbf5b84141bfc0cc"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingHeterogeneous",
+      "exit_code": 0,
+      "seconds": 22.58,
+      "source_sha256": "c34f44e44567be828afa4354be7a191cfa4837ddd3b76c01693c252594914c1c"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingIteration",
+      "exit_code": 0,
+      "seconds": 23.08,
+      "source_sha256": "87fe9d20578ddac742982936b04122f9d307bba0461d8b287c2edb7351616fc0"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingMixed",
+      "exit_code": 0,
+      "seconds": 22.91,
+      "source_sha256": "6674904054eb681e8f6cf141707d618169186f3574a03b9b605bd5f467bc81a6"
+    },
+    {
+      "module": "GraphMatrix.Model.LowerStackingThird",
+      "exit_code": 0,
+      "seconds": 22.7,
+      "source_sha256": "e39b16aebb05e04b3ed86580533e41b73a92bf895a434ec43d86b76360f1ed08"
+    },
+    {
+      "module": "GraphMatrix.Model.MinimumSeparatorPath",
+      "exit_code": 0,
+      "seconds": 28.33,
+      "source_sha256": "bb9a656f1493cf602e7a72e0014c893719de58d3e1238c44a1b04e32a81bfd05"
+    },
+    {
+      "module": "GraphMatrix.Model.RealLpFiniteMean",
+      "exit_code": 0,
+      "seconds": 25.14,
+      "source_sha256": "48c4abb91da996c467f3d5858ab40d6c5116c278712188f1a4d2fafc0a0af4be"
+    },
+    {
+      "module": "GraphMatrix.Model.RealLpTraceEndpoint",
+      "exit_code": 0,
+      "seconds": 22.41,
+      "source_sha256": "6bf54c599f5e9a163944a50594aeef4eabc3827e61cdfea2de59319114af5a50"
+    },
+    {
+      "module": "GraphMatrix.Model.SeparatorActualCoefficientBridge",
+      "exit_code": 0,
+      "seconds": 29.16,
+      "source_sha256": "1d3b27cfff4a3dd95a922ef602509a0b0b56c825f9fe1d7176c603c277616604"
+    },
+    {
+      "module": "GraphMatrix.Model.SeparatorAddressReindex",
+      "exit_code": 0,
+      "seconds": 28.33,
+      "source_sha256": "9805e2e4a9177ab91cbe889b0673160957fd1c7b2dc28c4c26c192b6bb0c1264"
+    },
+    {
+      "module": "GraphMatrix.Model.SeparatorBlock",
+      "exit_code": 0,
+      "seconds": 23.3,
+      "source_sha256": "269ecc1be9135e0b60d834bfeec478094758d612db3eecd8f405421350f8dbef"
+    },
+    {
+      "module": "GraphMatrix.Model.SeparatorBlockNorm",
+      "exit_code": 0,
+      "seconds": 28.8,
+      "source_sha256": "c4e05e228421c39adf7629b06df04df9afb32394d7bd7b010c6ccfbb14076c72"
+    },
+    {
+      "module": "GraphMatrix.Model.SeparatorCoordinates",
+      "exit_code": 0,
+      "seconds": 28.03,
+      "source_sha256": "5c6c3ba715411b252e8fd6ad34a89fb8d51b5a7ff92cf8043d4a279d1e79d3c4"
+    },
+    {
+      "module": "GraphMatrix.Model.TypedCoefficient",
+      "exit_code": 0,
+      "seconds": 28.91,
+      "source_sha256": "2d835a71cded213c19d3b67f64a3d854dc76703f5481f09e484fa01696077fe4"
+    },
+    {
+      "module": "GraphMatrix.Model.TypedCoreLpUpperAssembly",
+      "exit_code": 0,
+      "seconds": 22.02,
+      "source_sha256": "360385a878ab5f80fca1fc337383d2fd53f513452248e2c03ae9841271756549"
+    },
+    {
+      "module": "GraphMatrix.Model.TypedEdgeNoiseLaw",
+      "exit_code": 0,
+      "seconds": 21.36,
+      "source_sha256": "438fda755fb065a2192c8c4a2dfd9d96c35015f1ecfb63a1171202f9275fb74f"
+    },
+    {
+      "module": "GraphMatrix.Model.UniformTypedInputBridge",
+      "exit_code": 0,
+      "seconds": 28.56,
+      "source_sha256": "5e7158e2486de00572b28fdaa64585fbe45365e9b0dbf0b1d31959a57fb8ad2b"
+    },
+    {
+      "module": "GraphMatrix.Model.ZeroRole",
+      "exit_code": 0,
+      "seconds": 27.92,
+      "source_sha256": "b257356b1c29143b9f6fd2067e1a69d864ed72b20a6e4de8eafdf2bbd01223b2"
+    },
+    {
+      "module": "GraphMatrix.MomentToMean",
+      "exit_code": 0,
+      "seconds": 27.91,
+      "source_sha256": "26d85dc2a3bc410997a566bb1e9914fc568a2db7fd18f8a45d47ec5cdc178370"
+    },
+    {
+      "module": "GraphMatrix.NCKEndpoint",
+      "exit_code": 0,
+      "seconds": 23.26,
+      "source_sha256": "01f34e9763ccf52dd184afd66ddf65877cf66fb9d9bb2e0b8f7023f280f7b382"
+    },
+    {
+      "module": "GraphMatrix.NearlyCombinatorialFlatteningSupport",
+      "exit_code": 0,
+      "seconds": 22.36,
+      "source_sha256": "37b6c00595a53125e90ece2a57856b4f91dfbb9c8910b1981ba7abd7ddba88eb"
+    },
+    {
+      "module": "GraphMatrix.NearlyCombinatorialModel",
+      "exit_code": 0,
+      "seconds": 29.11,
+      "source_sha256": "127b1a5aa8e565176bb591243303f72c64a92b261c7c7954972da5541db90111"
+    },
+    {
+      "module": "GraphMatrix.NormTransfer",
+      "exit_code": 0,
+      "seconds": 27.36,
+      "source_sha256": "fc4a012a2320ebdccc0e9f7b05781b4f0662698dd01320021e2176e8d6154f2a"
+    },
+    {
+      "module": "GraphMatrix.OperatorNormEndpoint",
+      "exit_code": 0,
+      "seconds": 23.55,
+      "source_sha256": "739a6e96e8a3a9ab396f9e831fb1fd2a8bc55143fa78c9f01f3999e053e3a846"
+    },
+    {
+      "module": "GraphMatrix.PairCoarseningEvenPartition",
+      "exit_code": 0,
+      "seconds": 28.25,
+      "source_sha256": "6f5f139972f49479811da9996b84a4a0c76fea967e82ba2c025e2c73275ab807"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKAlgebraicReindexProof",
+      "exit_code": 0,
+      "seconds": 27.14,
+      "source_sha256": "4bccf7a48ea378ccddb226d6dd4483612fe7ca8249e6fec3f6edff2bb48380f1"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKBranchingLedger",
+      "exit_code": 0,
+      "seconds": 22.62,
+      "source_sha256": "aa267223e8fbfa6bb34b2a80c4778cdb60665ed6c1a0081b693e24aa0d85f5cc"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKBranchingStages",
+      "exit_code": 0,
+      "seconds": 28.7,
+      "source_sha256": "8920cb123e92e3a2ccc5ff0702a54ba9e10367be73926843cb0309efa626ebc7"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKConcreteLedger",
+      "exit_code": 0,
+      "seconds": 28.73,
+      "source_sha256": "28660270fe6a6967d41cb48056bd8d61a9295a1bf0e433f8111d4acf54847e95"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKFinalCompression",
+      "exit_code": 0,
+      "seconds": 28.31,
+      "source_sha256": "b9a260d21d89140ee594fd7e22b581ee9ffc72f545d25fbda599f025b1dabf5a"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKGaugeIsometry",
+      "exit_code": 0,
+      "seconds": 30.22,
+      "source_sha256": "4b226c37cf5d499e8e02062556e202e6a46a2e0b945eb0b59c96212b9f00e5da"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKIteration",
+      "exit_code": 0,
+      "seconds": 22.42,
+      "source_sha256": "5e5e9c60a3372c630b719d6d5bdbdc1f6928f40697f780f9df1e0c970aba6700"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKOneStepReduction",
+      "exit_code": 0,
+      "seconds": 27.61,
+      "source_sha256": "6a4ac4889da92c36d5e5bb22d1a3762acbefa6a8df3edc20eb743fa064e8e335"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKRawTerminalBound",
+      "exit_code": 0,
+      "seconds": 30.34,
+      "source_sha256": "1c22d079cd45ea8efc8388f58e09ab55279bdd260e45a385263b8ee96ef4903c"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKStageMatrices",
+      "exit_code": 0,
+      "seconds": 28.83,
+      "source_sha256": "a00e8bd53f55cfe1f47acfdde477d0e8429d40137e586d28c910d3d111a7a40b"
+    },
+    {
+      "module": "GraphMatrix.PartialNCKStageReindexIsometry",
+      "exit_code": 0,
+      "seconds": 23.33,
+      "source_sha256": "f38a65df3785076cdc4efbf3b6061f38e5f2c3c102193485613f9017276be6fc"
+    },
+    {
+      "module": "GraphMatrix.PartiteBoundaryMatrixMengerBound",
+      "exit_code": 0,
+      "seconds": 29.88,
+      "source_sha256": "16db0bc8c22164bd9c27aa9380415038cb657a53d33901671b3ed4901ddd9945"
+    },
+    {
+      "module": "GraphMatrix.PartiteBoundaryMatrixTrace",
+      "exit_code": 0,
+      "seconds": 32.11,
+      "source_sha256": "8cf1b331ca40a511189f4111197b3eeefd60b6efb14c2c007248283e4d24fe6c"
+    },
+    {
+      "module": "GraphMatrix.PartitionConstantSubspace",
+      "exit_code": 0,
+      "seconds": 22.02,
+      "source_sha256": "d72eec565039117635207fe147ade57163d85fe46d27d20da76908d0742c50a6"
+    },
+    {
+      "module": "GraphMatrix.PerfectMatchingDistance",
+      "exit_code": 0,
+      "seconds": 22.66,
+      "source_sha256": "a6780a6c49f5eb4d981a29a3c91819bb8753cdbca678e5620336ee9762b2b0ba"
+    },
+    {
+      "module": "GraphMatrix.Probability.ComponentEvents",
+      "exit_code": 0,
+      "seconds": 21.42,
+      "source_sha256": "67ced780ed89d88e0ff6c93b5509f033107e145f8ecd4255ebb73f747f334375"
+    },
+    {
+      "module": "GraphMatrix.Probability.Components.ActiveComponentCoefficients",
+      "exit_code": 0,
+      "seconds": 22.47,
+      "source_sha256": "c650c0f3da17aca535d5c1df7de61add98758f9c4c74ce51ddd49e1f786638cf"
+    },
+    {
+      "module": "GraphMatrix.Probability.Components.ContractionReadout",
+      "exit_code": 0,
+      "seconds": 25.98,
+      "source_sha256": "ee762d2f71ef38f91f8434a7f5c29fb7a84c2da30269b034ddb99d2514616bae"
+    },
+    {
+      "module": "GraphMatrix.Probability.Components.CrossingArrays",
+      "exit_code": 0,
+      "seconds": 26.01,
+      "source_sha256": "a9652ec522406582d6a15d310cf7e6dcaa427433e95bcb2ac7ea2a3ff7f147c4"
+    },
+    {
+      "module": "GraphMatrix.Probability.Conditional.ComponentContraction",
+      "exit_code": 0,
+      "seconds": 27.72,
+      "source_sha256": "6c58b95dd9e402ed806d8ac2749b1739093d405a3d70ea2dca87dd845c0c82c7"
+    },
+    {
+      "module": "GraphMatrix.Probability.Conditional.ConditionalProductLaw",
+      "exit_code": 0,
+      "seconds": 42.74,
+      "source_sha256": "85f7ed24b054efc77365cfd255528b925d21983944e84faad1ee8bcb2f3cbb06"
+    },
+    {
+      "module": "GraphMatrix.Probability.CrossingCoefficientIdentification",
+      "exit_code": 0,
+      "seconds": 22.44,
+      "source_sha256": "4b11d25948e51937f811df5a6147ccbc2669b5e301e4fc3d4265dbc3fc7294c7"
+    },
+    {
+      "module": "GraphMatrix.Probability.Factorization.RawProductBridge",
+      "exit_code": 0,
+      "seconds": 28.19,
+      "source_sha256": "4ba4d74ec06355a5b13aef29252e4e6f6de33fc0cf83fecb3976d87533c933b0"
+    },
+    {
+      "module": "GraphMatrix.Probability.Factorization.RealLpFactorization",
+      "exit_code": 0,
+      "seconds": 28.14,
+      "source_sha256": "3f36e68d29c9c5d3b6249439e5bbe037130141f030585533d0e63530b9c4e389"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.FiniteMean",
+      "exit_code": 0,
+      "seconds": 24.23,
+      "source_sha256": "50498807f61c3f600c7baf2acfff834abc94ce8668a6d1653ccb398e01c7053e"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.GoodEvents",
+      "exit_code": 0,
+      "seconds": 32.58,
+      "source_sha256": "a21961bcc1bc964e52ecaf10bd7f224b8e8630ff405e2fa30d07507c21fcf65f"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.GroupedMoments",
+      "exit_code": 0,
+      "seconds": 21.7,
+      "source_sha256": "ff4199edc28e2f626da40071a7a0d436faf8b169a97b86ed61d77890ac29aeb4"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.HilbertMoments",
+      "exit_code": 0,
+      "seconds": 22.92,
+      "source_sha256": "8f11a923dff3e50dbc7c2d0034b0afcf0b7c7a96e8ebc6ed04aa50d8d47d8c4e"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.HilbertPolynomial",
+      "exit_code": 0,
+      "seconds": 78.52,
+      "source_sha256": "2af281aa445812bff27d09d37fe03d1b3a8a4b53b5b55346476fb49dc75ac273"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.InternalMoments",
+      "exit_code": 0,
+      "seconds": 26.81,
+      "source_sha256": "d24f7ebad76c9c35399b3382f3cd6f149cddc2430d53a9287a3141d92c08c7bb"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.ScaleBounds",
+      "exit_code": 0,
+      "seconds": 25.22,
+      "source_sha256": "42511df9d319ec09d9080fbad04369f6d5f6180329f9779a00eaa0967ad036eb"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.SecondLayerMoments",
+      "exit_code": 0,
+      "seconds": 24.94,
+      "source_sha256": "264a005e3a7d1b9cad0a9c7ccf7ac5a3e71d5597935ab70fbbada34558f74794"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.Structure",
+      "exit_code": 0,
+      "seconds": 23.06,
+      "source_sha256": "fb4c318134da14653dcb06fd7b9599329b229c3348560ca0476a0e78778cb548"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.Theorems",
+      "exit_code": 0,
+      "seconds": 28.12,
+      "source_sha256": "4090d61c5c7a4a6df1ad4ce7c520d44788f299b3046d0a6dd084e5d8dae58739"
+    },
+    {
+      "module": "GraphMatrix.Probability.Internal.Uniform",
+      "exit_code": 0,
+      "seconds": 29.67,
+      "source_sha256": "4eea9a57b523aee3fed900638eba81afce68e7c0aa4ebc040a856bb1bc805c68"
+    },
+    {
+      "module": "GraphMatrix.Probability.MomentComparison.ExactPairInjection",
+      "exit_code": 0,
+      "seconds": 22.31,
+      "source_sha256": "ecfb85f357bbd818cad8eb9e1aac105d251550c096a6bbe6dd3a2c06982d3a69"
+    },
+    {
+      "module": "GraphMatrix.Probability.MomentComparison.ScalarCombinatorics",
+      "exit_code": 0,
+      "seconds": 23.01,
+      "source_sha256": "426ce5ed163bf4408ddb32a7eb995a2b5e30ae25f99742054a72138665bba5f7"
+    },
+    {
+      "module": "GraphMatrix.Probability.MomentComparison.ScalarMomentProof",
+      "exit_code": 0,
+      "seconds": 25.51,
+      "source_sha256": "266de344dca54faeb1d4b17c6f0be383ef23207a735bb89d82500b2588e29f63"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.ActualAddressBridge",
+      "exit_code": 0,
+      "seconds": 22.64,
+      "source_sha256": "254c27ac53e23616e5d941cf0691351bca8a0e8db72e2a52c7d695fd08e61064"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.ActualWeightedSumSync",
+      "exit_code": 0,
+      "seconds": 22.09,
+      "source_sha256": "2ce131a5cbd0e81839c64408a5ae84fb86f85e0d8a6d413996211b85fa2f63bc"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.ComponentJointLaw",
+      "exit_code": 0,
+      "seconds": 23.22,
+      "source_sha256": "f1fee2537f52544f0fe2b22701668be3ac1f7356c292626d000dafb6fd604792"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.ComponentLaw",
+      "exit_code": 0,
+      "seconds": 22.31,
+      "source_sha256": "76eae21fac6f1d37f141e0929a6673c68ff026ea5ac7f5badbe58bc4877662b9"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.ComponentTrialBridge",
+      "exit_code": 0,
+      "seconds": 32.24,
+      "source_sha256": "52d7042ea29153f11491028e2d80e440804d3e5914dec46ac150dba059518ddc"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.FiniteProductLaw",
+      "exit_code": 0,
+      "seconds": 22.78,
+      "source_sha256": "4bdd258ccbd46636ad580a0f90789de11415536e99997e22dd57d619496f29f1"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.FromP1Component",
+      "exit_code": 0,
+      "seconds": 21.62,
+      "source_sha256": "5609f796d6592a0f33ecaae330f0b078ddf9973b3476a738223802ed742b5021"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.LargeNArithmetic",
+      "exit_code": 0,
+      "seconds": 22.03,
+      "source_sha256": "21145e213a791b7b15155d564eef3820b66629b7586daf1b685e084b74cca0e8"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.SyncAmplification",
+      "exit_code": 0,
+      "seconds": 21.91,
+      "source_sha256": "989c48ff0f48b283861880a2a43bab6052ae76b27066ab19004c844110c17c0d"
+    },
+    {
+      "module": "GraphMatrix.Probability.Synchronization.UniformTail",
+      "exit_code": 0,
+      "seconds": 22.08,
+      "source_sha256": "14da39938dbdf19140aeab355bd3d46ee432a90143b5a4bed63c406e2a5cbc22"
+    },
+    {
+      "module": "GraphMatrix.Probability.TrialLawIdentification",
+      "exit_code": 0,
+      "seconds": 21.97,
+      "source_sha256": "df4617443f58a909d88d14fe430a29f32fa479f59b025dcbde58ecd466502081"
+    },
+    {
+      "module": "GraphMatrix.RademacherAdjacentContraction",
+      "exit_code": 0,
+      "seconds": 28.19,
+      "source_sha256": "63d6a4250a83701af11f03c596c5f9a5cb7a6754742427d5ca0bf319b8bbfab8"
+    },
+    {
+      "module": "GraphMatrix.RademacherBlockRowSandwich",
+      "exit_code": 0,
+      "seconds": 22.86,
+      "source_sha256": "41686bbbef324695ae086cd558d228f041318e1d4a81b72d9b3588fb488d66e5"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanAssignmentEquiv",
+      "exit_code": 0,
+      "seconds": 31.39,
+      "source_sha256": "fc09118a3e7ea586ce95ba833a5f06b81b8c8a8bb5ed68e0737368f1dcdafe66"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanAssignmentEquivRecursive",
+      "exit_code": 0,
+      "seconds": 24.41,
+      "source_sha256": "84526b131e8fcf81f8c4f950207bd099db9ebe2b6163b212fb43e221ec259f71"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanClosedCycleEquiv",
+      "exit_code": 0,
+      "seconds": 22.53,
+      "source_sha256": "ddfcf2fceef39bc23264d57fcbe63ea0e9d4f27745ce24265a34e65d892c296b"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanClosedCycleWeight",
+      "exit_code": 0,
+      "seconds": 21.5,
+      "source_sha256": "776762c9d64752d2fa44833e736608c5d9fc50e175629622c3335b08c5c218c1"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanClosedCycleWeightProof",
+      "exit_code": 0,
+      "seconds": 27.75,
+      "source_sha256": "4ddbfde67cbbec3d5b31aeaaae1a8f847cd2d031d4d0fe33462c284c5c9e2bc2"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanContributionBound",
+      "exit_code": 0,
+      "seconds": 21.95,
+      "source_sha256": "fb2bdb5627cb2adb7e5ff963924c9b318ca05e5543cf1598ec33ee3e8c912170"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanCoordinateEquivRecursive",
+      "exit_code": 0,
+      "seconds": 21.81,
+      "source_sha256": "b9c99bd1d14dd2f56aceccdb68a4d13c0b3498474078d43fcf82391f3e09bba1"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanCoordinateWeightEquivProof",
+      "exit_code": 0,
+      "seconds": 23.39,
+      "source_sha256": "ad82f510a04966a4cb051744d8d1d89ae6309024fda87767ccb7ef0399f3b65a"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanCycleCoordinateEquivProof",
+      "exit_code": 0,
+      "seconds": 24.92,
+      "source_sha256": "8a625a274c37dd5c2cefc457d18f9916684891a78a55d89da4d81262d16e7fbf"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanCycleCoordinateSigmaInverse",
+      "exit_code": 0,
+      "seconds": 21.86,
+      "source_sha256": "5fd08df08558ace26fe855362b6afa7e45232f58c633a68c5fa7a627d91d129a"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanNodeReindexProof",
+      "exit_code": 0,
+      "seconds": 32.39,
+      "source_sha256": "14e64a91668eab16443f49a29527fc52d5c27ce008a724ec61e1bdbb1c49a3a3"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanOccurrenceBridge",
+      "exit_code": 0,
+      "seconds": 29.41,
+      "source_sha256": "e01e849271376094629e6e05c783ae38043147728276114fc9bea6ae4a73e51b"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanRawToDecoration",
+      "exit_code": 0,
+      "seconds": 21.23,
+      "source_sha256": "fd3299fecb449f184c28ebb3abb02d008ddb5f69a5e7f95eaa97d9e3144df3b3"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanScalarIdentityProof",
+      "exit_code": 0,
+      "seconds": 21.45,
+      "source_sha256": "47073ffbace6f081ec0136180f38087a38056c14a537580f9c37773754b95c37"
+    },
+    {
+      "module": "GraphMatrix.RademacherCatalanTraceBridge",
+      "exit_code": 0,
+      "seconds": 21.97,
+      "source_sha256": "bf784e0e953893ac2b90a9ae1d2619164c4ea56e9e766425813509172fac5788"
+    },
+    {
+      "module": "GraphMatrix.RademacherCharacterSum",
+      "exit_code": 0,
+      "seconds": 22.83,
+      "source_sha256": "43233ca3be97fa558a3ce74c23be3e2926756e53a2de5711d6c755964069cdd1"
+    },
+    {
+      "module": "GraphMatrix.RademacherColorProjectionContraction",
+      "exit_code": 0,
+      "seconds": 22.83,
+      "source_sha256": "8abc4db187504bc8974bf48ebbcfbcb6fe5b01f9552f4aab374748ec6f06eafd"
+    },
+    {
+      "module": "GraphMatrix.RademacherColumnMatchingContribution",
+      "exit_code": 0,
+      "seconds": 28.11,
+      "source_sha256": "2ccb12b9c710bae06a9d29c0b4c7841381705aea74918f48f1d85d7eae0c2215"
+    },
+    {
+      "module": "GraphMatrix.RademacherConcreteAdjacentContraction",
+      "exit_code": 0,
+      "seconds": 29.16,
+      "source_sha256": "6aad5ec27ef9deba77df410f353279c8d6d9641a4fbdadc75e40c827dbd04e3b"
+    },
+    {
+      "module": "GraphMatrix.RademacherCrossingMatchingReduction",
+      "exit_code": 0,
+      "seconds": 21.64,
+      "source_sha256": "38f7b35ac4be3eb9ad1817769cbff0f94af79afaf1393c5f250cdfaa4e9f04d5"
+    },
+    {
+      "module": "GraphMatrix.RademacherCrossingPairingBound",
+      "exit_code": 0,
+      "seconds": 21.97,
+      "source_sha256": "076e56ddd01f96264163ad62d36cf72d5b5c076cbd458d593cea7c1c5aff530e"
+    },
+    {
+      "module": "GraphMatrix.RademacherDecoupledStageZeroGlue",
+      "exit_code": 0,
+      "seconds": 27.72,
+      "source_sha256": "1fa78bfc3f11321ff68b0b357b0d0d5fd4de2e8d2295c9f9b14560e314304ae7"
+    },
+    {
+      "module": "GraphMatrix.RademacherDecoupling",
+      "exit_code": 0,
+      "seconds": 28.41,
+      "source_sha256": "ff384389766cc895149f615f0faca3d51484faab8545f89c679a442de9c2d42b"
+    },
+    {
+      "module": "GraphMatrix.RademacherDihedralMatching",
+      "exit_code": 0,
+      "seconds": 28.14,
+      "source_sha256": "3a9254522e81ce37b9f62241ded7634593208add5d14f5477ae218701845b6bf"
+    },
+    {
+      "module": "GraphMatrix.RademacherEvenWordPairing",
+      "exit_code": 0,
+      "seconds": 28.64,
+      "source_sha256": "4a586a21c5f63037b989ee951bdd9e6b9262a03535ec374f8d1d9b0925475f50"
+    },
+    {
+      "module": "GraphMatrix.RademacherEvenWordPairingDecomposition",
+      "exit_code": 0,
+      "seconds": 21.42,
+      "source_sha256": "466603b49b617ed149cbd5b2010811283f3eb7b205d9fcc1cc6a994f547cfdd7"
+    },
+    {
+      "module": "GraphMatrix.RademacherMatchingContribution",
+      "exit_code": 0,
+      "seconds": 28.61,
+      "source_sha256": "58988ebcf184264036b083b44228679d7b6baeed81105ba808372b0d2bb9ebf5"
+    },
+    {
+      "module": "GraphMatrix.RademacherMatchingReindex",
+      "exit_code": 0,
+      "seconds": 29.81,
+      "source_sha256": "5f3b8532714c67575417a70b09732759d76aaf5bcdf49e814f67d4fffac87c22"
+    },
+    {
+      "module": "GraphMatrix.RademacherMatrixDyadicMoment",
+      "exit_code": 0,
+      "seconds": 21.89,
+      "source_sha256": "291d65fc43553be4f047ee67149bef86e91d098070a10687c58fad403f787e8a"
+    },
+    {
+      "module": "GraphMatrix.RademacherMatrixFourthMoment",
+      "exit_code": 0,
+      "seconds": 22.64,
+      "source_sha256": "83fe46ff1d7b7e757a4e7597210215823e3e7b0eeb651330229fcbb3b39ddbe8"
+    },
+    {
+      "module": "GraphMatrix.RademacherMatrixSecondMoment",
+      "exit_code": 0,
+      "seconds": 25.28,
+      "source_sha256": "051001aedaf97d0449c7eb2aab0766b36ac72cd4ef42e346b25dd1b12d32882a"
+    },
+    {
+      "module": "GraphMatrix.RademacherNoncrossingContribution",
+      "exit_code": 0,
+      "seconds": 23.84,
+      "source_sha256": "136a1f8f173d0984b92cb620ad408e57128a6871e364f388b68627e3882305ed"
+    },
+    {
+      "module": "GraphMatrix.RademacherNoncrossingMatching",
+      "exit_code": 0,
+      "seconds": 28.33,
+      "source_sha256": "7dbc0f89022b519c6276eb03ec6f0762c61e51820716e5a52aefe440ecf323ba"
+    },
+    {
+      "module": "GraphMatrix.RademacherOpenWordContraction",
+      "exit_code": 0,
+      "seconds": 23.06,
+      "source_sha256": "a8504e77127bee56ee8d83c8febe7bff54d9b44decc291d481f0748a92b3f58a"
+    },
+    {
+      "module": "GraphMatrix.RademacherPerfectMatchingCount",
+      "exit_code": 0,
+      "seconds": 27.95,
+      "source_sha256": "cdd1e01fcb8e95f1647dd5e70fbe80645402375a114436ab0ac7b1fb9fa66957"
+    },
+    {
+      "module": "GraphMatrix.RademacherPerfectMatchingEnumeration",
+      "exit_code": 0,
+      "seconds": 21.92,
+      "source_sha256": "b4d2dd51812cde39468710dc694fb73cb1b96efbfaacbcf5dcb93870c33c000b"
+    },
+    {
+      "module": "GraphMatrix.RademacherRainbowDecoupling",
+      "exit_code": 0,
+      "seconds": 24.02,
+      "source_sha256": "27e39351d0149829786470b70b8445a30af8ea766c3717c463fcc67645bc2793"
+    },
+    {
+      "module": "GraphMatrix.RademacherSymmetrizedDecoupling",
+      "exit_code": 0,
+      "seconds": 22.0,
+      "source_sha256": "82e745a8ea0468114c33571eb2f397846e1adb59c7e57e07aab64af359ceaa3d"
+    },
+    {
+      "module": "GraphMatrix.RademacherWalshProjection",
+      "exit_code": 0,
+      "seconds": 23.44,
+      "source_sha256": "12a4c0a292682fae6109abe6df1ea0c334f74bbf5f0cee50e3019e6472199bc4"
+    },
+    {
+      "module": "GraphMatrix.ReplicaPartitionState",
+      "exit_code": 0,
+      "seconds": 22.47,
+      "source_sha256": "23dfc4d236a16f1a25d8b5ab123df66946837a2123c8efca58bb7c780f1d05cb"
+    },
+    {
+      "module": "GraphMatrix.ReplicaStateWeight",
+      "exit_code": 0,
+      "seconds": 22.53,
+      "source_sha256": "a90a7029b7369135c95a61a1ba4bf093a0cebd7e822cf18e1227b80e1b1b8eed"
+    },
+    {
+      "module": "GraphMatrix.RightBoundaryEvenPartition",
+      "exit_code": 0,
+      "seconds": 27.5,
+      "source_sha256": "77a0970712e9b618d5c0d08402d5c4e8bb5c3eda55cfc3ef15dcfebb8e2cc554"
+    },
+    {
+      "module": "GraphMatrix.RoleColoredNoiseExtension",
+      "exit_code": 0,
+      "seconds": 27.12,
+      "source_sha256": "b3794c3d90cd9df44d2554460abd2ddd76261160d6634e54850b3a7d5355eabd"
+    },
+    {
+      "module": "GraphMatrix.RoleColoredPartiteBridge",
+      "exit_code": 0,
+      "seconds": 27.41,
+      "source_sha256": "1cf9003fce6e96e2284828e3ed4a3e595e974c8b59adf66237a09feaf88b82cc"
+    },
+    {
+      "module": "GraphMatrix.RoleColoringExistence",
+      "exit_code": 0,
+      "seconds": 27.72,
+      "source_sha256": "3c0ab0b392b1eb9b5ca20fa0adca2bd92392451394c69e3933a4b3d206a47133"
+    },
+    {
+      "module": "GraphMatrix.RpowHalfExponent",
+      "exit_code": 0,
+      "seconds": 22.16,
+      "source_sha256": "d0801b472e28851628bf0ce61e0c02b05d632cb094ab001801959140f6dc6a1a"
+    },
+    {
+      "module": "GraphMatrix.SchurTest",
+      "exit_code": 0,
+      "seconds": 26.59,
+      "source_sha256": "a574622c31bb52bbe2cd1e75515f788309cc0b42c3e10702657bffc808b62efa"
+    },
+    {
+      "module": "GraphMatrix.SeparatorPathCertificate",
+      "exit_code": 0,
+      "seconds": 24.41,
+      "source_sha256": "06fa9a00e2ed7db7185241a017833c4c50139bf8d6dc83eeb15d629a1b0dd49d"
+    },
+    {
+      "module": "GraphMatrix.SparseFlatteningNorm",
+      "exit_code": 0,
+      "seconds": 22.53,
+      "source_sha256": "c075a1fad6e16ef6fb0c16687a24205efc855dc2ced8a78048ff1e4d3ba493df"
+    },
+    {
+      "module": "GraphMatrix.StageSpecificNCKTraceReduction",
+      "exit_code": 0,
+      "seconds": 30.75,
+      "source_sha256": "4202d462b711b555fe66553c186db09d89fbdfdcd42c382070c16a9dd4406bb7"
+    },
+    {
+      "module": "GraphMatrix.StateBoundaryPathDefect",
+      "exit_code": 0,
+      "seconds": 25.59,
+      "source_sha256": "133f68bc5ee5ecd5b15d957f8179dc406a8183b2177843e0aac6803efb36e1f7"
+    },
+    {
+      "module": "GraphMatrix.Theorem48AnalyticReduction",
+      "exit_code": 0,
+      "seconds": 22.45,
+      "source_sha256": "6b88a346a7f023eafe339b0527e23f50f7b2200dde7fc835c5bd597d3b37b1da"
+    },
+    {
+      "module": "GraphMatrix.Theorem48BranchingAssembly",
+      "exit_code": 0,
+      "seconds": 29.14,
+      "source_sha256": "c56b0dfcca36711331cb9a1da5712cccc47311ca4c4f4dc7a8ea62e248e61027"
+    },
+    {
+      "module": "GraphMatrix.Theorem48RawFinalAssembly",
+      "exit_code": 0,
+      "seconds": 28.34,
+      "source_sha256": "f9861d8cf007997a20a9599866d3bfd41d9cac9fbb025bb3040ab64f20a60142"
+    },
+    {
+      "module": "GraphMatrix.Theorem48StageSpecificAssembly",
+      "exit_code": 0,
+      "seconds": 29.22,
+      "source_sha256": "68321cad9c6ef9637a82e53917ed749106b7dfe40c2426a15bf9e7170a874372"
+    },
+    {
+      "module": "GraphMatrix.Theorem48UnconditionalGeometry",
+      "exit_code": 0,
+      "seconds": 22.01,
+      "source_sha256": "9ce520acc034cea4b188d736f92a1dfdf198e3f67e4fd66c454387ceaee21ec6"
+    },
+    {
+      "module": "GraphMatrix.Theorem48UpperAssembly",
+      "exit_code": 0,
+      "seconds": 28.51,
+      "source_sha256": "762bb7624ba71d29f3917874e6b72b0ab2b90aefc66cc7f14dd89f17cfcbf132"
+    },
+    {
+      "module": "GraphMatrix.ToPartiteBridge",
+      "exit_code": 0,
+      "seconds": 28.81,
+      "source_sha256": "4abea8327a2ae19835686fbf038ccf344c7cb52f2615ff140f8ae43352015c30"
+    },
+    {
+      "module": "GraphMatrix.TraceCycleIdentity",
+      "exit_code": 0,
+      "seconds": 28.25,
+      "source_sha256": "0d76aeedec94fab14482af8214925b3797959a1957cd25dbd1f7b5a78424f303"
+    },
+    {
+      "module": "GraphMatrix.TraceMatchingDistance",
+      "exit_code": 0,
+      "seconds": 25.36,
+      "source_sha256": "c0d7938fd4d39ea5bba9807a790fcbe6fb87e273aac09610f19de5ce78940c3f"
+    },
+    {
+      "module": "GraphMatrix.TraceMomentFormula",
+      "exit_code": 0,
+      "seconds": 27.45,
+      "source_sha256": "0417b528a259df8cd83fdd3aa276755cb2c43c24ae65123f7c537192da3be8c1"
+    },
+    {
+      "module": "GraphMatrix.TraceNormBridge",
+      "exit_code": 0,
+      "seconds": 28.81,
+      "source_sha256": "03f24055e90a134ba6b8af8543e96838e9080014931917075fe8c682c387daa5"
+    },
+    {
+      "module": "GraphMatrix.TraceWordExpansion",
+      "exit_code": 0,
+      "seconds": 28.66,
+      "source_sha256": "0ae4df21150efcc237f4aa2831f9fa94bc9646672485c7cd2a0be0dffb232f35"
+    },
+    {
+      "module": "GraphMatrix.UnconditionalMengerFlattening",
+      "exit_code": 0,
+      "seconds": 21.05,
+      "source_sha256": "caf2a839c4d19012ee082550b147da2880b0c14cc89d90a8d060b77b861791a0"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltChebyshev",
+      "exit_code": 0,
+      "seconds": 25.28,
+      "source_sha256": "55848cab5675fb66302bd74812354b701fabaadebad991de1492184e7bd35356"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltComplete",
+      "exit_code": 0,
+      "seconds": 22.2,
+      "source_sha256": "ac68ac1ee97d4fc6e8620bb4ce2185dc3d92d9ea37e0d1a0e7c0f5d15bc7738a"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltConcreteVariance",
+      "exit_code": 0,
+      "seconds": 21.72,
+      "source_sha256": "75c179035c6e25193796e78237609935141e799de77a1cecff72cf70f2d8c807"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltCore",
+      "exit_code": 0,
+      "seconds": 27.67,
+      "source_sha256": "9071106bba78ed1c224fd98b855b563b05e5b43a771e9d45d45fecbaefd8e65d"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltMoments",
+      "exit_code": 0,
+      "seconds": 27.95,
+      "source_sha256": "495434856966f9bfb31ada0056f0d2d083b31a99df93e1ef5ada029d72163ec7"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltTanh",
+      "exit_code": 0,
+      "seconds": 23.59,
+      "source_sha256": "58bb46c203221eeda6b53bff41d34f608118e75bb6fa9bee657046359bcca298"
+    },
+    {
+      "module": "GraphMatrix.WeightedSignTiltVariance",
+      "exit_code": 0,
+      "seconds": 26.44,
+      "source_sha256": "e73a296122b495f74aec2ed9459d334ace211ae1458b78232e16af08f67328be"
+    },
+    {
+      "module": "GraphMatrix.ZeroResidualLower",
+      "exit_code": 0,
+      "seconds": 20.8,
+      "source_sha256": "025c1b38477a0df745d540ff654a48f1793fb620e48db7f727aee5e1de243b3f"
+    },
+    {
+      "module": "Verify",
+      "exit_code": 0,
+      "seconds": 20.81,
+      "source_sha256": "7bf125fc3f7fbc8eef2f5a04da4cc26fc2c52716212e369eaa8bc5ed3e1f7246"
+    }
+  ]
 }

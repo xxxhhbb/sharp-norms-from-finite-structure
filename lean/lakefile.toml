@@ -1,10 +1,10 @@
-name = "OP31Main"
+name = "GraphMatrix"
 version = "0.1.0"
-defaultTargets = ["R6"]
+defaultTargets = ["GraphMatrix"]
 
 [[lean_lib]]
-name = "R6"
-roots = ["R6.M1OriginalMain"]
+name = "GraphMatrix"
+roots = ["GraphMatrix.MainTheorem"]
 moreLeanArgs = ["-j1"]
 
 [[require]]
