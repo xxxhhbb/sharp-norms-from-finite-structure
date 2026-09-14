@@ -1,6 +1,9 @@
 # Sharp Norms from Finite Structure
 
 [Read the paper (PDF)](./Sharp%20Norms%20from%20Finite%20Structure.pdf)
+[Lean proof of the graph-matrix main theorem](./lean/README.md) · [Final theorem](./lean/R6/M1OriginalMain.lean)
+
+The original two-sided graph-matrix norm theorem in Result 1 now has an end-to-end Lean 4.33.0 proof. The final theorem takes only the graph shape as input; its recorded axiom set contains only the standard Lean axioms. Source files, pinned dependencies, build instructions and local verification records are in [lean/](./lean/README.md). This formalization release covers the graph-matrix main theorem; the other results below are not included in its completion claim.
 
 We establish four main results: a sharp norm classification for dense Rademacher graph matrices; degree-four clique SoS feasibility at a fixed multiple of the square-root scale; sharp convergence thresholds and exact spectral edges for Gaussian tensor networks; and a norm formula for independent random factors that accounts for both structure and scalar tails.
 
